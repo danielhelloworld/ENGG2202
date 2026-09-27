@@ -21,6 +21,7 @@ from estimation.target_filter import TargetFilter
 from perception.detector_yolo import YoloPersonDetector
 from perception.target_selector import TargetSelector
 from telemetry.csv_logger import AsyncCsvLogger
+from telemetry.mjpeg_stream import MjpegStreamer
 from telemetry.overlay import draw_overlay
 
 
@@ -53,6 +54,7 @@ class TrackerApplication:
             else VisionOnlyGimbal()
         )
         self.logger = AsyncCsvLogger(config.telemetry)
+        self.streamer = MjpegStreamer()
         self.last_command_ms: Optional[int] = None
         self.last_log_ms: Optional[int] = None
         self.last_console_ms: Optional[int] = None
@@ -169,6 +171,7 @@ class TrackerApplication:
     def run(self) -> None:
         self.logger.start()
         self.gimbal.start()
+        self.streamer.start()
         normal_exit = False
 
         try:
@@ -236,13 +239,14 @@ class TrackerApplication:
                 self._maybe_log(capture_ms, result)
                 self._maybe_report(capture_ms, result, len(detections))
 
+                draw_overlay(
+                    frame,
+                    result,
+                    self.camera_model,
+                    self.config.ui.overlay_scale,
+                )
+                self.streamer.update(frame)
                 if self.display is not None:
-                    draw_overlay(
-                        frame,
-                        result,
-                        self.camera_model,
-                        self.config.ui.overlay_scale,
-                    )
                     self.display.show(frame)
 
                 time.sleep_ms(1)
@@ -258,4 +262,5 @@ class TrackerApplication:
             now_ms = time.ticks_ms()
             if normal_exit:
                 self.gimbal.shutdown(now_ms)
+            self.streamer.close()
             self.logger.close()
