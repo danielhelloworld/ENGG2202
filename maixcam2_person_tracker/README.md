@@ -85,6 +85,18 @@ If the model is stored elsewhere, change `ModelConfig.path` in `config.py`.
 
 The Mac is a development and monitoring host only. The real-time loop runs entirely on the MaixCAM 2.
 
+## Workbench integration
+
+The optional [MaixCAM 2 Workbench](../workbench/README.md) provides a browser dashboard, MJPEG proxy, telemetry categories, and runtime status. It does not take ownership of the camera or inference loop.
+
+To publish status, set the `endpoint` default inside `WorkbenchConfig` in `config.py` to the Mac USB-network address ending in `/api/telemetry`:
+
+```python
+endpoint: str = "http://10.177.5.100:8760/api/telemetry"
+```
+
+The publisher is disabled when the endpoint is empty. When enabled, it sends the newest camera, person detection, tracking, gimbal, model, and process snapshot from a background thread. A disconnected dashboard does not block the vision loop. Keep the workbench gateway bound to the Mac's USB-network interface; its telemetry endpoint is unauthenticated.
+
 ## Configuration that must be measured
 
 The values in `config.py` are conservative starting points, not final calibration values:
@@ -120,6 +132,8 @@ control/gimbal_controller.py    Command prediction and motion limits
 drivers/f32c_protocol.py        Binary F32C protocol
 drivers/gimbal_uart.py          UART ownership and motor state
 telemetry/csv_logger.py         Bounded asynchronous logging
+telemetry/mjpeg_stream.py       Annotated MJPEG camera endpoint
+telemetry/workbench_publisher.py Optional asynchronous desktop telemetry
 telemetry/overlay.py            On-screen diagnostics
 docs/ARCHITECTURE.md            Design and module boundaries
 docs/BRINGUP.md                 Safe hardware activation procedure

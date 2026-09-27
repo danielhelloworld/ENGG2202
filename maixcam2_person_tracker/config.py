@@ -127,6 +127,13 @@ class TelemetryConfig:
 
 
 @dataclass(frozen=True)
+class WorkbenchConfig:
+    # Set this to the Mac's USB-network URL ending in /api/telemetry.
+    endpoint: str = ""
+    publish_period_ms: int = 250
+
+
+@dataclass(frozen=True)
 class AppConfig:
     model: ModelConfig = field(default_factory=ModelConfig)
     camera: CameraConfig = field(default_factory=CameraConfig)
@@ -137,6 +144,7 @@ class AppConfig:
     search: SearchConfig = field(default_factory=SearchConfig)
     ui: UiConfig = field(default_factory=UiConfig)
     telemetry: TelemetryConfig = field(default_factory=TelemetryConfig)
+    workbench: WorkbenchConfig = field(default_factory=WorkbenchConfig)
 
 
 CONFIG = AppConfig()

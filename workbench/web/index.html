@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#0a101a" />
+    <title>MaixCAM Workbench</title>
+    <link rel="stylesheet" href="/web/styles.css" />
+  </head>
+  <body>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <div class="brand-lockup">
+          <div class="brand-mark"><span></span><span></span><span></span></div>
+          <div><strong>MAIX<span>LAB</span></strong><small>DEVICE WORKBENCH</small></div>
+        </div>
+
+        <div class="device-switcher">
+          <div class="device-avatar">M2</div>
+          <div class="device-copy"><strong>MaixCAM 2</strong><span id="device-address">10.177.5.1</span></div>
+          <span class="connection-dot" id="sidebar-dot"></span>
+        </div>
+
+        <div class="nav-label">WORKSPACE</div>
+        <nav class="main-nav" aria-label="Workbench navigation">
+          <button class="nav-item active" data-view="overview"><span class="nav-icon">◫</span><span>总览</span><kbd>01</kbd></button>
+          <button class="nav-item" data-view="camera"><span class="nav-icon">▣</span><span>实时画面</span><kbd>02</kbd></button>
+          <button class="nav-item" data-view="data"><span class="nav-icon">▤</span><span>数据面板</span><kbd>03</kbd></button>
+          <button class="nav-item" data-view="runtime"><span class="nav-icon">⌘</span><span>运行状态</span><kbd>04</kbd></button>
+        </nav>
+
+        <div class="nav-label nav-label-lower">DEVICE</div>
+        <nav class="main-nav">
+          <button class="nav-item" data-view="settings"><span class="nav-icon">⚙</span><span>接入设置</span></button>
+        </nav>
+
+        <div class="sidebar-bottom">
+          <div class="health-card">
+            <div class="health-head"><span>DEVICE LINK</span><span class="pulse" id="health-pulse"></span></div>
+            <strong id="sidebar-link-state">等待设备接入</strong>
+            <p id="sidebar-link-hint">启动追踪程序后将自动接收状态</p>
+          </div>
+          <div class="sidebar-foot"><span class="foot-led"></span> LOCAL DEVELOPMENT MODE</div>
+        </div>
+      </aside>
+
+      <main class="main-area">
+        <header class="topbar">
+          <div class="breadcrumbs"><span>MaixLab</span><i>/</i><strong id="page-crumb">总览</strong></div>
+          <div class="topbar-actions">
+            <div class="live-indicator"><span class="live-dot" id="top-live-dot"></span><span id="top-live-label">DEVICE OFFLINE</span></div>
+            <button class="icon-button" id="refresh-button" title="Refresh device state" aria-label="Refresh device state">↻</button>
+            <div class="avatar">D</div>
+          </div>
+        </header>
+
+        <div class="page-content">
+          <section class="view active" id="view-overview">
+            <div class="page-heading">
+              <div><div class="eyebrow">SYSTEM OVERVIEW <span class="eyebrow-line"></span></div><h1>设备工作台</h1><p class="heading-subtitle">实时观察 MaixCAM 2 的视觉、跟踪与运行状态。</p></div>
+              <div class="heading-meta"><span class="meta-label">SESSION</span><strong id="session-time">—</strong><span class="meta-divider"></span><span class="meta-label">SCHEMA</span><strong>v1.0</strong></div>
+            </div>
+
+            <div class="status-strip">
+              <div class="status-main"><span class="status-icon" id="connection-icon">↗</span><div><strong id="connection-title">等待 MaixCAM 2 接入</strong><p id="connection-description">启动设备追踪程序后，数据和摄像头画面将在此显示。</p></div></div>
+              <button class="text-button" data-open-view="settings">配置设备连接 <span>→</span></button>
+            </div>
+
+            <div class="metric-grid four-cols">
+              <article class="metric-card"><div class="metric-top"><span>PERSON DETECTIONS</span><span class="metric-symbol cyan">◎</span></div><div class="metric-value" id="overview-person-count">—</div><div class="metric-caption"><span class="metric-state" id="vision-state">等待数据</span><span>VISION</span></div></article>
+              <article class="metric-card"><div class="metric-top"><span>TRACKING MODE</span><span class="metric-symbol violet">⌖</span></div><div class="metric-value metric-word" id="overview-mode">—</div><div class="metric-caption"><span class="metric-state" id="tracking-state">等待数据</span><span>ESTIMATION</span></div></article>
+              <article class="metric-card"><div class="metric-top"><span>PAN / TILT</span><span class="metric-symbol amber">⌁</span></div><div class="metric-value metric-angle" id="overview-gimbal">—</div><div class="metric-caption"><span class="metric-state" id="gimbal-state">云台数据</span><span>GIMBAL</span></div></article>
+              <article class="metric-card"><div class="metric-top"><span>RUNNING FILE</span><span class="metric-symbol green">⌘</span></div><div class="metric-value metric-word" id="overview-file">—</div><div class="metric-caption"><span class="metric-state" id="runtime-state">未运行</span><span>RUNTIME</span></div></article>
+            </div>
+
+            <div class="overview-grid">
+              <article class="panel camera-panel">
+                <div class="panel-header"><div><div class="panel-kicker">CAMERA FEED</div><h2>实时画面</h2></div><span class="badge badge-offline" id="camera-badge"><i></i> OFFLINE</span></div>
+                <div class="camera-frame" id="camera-frame">
+                  <img id="camera-image" alt="MaixCAM 2 live camera feed" hidden />
+                  <div class="camera-placeholder" id="camera-placeholder"><div class="camera-placeholder-icon">▣</div><strong>等待摄像头画面</strong><span>启动 MaixCAM 2 追踪程序后，画面会自动接入</span><button class="outline-button" data-open-view="camera">打开实时画面 <span>→</span></button></div>
+                  <div class="camera-hud"><span><i></i> LIVE</span><span id="camera-resolution">— × —</span></div>
+                </div>
+                <div class="camera-footer"><span><i class="small-led" id="camera-led"></i><span id="camera-footer-state">相机未连接</span></span><span id="camera-fps">— FPS</span></div>
+              </article>
+
+              <article class="panel tracking-panel">
+                <div class="panel-header"><div><div class="panel-kicker">TARGET TRACKING</div><h2>目标跟踪</h2></div><span class="state-chip" id="tracking-chip">NO DATA</span></div>
+                <div class="tracking-visual">
+                  <div class="radar-grid"><div class="radar-cross horizontal"></div><div class="radar-cross vertical"></div><div class="radar-ring ring-one"></div><div class="radar-ring ring-two"></div><div class="radar-ring ring-three"></div><div class="radar-center"></div><div class="radar-target" id="radar-target"></div><div class="radar-sweep"></div><span class="radar-axis axis-top">+Y</span><span class="radar-axis axis-right">+X</span><span class="radar-axis axis-bottom">−Y</span><span class="radar-axis axis-left">−X</span></div>
+                  <div class="target-readout"><span class="readout-label">AZIMUTH</span><strong id="target-azimuth">—<small>°</small></strong><span class="readout-label">ELEVATION</span><strong id="target-elevation">—<small>°</small></strong></div>
+                </div>
+                <div class="tracking-footer"><span>CONFIDENCE <strong id="target-confidence">—</strong></span><span>RATE <strong id="target-rate">—</strong></span></div>
+              </article>
+            </div>
+
+            <section class="panel category-panel"><div class="panel-header"><div><div class="panel-kicker">TELEMETRY CATALOG</div><h2>数据分类</h2></div><button class="text-button" data-open-view="data">查看全部数据 <span>→</span></button></div><div class="category-grid" id="overview-categories"></div></section>
+          </section>
+
+          <section class="view" id="view-camera">
+            <div class="page-heading compact-heading"><div><div class="eyebrow">CAMERA MONITOR <span class="eyebrow-line"></span></div><h1>实时画面</h1><p class="heading-subtitle">经工作台网关转发的 MJPEG 摄像头视频流。</p></div><div class="heading-meta"><span class="meta-label">SOURCE</span><strong id="camera-source-label">MaixCAM 2</strong></div></div>
+            <article class="panel full-camera-panel"><div class="panel-header"><div><div class="panel-kicker">LIVE STREAM</div><h2>Camera 01 · MaixCAM 2</h2></div><span class="badge badge-offline" id="camera-page-badge"><i></i> WAITING</span></div><div class="camera-frame large-camera-frame"><img id="camera-image-large" alt="MaixCAM 2 live camera stream" hidden /><div class="camera-placeholder" id="camera-placeholder-large"><div class="camera-placeholder-icon">▣</div><strong>摄像头暂未接入</strong><span>确认设备地址、追踪程序和 MJPEG 服务均已启动</span><button class="outline-button" data-open-view="settings">检查接入设置 <span>→</span></button></div><div class="camera-hud"><span><i></i> LIVE</span><span id="camera-resolution-large">— × —</span></div></div><div class="camera-footer"><span><i class="small-led" id="camera-led-large"></i><span id="camera-footer-state-large">等待设备心跳</span></span><span>MJPEG · <span id="camera-fps-large">—</span> FPS</span></div></article>
+            <div class="camera-note"><span class="note-icon">i</span><p>画面清晰度取决于镜头对焦与模型输入分辨率。视频无法连接时，请检查 MaixCAM 2 追踪程序是否运行，以及 USB 网络地址是否正确。</p></div>
+          </section>
+
+          <section class="view" id="view-data">
+            <div class="page-heading compact-heading"><div><div class="eyebrow">DATA EXPLORER <span class="eyebrow-line"></span></div><h1>数据面板</h1><p class="heading-subtitle">按功能类别浏览当前已接入的设备指标。</p></div><div class="heading-meta"><span class="meta-label">UPDATED</span><strong id="data-updated">—</strong></div></div>
+            <div class="data-tabs" id="data-tabs"></div><div class="data-table-wrap panel"><div class="data-table-head"><span>指标名称</span><span>当前值</span><span>说明 / 单位</span><span>数据源</span></div><div id="data-rows"></div></div>
+            <div class="extension-hint"><span class="note-icon">＋</span><p>新增功能可通过统一 telemetry payload 增加 category 和 metric；未知类别会自动显示在“扩展数据”中。</p></div>
+          </section>
+
+          <section class="view" id="view-runtime">
+            <div class="page-heading compact-heading"><div><div class="eyebrow">PROCESS MONITOR <span class="eyebrow-line"></span></div><h1>运行状态</h1><p class="heading-subtitle">查看设备连接、主程序与摄像头服务状态。</p></div><span class="badge badge-offline" id="runtime-page-badge"><i></i> DISCONNECTED</span></div>
+            <div class="runtime-grid">
+              <article class="panel runtime-panel"><div class="panel-header"><div><div class="panel-kicker">APPLICATION PROCESS</div><h2>运行文件</h2></div><span class="process-indicator" id="process-indicator"></span></div><div class="process-name" id="runtime-script">无活动程序</div><div class="runtime-list"><div><span>运行状态</span><strong id="runtime-running">—</strong></div><div><span>进程 ID</span><strong id="runtime-pid">—</strong></div><div><span>运行时长</span><strong id="runtime-uptime">—</strong></div><div><span>模型文件</span><strong id="runtime-model">—</strong></div><div><span>最后心跳</span><strong id="runtime-heartbeat">—</strong></div></div></article>
+              <article class="panel runtime-panel"><div class="panel-header"><div><div class="panel-kicker">DEVICE SERVICES</div><h2>设备服务</h2></div><span class="panel-tag">MaixCAM 2</span></div><div class="service-list"><div class="service-row"><span class="service-mark">CAM</span><div><strong>Camera / ISP</strong><small id="service-camera-detail">等待设备状态</small></div><span class="service-status" id="service-camera">UNKNOWN</span></div><div class="service-row"><span class="service-mark">NPU</span><div><strong>NPU Inference</strong><small id="service-npu-detail">等待设备状态</small></div><span class="service-status" id="service-npu">UNKNOWN</span></div><div class="service-row"><span class="service-mark">HTTP</span><div><strong>Video Stream</strong><small>MJPEG preview endpoint</small></div><span class="service-status" id="service-stream">UNKNOWN</span></div><div class="service-row"><span class="service-mark">UART</span><div><strong>Gimbal UART</strong><small id="service-gimbal-detail">Vision-only mode</small></div><span class="service-status" id="service-gimbal">DISABLED</span></div></div></article>
+            </div>
+            <article class="panel activity-panel"><div class="panel-header"><div><div class="panel-kicker">EVENT STREAM</div><h2>最近状态</h2></div><span class="panel-tag" id="event-count">0 events</span></div><div class="event-list" id="event-list"><div class="empty-state">设备连接后，运行状态变化将显示在这里。</div></div></article>
+          </section>
+
+          <section class="view" id="view-settings">
+            <div class="page-heading compact-heading"><div><div class="eyebrow">CONNECTION SETTINGS <span class="eyebrow-line"></span></div><h1>接入设置</h1><p class="heading-subtitle">配置 USB 网络中的 MaixCAM 2 地址与摄像头流端口。</p></div></div>
+            <article class="panel settings-panel"><div class="panel-header"><div><div class="panel-kicker">DEVICE CONNECTION</div><h2>设备网络</h2></div><span class="panel-tag">USB NETWORK</span></div><form id="settings-form"><label>MaixCAM 2 IP 地址<input id="device-ip-input" name="device_ip" value="10.177.5.1" placeholder="10.177.5.1" required /></label><label>MJPEG 视频端口<input id="video-port-input" name="video_port" type="number" min="1" max="65535" value="8080" required /></label><div class="form-divider"></div><div class="ingest-endpoint"><div><span class="field-label">TELEMETRY INGEST ENDPOINT</span><code id="ingest-endpoint">http://127.0.0.1:8760/api/telemetry</code><small>Set MAIX_WORKBENCH_URL on MaixCAM 2 to this endpoint. Bind the workbench server to the Mac USB-network IP for device access.</small></div><button class="copy-button" type="button" id="copy-endpoint">复制</button></div><div class="form-actions"><span class="form-feedback" id="settings-feedback"></span><button class="primary-button" type="submit">保存接入设置 <span>→</span></button></div></form></article>
+            <article class="panel integration-panel"><div class="panel-kicker">EXTENSION CONTRACT</div><h2>后续模块接入方式</h2><p>设备端向统一 telemetry endpoint 发送 JSON。首版数据按 <code>camera</code>、<code>vision</code>、<code>tracking</code>、<code>gimbal</code>、<code>system</code> 分类；扩展模块可新增 <code>extensions</code> 下的命名空间，工作台会自动列出尚未登记的指标。</p></article>
+          </section>
+        </div>
+        <footer class="main-footer"><span>MAIXLAB WORKBENCH <i>·</i> MODULAR DEVICE MONITORING</span><span id="footer-clock">LOCAL SESSION</span></footer>
+      </main>
+    </div>
+    <script src="/web/app.js" defer></script>
+  </body>
+</html>

@@ -1,5 +1,7 @@
 """Application orchestration for the Stage 1 person-tracking loop."""
 
+import os
+import sys
 from typing import Optional, Tuple
 
 from maix import app, camera, display, time
@@ -23,6 +25,7 @@ from perception.target_selector import TargetSelector
 from telemetry.csv_logger import AsyncCsvLogger
 from telemetry.mjpeg_stream import MjpegStreamer
 from telemetry.overlay import draw_overlay
+from telemetry.workbench_publisher import WorkbenchPublisher
 
 
 class TrackerApplication:
@@ -55,6 +58,13 @@ class TrackerApplication:
         )
         self.logger = AsyncCsvLogger(config.telemetry)
         self.streamer = MjpegStreamer()
+        self.workbench = WorkbenchPublisher(
+            config.workbench.endpoint or os.getenv("MAIX_WORKBENCH_URL", "")
+        )
+        self.process_started_ms: Optional[int] = None
+        self.last_workbench_ms: Optional[int] = None
+        self.last_capture_ms: Optional[int] = None
+        self.measured_fps: Optional[float] = None
         self.last_command_ms: Optional[int] = None
         self.last_log_ms: Optional[int] = None
         self.last_console_ms: Optional[int] = None
@@ -168,16 +178,98 @@ class TrackerApplication:
         )
         self.last_console_ms = now_ms
 
+    def _workbench_snapshot(
+        self,
+        now_ms: int,
+        result: FrameResult,
+        detection_count: int,
+    ) -> dict:
+        detection = result.detection
+        track = result.track
+        gimbal = result.gimbal
+        command = result.command
+        return {
+            "schema_version": 1,
+            "runtime": {
+                "running": True,
+                "script": os.path.basename(sys.argv[0]) or "main.py",
+                "pid": os.getpid(),
+                "uptime_seconds": max(
+                    0.0,
+                    (now_ms - (self.process_started_ms or now_ms)) / 1000.0,
+                ),
+                "model_path": self.config.model.path,
+            },
+            "camera": {
+                "available": True,
+                "width": self.detector.input_width,
+                "height": self.detector.input_height,
+                "fps": round(self.measured_fps, 1) if self.measured_fps else None,
+            },
+            "vision": {
+                "person_count": detection_count,
+                "selected_label": self.config.model.target_label if detection else None,
+                "confidence": detection.confidence if detection else None,
+                "center_x": detection.box.center_x if detection else None,
+                "center_y": detection.box.center_y if detection else None,
+                "class_id": detection.class_id if detection else None,
+            },
+            "tracking": {
+                "mode": result.mode.value,
+                "azimuth_deg": track.azimuth_deg if track else None,
+                "elevation_deg": track.elevation_deg if track else None,
+                "azimuth_rate_deg_s": track.azimuth_rate_deg_s if track else None,
+                "elevation_rate_deg_s": track.elevation_rate_deg_s if track else None,
+                "azimuth_sigma_deg": track.azimuth_sigma_deg if track else None,
+                "elevation_sigma_deg": track.elevation_sigma_deg if track else None,
+            },
+            "gimbal": {
+                "enabled": self.config.gimbal.enabled,
+                "pan_deg": gimbal.pan_deg,
+                "tilt_deg": gimbal.tilt_deg,
+                "pan_valid": gimbal.pan_valid,
+                "tilt_valid": gimbal.tilt_valid,
+                "command_pan_deg": command.pan_target_deg if command else None,
+                "command_tilt_deg": command.tilt_target_deg if command else None,
+            },
+            "system": {
+                "camera_available": True,
+                "npu_ready": True,
+                "status": result.status_message,
+            },
+            "extensions": {},
+        }
+
+    def _maybe_publish(self, now_ms: int, result: FrameResult, detection_count: int) -> None:
+        if (
+            self.last_workbench_ms is not None
+            and now_ms - self.last_workbench_ms < self.config.workbench.publish_period_ms
+        ):
+            return
+        self.workbench.publish(self._workbench_snapshot(now_ms, result, detection_count))
+        self.last_workbench_ms = now_ms
+
     def run(self) -> None:
         self.logger.start()
         self.gimbal.start()
         self.streamer.start()
+        self.process_started_ms = time.ticks_ms()
+        self.workbench.start()
         normal_exit = False
 
         try:
             while not app.need_exit():
                 frame = self.camera.read()
                 capture_ms = time.ticks_ms()
+                if self.last_capture_ms is not None:
+                    interval_ms = max(1, capture_ms - self.last_capture_ms)
+                    instant_fps = 1000.0 / interval_ms
+                    self.measured_fps = (
+                        instant_fps
+                        if self.measured_fps is None
+                        else self.measured_fps * 0.8 + instant_fps * 0.2
+                    )
+                self.last_capture_ms = capture_ms
 
                 self.gimbal.poll(capture_ms)
                 gimbal_state = self.gimbal.state(capture_ms)
@@ -238,6 +330,7 @@ class TrackerApplication:
                 )
                 self._maybe_log(capture_ms, result)
                 self._maybe_report(capture_ms, result, len(detections))
+                self._maybe_publish(capture_ms, result, len(detections))
 
                 draw_overlay(
                     frame,
@@ -262,5 +355,6 @@ class TrackerApplication:
             now_ms = time.ticks_ms()
             if normal_exit:
                 self.gimbal.shutdown(now_ms)
+            self.workbench.close()
             self.streamer.close()
             self.logger.close()
