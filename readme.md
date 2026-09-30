@@ -6,6 +6,8 @@ This repository contains the MaixCAM 2 vision-tracking prototype, its system arc
 
 - [Tracker architecture](maixcam2_drone_tracker_architecture.md) — system boundaries, runtime flow, and staged development plan.
 - [Person-tracking application](maixcam2_person_tracker/README.md) — Stage 1 YOLO person detection, target association, bearing estimation, and safe vision-only gimbal flow.
+- [MicArray sound-direction display](maixcam2_micarray_direction/README.md) — independent MaixVision UART app with reusable 16×16 sound-map direction API; no gimbal commands.
+- [Thermal160 + YOLO MaixVision app](maixcam2_thermal_yolo_fusion/README.md) — RGB detection, manual multi-distance thermal alignment, hot-region tracking, temperature overlay, and RTSP/JPEG output.
 - [Developer workbench](workbench/README.md) — local monitoring dashboard, MJPEG stream proxy, telemetry schema, extension points, and setup instructions.
 - `Daniel's code/` — existing ENGG2202 project files.
 

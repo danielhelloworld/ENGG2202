@@ -1,0 +1,11 @@
+{
+  "test": "real FFmpeg decode via RTSP TCP",
+  "frames": 3,
+  "width": 640,
+  "height": 480,
+  "rgb_mean_absolute_error": 2.866476779513889,
+  "seconds": 0.609,
+  "hardware_tested": false,
+  "synthetic_inputs": true,
+  "stderr": ""
+}

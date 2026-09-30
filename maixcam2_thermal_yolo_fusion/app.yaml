@@ -1,0 +1,17 @@
+id: thermal_yolo_fusion
+name: Thermal YOLO Fusion
+name[zh]: 热成像YOLO融合
+version: 1.5.0
+author: Local Project
+icon: assets/thermal.json
+desc: MaixCAM2 Thermal160 and YOLO overlay with RTSP JPEG streaming
+desc[zh]: 热成像与YOLO检测融合、区域测温、RTSP输出
+include:
+  - main.py
+  - README.md
+  - CALIBRATION.md
+  - PERFORMANCE.md
+  - THIRD_PARTY.md
+  - LICENSE_SIPEED.txt
+  - assets/thermal.json
+  - app.yaml
