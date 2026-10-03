@@ -1,0 +1,1689 @@
+{
+  "stl_count": 34,
+  "existing_files_verified_unchanged": 149,
+  "existing_file_hashes": {
+    "3D_MaixCam2_379C_2025-09-16.step": "0e8eecabbf3e7c22ca14ea6921cd59336770238e705e1bb3b55f82ac3ea771a6",
+    "cleanup_2026-10-03.json": "2533d59dffebdd48c3b41bdb3e786face09bb9b5d863f1ac5c98ea7537197176",
+    "MaixCAM2_3.0.step": "cc9149d3dc8f07e251276ecf51ef8121c129051dcfc557045478729745a820f2",
+    "README.md": "1458e5e5624217b80b8b20f780530af4acb360c2219740daa58452baa4773223",
+    "README_加强版与USB优化.md": "e23d06fbddaa624e483c97d98ecbf58635b2069d37c8a59c6919ce258d22ff1d",
+    "README_快拆转接台.md": "ee840a6758403c7badf4dba6c77ffeee7e907b400ac7a78fc9d7a1b75a68b294",
+    "云台连接件.step": "15d0dd4c3250db40d3b52048498f4abcb266c2d13061e81c94ec3f188899b6d7",
+    "output_v1/assembly_preview.png": "5f803c80d1643b4422d1f0242889bba2d85ba1dbbb67e9ac40fb5e6e2c0d9b36",
+    "output_v1/build_report.json": "dd6073d5b0e1321859ae1426821e240dbfb615926f59da54eda636d3003b039c",
+    "output_v1/camera_plate.f3d": "cf44ef62ab9fe73872102151d884446cae56d3f354a26c51477c56d1eea64c64",
+    "output_v1/camera_plate.step": "e40299922c19f363225e5484494d879b33cccd6b70c89447cc364ee3584721b1",
+    "output_v1/camera_plate.stl": "f8aadd844ad6226547169ffd92cd555b9ce60e02b4587d5e22fa93ae1297ef56",
+    "output_v1/camera_plate_four_screw.f3d": "1af30f12636d923b42101570c34e5051621922bac7b3f3a01d8a1e4343275717",
+    "output_v1/camera_plate_four_screw.step": "cec7787895671f64a42b6b311acf1796e700e4693390cb417cb1a9312599ea55",
+    "output_v1/camera_plate_four_screw.stl": "33d10d45f9df52856174295edddc9e9907f71e9c520219c8db31e3e2ed0fe62c",
+    "output_v1/fit_coupon_gap_0.15.f3d": "780d390a9e243c5693623214d2dedab116c053de6a0ea3145160083d484f6fb4",
+    "output_v1/fit_coupon_gap_0.15.step": "74064eb4c3bfe41696ca8bda02d70318756fbf2a88dfcb87e848eead2876d44a",
+    "output_v1/fit_coupon_gap_0.15.stl": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+    "output_v1/fit_coupon_gap_0.25.f3d": "7565a7b849395c7a09151439fd23181d3042347062901ab04b7f093dc824168e",
+    "output_v1/fit_coupon_gap_0.25.step": "d32a3faf4c096f6c5f44736eda4d74c397fb1526b51f32e4b4580106dd6ecc09",
+    "output_v1/fit_coupon_gap_0.25.stl": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+    "output_v1/fit_coupon_gap_0.35.f3d": "ee7203a26b2a03aab63d72cb7bca6a22ceb3e579bba1020ddf95ad9b7eb0e6ed",
+    "output_v1/fit_coupon_gap_0.35.step": "e84e82e8eac0191025df548a9579a5b2eed9349822b0fa4ad4c5e66d746bfdc1",
+    "output_v1/fit_coupon_gap_0.35.stl": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+    "output_v1/fit_coupon_male.f3d": "21b291202eb837083388e501c74271f72544a57ca52c78cfdd577992f40f05f8",
+    "output_v1/fit_coupon_male.step": "22c282bbfa06e92fcec26775db91e6c99bd44aca0788edd1c02f227a2e2b3447",
+    "output_v1/fit_coupon_male.stl": "5b951c91518453cc23a065ced79a709e18f162302602100f7e308e4af4b44620",
+    "output_v1/MaixCAM2_quick_release_assembly.f3d": "6c20bc1d501bb7ccd6b7e9f68e1af11c9e0f3aafd574587255d1844087ae46f4",
+    "output_v1/MaixCAM2_quick_release_assembly.step": "21e7854d3a857f9eeedcbee76ce0e93cfb1bc827d482197751c921997be93450",
+    "output_v1/mesh_validation.json": "c20dad339a453dc5dd8b2018e321da8e02cde88f22dd2d38ac1e06b1e71b95a4",
+    "output_v1/receiver_heat_stake.f3d": "7fdee6b2b1614731561d994c7077bdc4edfd21bb9f9a6d3c5d2f0634d50abdd5",
+    "output_v1/receiver_heat_stake.step": "849489edc9bff7a76c1087accad3d5daaf5404f261e12e906230af6f9b0264bd",
+    "output_v1/receiver_heat_stake.stl": "cb0271404689adaf114fc774153960b8d78e2584223b82de62e4767875ec8ed0",
+    "output_v1/receiver_M2_bolt.f3d": "b1abf7a0bd6ecb10f07d12ce802ee26b770b3cc98e8e6f8c1358572786051efb",
+    "output_v1/receiver_M2_bolt.step": "08dfdac156df93f22f14fbd4cfc6af1538157d882f50e65c01620d6f75e2b663",
+    "output_v1/receiver_M2_bolt.stl": "afa36161cc63931419a498dbb46f2b78729f945ca0c574ce07d2bded6a1f3dbd",
+    "output_v2/assembly_preview.png": "7dd2bc285c480b7e2f9aab50ec7e3cde9db895e13a8b1e490b3539c636f47420",
+    "output_v2/build_report.json": "f66e458459ebeccae9feaa6f6ff963f61d97e45b3eb5159a4c5984f69e2cc712",
+    "output_v2/camera_plate.f3d": "0dd4d53f82b00bc63a8d61339fa8fdce40432ec26823da4566921797a42ba0f2",
+    "output_v2/camera_plate.step": "d2d7ff196c7e0efcfa08a324021da492bff67f5b86b25f9016403e2d86bd50aa",
+    "output_v2/camera_plate.stl": "e6895fcf0a9d87dad2e80705641baa148a50471861d90ae699b586b0a32e7fb7",
+    "output_v2/camera_plate_four_screw.f3d": "3cb54f274f7b2effa8c6d63697824ae7b0b164f24be25c90883327c716c15793",
+    "output_v2/camera_plate_four_screw.step": "b143439e5163f5aab779d119bce4896bcd6fa3c3aa1a8ab685390204d5f38f30",
+    "output_v2/camera_plate_four_screw.stl": "a090625848078db747c58d8cdb35416080d065f93c534016960b48cb85a73174",
+    "output_v2/fit_coupon_gap_0.15.f3d": "d076d9e078babd93458471745d7027a7d0d54490359d4b167052a0bb77ba90f4",
+    "output_v2/fit_coupon_gap_0.15.step": "41bb6b75ac231c2b8e782cb9b6a41a22b9c1a49ac32d15ae41b9bc66287a08bd",
+    "output_v2/fit_coupon_gap_0.15.stl": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+    "output_v2/fit_coupon_gap_0.25.f3d": "2e80655907a3ef7a1462450950fbfe3a8b7fe2adb288e62d7691b85d7b167a49",
+    "output_v2/fit_coupon_gap_0.25.step": "8ac3114747366d8204e7e7ff10c3487cded19cd0438e6c8e7133cc2b353a50fb",
+    "output_v2/fit_coupon_gap_0.25.stl": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+    "output_v2/fit_coupon_gap_0.35.f3d": "ebc978f60f137bc4eaf56d3c7090f1c35aa3ad315ea9064e83d6bba707b0d447",
+    "output_v2/fit_coupon_gap_0.35.step": "b63e93ee235f5576c23760cd81515aa7a8f8ebb0413c72dd59bea071625dfd4e",
+    "output_v2/fit_coupon_gap_0.35.stl": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+    "output_v2/fit_coupon_male.f3d": "a6669d24c14cac23cd6c10c0be4add311f25ec7b669be82a80588c13ca6cb220",
+    "output_v2/fit_coupon_male.step": "3f9a5fa297125d1280463155231d566f29f181286d727cf7162b4ba85d9645d7",
+    "output_v2/fit_coupon_male.stl": "5b951c91518453cc23a065ced79a709e18f162302602100f7e308e4af4b44620",
+    "output_v2/geometry_checks.json": "13484773080c240d0d9c647e43ff66e833021e29a995162c080112df35ba5a4a",
+    "output_v2/intersection_diagnostics.jsonl": "d576da24c954374c47788dfa413db7036d85dbbd8c77eb5619a19652db4f4932",
+    "output_v2/MaixCAM2_quick_release_assembly.f3d": "b17c9aa9569d6a011c00011e09f05b2595f056f70a665035514aa02cd70767af",
+    "output_v2/MaixCAM2_quick_release_assembly.step": "537106fcd3715d4b61746bc7a70ffa8ecf57f78230233e28c0e26986900ceb35",
+    "output_v2/mesh_validation.json": "0869ea0a6e610933178d12b0d0a0e1116e29bf7a06a6935ad9ff69e5913764e7",
+    "output_v2/receiver_heat_stake.f3d": "27b288c381d6ad923ab7ce49a332fbf5621d89e838444dd4f24ab43861226c13",
+    "output_v2/receiver_heat_stake.step": "bd42f8a8b54a9433af4868c3f7d2264935a194daf8963b4302db9a7251a4f057",
+    "output_v2/receiver_heat_stake.stl": "ac35d19c9b9dc0e652cdff1b4643d5d225a2a2a9e669194ea04f89e0da0dd0cd",
+    "output_v2/receiver_M2_bolt.f3d": "dc8c5f91a32d41efaafc3af320093bedc9e02a49f7ea16b242f623200406e867",
+    "output_v2/receiver_M2_bolt.step": "ab3ce8fa5071880bd1b0f30a46f50b0132327d1e674daffbf4af01ed6c67a3b7",
+    "output_v2/receiver_M2_bolt.stl": "1ac4a0a35a4c5b03c05877fff1d953fd0f88b158490007ae4950c43da0ff6457",
+    "output_v2_reinforced/assembly_preview.png": "11116a26f061611d1d4563033902d3170da5180ef1d8f2328c335961fadab90a",
+    "output_v2_reinforced/build_report.json": "3a016b409c8cb31deb7ab181e6b88de27ba840213b98dc4db8c6f2980739c80a",
+    "output_v2_reinforced/camera_plate.f3d": "e4cc7f2a6d12a5dd40193fa536620c94e107c7d57277a211ae49c05a820ce9f9",
+    "output_v2_reinforced/camera_plate.step": "2bed46b28a882117e7e56a52daacaba3de8438fec0f8c540c40a5adb783f2f5a",
+    "output_v2_reinforced/camera_plate.stl": "e6895fcf0a9d87dad2e80705641baa148a50471861d90ae699b586b0a32e7fb7",
+    "output_v2_reinforced/camera_plate_four_screw.f3d": "9383fd6d86a13fc74339db44c3162dc2072cef55964e73a78e0a5a0f0b116885",
+    "output_v2_reinforced/camera_plate_four_screw.step": "554ff070092f0d2fbfb34bf553ae8cc1166c6163189309f48ebe6dbfba548991",
+    "output_v2_reinforced/camera_plate_four_screw.stl": "a090625848078db747c58d8cdb35416080d065f93c534016960b48cb85a73174",
+    "output_v2_reinforced/feature_health.json": "e2dc06e61876e96afac1069cb8e52705ff5a5bd4235fd780aba8a71e4231a18e",
+    "output_v2_reinforced/fit_coupon_gap_0.15.f3d": "3f0d58737aee6df07b775386547db722c1ed0b5d2c9006dde76f0659b3a02b4f",
+    "output_v2_reinforced/fit_coupon_gap_0.15.step": "4025a0d3194845f3b2eac35980a7166d8a8ea09238ab86bbe051a20d7fcf3482",
+    "output_v2_reinforced/fit_coupon_gap_0.15.stl": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+    "output_v2_reinforced/fit_coupon_gap_0.25.f3d": "b5b6973e01406095ec8bdfd64b12e025fedd0484fb4a2fd3938cfd1cf3c1166f",
+    "output_v2_reinforced/fit_coupon_gap_0.25.step": "7139094151c670147df2f9f0cfd4a75a5e4e60ecc7f9788c483bc836f879cc0b",
+    "output_v2_reinforced/fit_coupon_gap_0.25.stl": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+    "output_v2_reinforced/fit_coupon_gap_0.35.f3d": "82813ae5bf3194df194fc1d5e95bb83ed0d1596f396007e48c4925ef359fb047",
+    "output_v2_reinforced/fit_coupon_gap_0.35.step": "05d868cd8a5d0b5b752d58e0f8d354287657622675840ff8af0318df9eed3fed",
+    "output_v2_reinforced/fit_coupon_gap_0.35.stl": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+    "output_v2_reinforced/fit_coupon_male.f3d": "a61b8e9a2400f2293db111ce4ffcd64804c0a00dc5cfad68d622d09cc639eed8",
+    "output_v2_reinforced/fit_coupon_male.step": "66e8d7569f5fe8f666383a00091ccc24fdba8303ab696daaa6dd7fa6d85718b3",
+    "output_v2_reinforced/fit_coupon_male.stl": "5b951c91518453cc23a065ced79a709e18f162302602100f7e308e4af4b44620",
+    "output_v2_reinforced/geometry_checks.json": "8333a14497927dae8f33620e7010ac7cf4391be015ea384c9876e49dd882bbc3",
+    "output_v2_reinforced/intersection_diagnostics.jsonl": "70f366e7a6c254c04007a38230b5c29f25cf5cc2b15503611847a7c57a867b09",
+    "output_v2_reinforced/MaixCAM2_quick_release_assembly.f3d": "ee83789235351c929051d3e1e9be97a0915ef13ef57d7b8cf53cb9ff9dd71ff9",
+    "output_v2_reinforced/MaixCAM2_quick_release_assembly.step": "440a68dbce827b101048cd094a0820e6e2bd09121c77f0a84ca865d4b0be9545",
+    "output_v2_reinforced/mesh_validation.json": "b3b47e6f391244dc63675b7b894c0dbea1be0a13a48fd7e4309784fa80438ff9",
+    "output_v2_reinforced/receiver_heat_stake.f3d": "2fa06b90c94658cff395e7c76932064a730e84c9829b1e3e56857b44ee5a2628",
+    "output_v2_reinforced/receiver_heat_stake.step": "3ee33217a9e003a3f351dac83cfdae2637fe8616d7ca34722f47dd81bc325c28",
+    "output_v2_reinforced/receiver_heat_stake.stl": "142b76dec5107f8016ba420ca0651df2574af1b1239f4764f9b91b55c9ae7d93",
+    "output_v2_reinforced/receiver_M2_bolt.f3d": "f0023655a134898d8759d85950bee60d3f33b088e30338a3660693f998e23e47",
+    "output_v2_reinforced/receiver_M2_bolt.step": "c487c4c9ab37d3f30ce8d77c1939b763f48914dbf28a36f019bb17c7c5d58dce",
+    "output_v2_reinforced/receiver_M2_bolt.stl": "76ed0722159d22950b5e0c86febb8ea7f934394041bb98a67ef0028c3cc73801",
+    "output_v2_reinforced/side_heat_rivet_print_2.f3d": "f28ce6c5143326d46a72a4b5f447c72e7e902fd1f774017def04a9e713a01bd1",
+    "output_v2_reinforced/side_heat_rivet_print_2.step": "1aea73ecec36848197ee958f61bff2ea8159c49cb1d1c0d1ea56a0853cb25b7b",
+    "output_v2_reinforced/side_heat_rivet_print_2.stl": "0b687910feaf34afbacfc815bc77540bf885d88c85f8da675c40dd41a7815b89",
+    "output_v3_usb/assembly_preview.png": "1beff0171b6058d3ae2aed8ae99d13f735ebab4040b495b1d486ace41e0c3ec4",
+    "output_v3_usb/build_report.json": "d623bed9e014a820b3b250cf70071b7cc27f53453c0c84c7e37c248be4ef2799",
+    "output_v3_usb/camera_plate.f3d": "b3627ef03bb65ef205e1a6112a0d657194d600e071d125e6f1e4a7e852ed0a8b",
+    "output_v3_usb/camera_plate.step": "9e6e9b5d2afedc4bf72532d0f55a10fedae2579888bb8db4a4fe047fe3740c25",
+    "output_v3_usb/camera_plate.stl": "86eed1efab251851bfa4e65655eb3e726a853e8ab894d68effe072be8903217b",
+    "output_v3_usb/camera_plate_four_screw.f3d": "52cfdd450a229d8d5a6a30a0b89922d087a277857204ec3f8bd9888badf76020",
+    "output_v3_usb/camera_plate_four_screw.step": "cdc09f21fae5fb87b0b50941631fe05bdbc0304062846f3d284cf33c42a59e4e",
+    "output_v3_usb/camera_plate_four_screw.stl": "cf6d64e5cfa4abcb4e749770efc237e30a3d36e5711dd5fbb4192dec47f595eb",
+    "output_v3_usb/feature_health.json": "1a2ffbfc3ab84d8e1abdf8c87eee06508f7e14bdfcfb30fc30f3ea3ba9b557eb",
+    "output_v3_usb/fit_coupon_gap_0.15.f3d": "348d3150356d647d393618cd816670b15ff084241f2945e208f9b84f830a6c47",
+    "output_v3_usb/fit_coupon_gap_0.15.step": "2ca4c96e28a4919bc4bed18ff6084b7721eb7a7c5a43778436989994293150d9",
+    "output_v3_usb/fit_coupon_gap_0.15.stl": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+    "output_v3_usb/fit_coupon_gap_0.25.f3d": "5b051620600c3520b319747882679fb7f5efb6a3a1b5ecabc72c139f6eb38318",
+    "output_v3_usb/fit_coupon_gap_0.25.step": "1c630f4863f451025e008ee0f03b2c57a55af01d4b5b4f152a8d04dace6e7bff",
+    "output_v3_usb/fit_coupon_gap_0.25.stl": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+    "output_v3_usb/fit_coupon_gap_0.35.f3d": "52200d2da5d2924b206de2097f3b4ba4f1b3f365c0eae9c606814e7e9e53407e",
+    "output_v3_usb/fit_coupon_gap_0.35.step": "c3a70f9010db595b60755c2f299b8547de0cebcb9b5ddf6fdabb1310d576425c",
+    "output_v3_usb/fit_coupon_gap_0.35.stl": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+    "output_v3_usb/fit_coupon_male.f3d": "433272a64d1c349468d896e26ac15a96cd55c78572a9f05ea4c79ec736eed8f6",
+    "output_v3_usb/fit_coupon_male.step": "80b9daf65ed040ae93d49c15e1fb70bc3db83b1b49da75078f48f11067fbf971",
+    "output_v3_usb/fit_coupon_male.stl": "5b951c91518453cc23a065ced79a709e18f162302602100f7e308e4af4b44620",
+    "output_v3_usb/geometry_checks.json": "157e690e23037104923949a6d6ab645154daec2ea0f975b4417cf6eeb59196eb",
+    "output_v3_usb/intersection_diagnostics.jsonl": "f767c080b68a9c7e9f99c6ae15ed74430b3e178a74ec42243e8f3c9f9032ab3f",
+    "output_v3_usb/MaixCAM2_quick_release_assembly.f3d": "615e74a40728ebd77d2bf9917dcad4ea66c27cb34739cc8b2c81b634d895cf76",
+    "output_v3_usb/MaixCAM2_quick_release_assembly.step": "9315af0c6e75992466735daa32019ceb817fd5b46599bdf50c7217eca4fc3a83",
+    "output_v3_usb/mesh_validation.json": "3dc46b9624c20b507073a38b17c16a781f15ffdca50b58bdf1f4ad85e5d4e80b",
+    "output_v3_usb/receiver_heat_stake.f3d": "7862f381c7ddf351620b82365009f4a00b51793707c15d1e07f3a6365471dc31",
+    "output_v3_usb/receiver_heat_stake.step": "5e51e4fe034c4be5c3be2329fdd42a645bfd69633d120274e3fe66c9800c5876",
+    "output_v3_usb/receiver_heat_stake.stl": "c45c67895a2d34098c428cf1cf6b5e245c73b34b16bd788312c5c215fcebaded",
+    "output_v3_usb/receiver_M2_bolt.f3d": "53265b49557486cf490cdfc3b84ae12f8fb4f653f0a60d1b040b48d7d6b708dc",
+    "output_v3_usb/receiver_M2_bolt.step": "351665b7d469619f3be8049d1aa0caf2af1916999d19250302c58d55b56fd1d0",
+    "output_v3_usb/receiver_M2_bolt.stl": "867244e5bc70ec85228957fdd20cf6589f70a571bf5515b80017ab4ba7f67ef1",
+    "output_v3_usb/side_heat_rivet_print_2.f3d": "922494b6b5baa49191df9295db47fff7d2a9943e1af1a7f6c063be6cb68d1524",
+    "output_v3_usb/side_heat_rivet_print_2.step": "cbee934460c6bba5ef3c42ba4c8a044df3fda980f230b0717338c8f68c45b61f",
+    "output_v3_usb/side_heat_rivet_print_2.stl": "0b687910feaf34afbacfc815bc77540bf885d88c85f8da675c40dd41a7815b89",
+    "output_v3_usb/USB_clearance_preview.png": "2d63e5de08a59484929a0b3f5f21a99bedffa8e58f6724d7c12822c92589832c",
+    "quick_release_tool/build_adapter.py": "f8b9295e1b9a932092cd48d0f8c65791ccfa1469b468b7b00cf9a3318ba20862",
+    "quick_release_tool/build_optimized.py": "c3364360f25d042dd85fe16c9651b5b3d7b621ca846f0c430c6c5ed40bbfbbe2",
+    "quick_release_tool/command.json": "412a3a87d7e0708dc68a9a024854aabc3436a8086b23cdf7441b435afa14e8b1",
+    "quick_release_tool/connector_geometry.json": "ca47678975228b1fb480517dd812a3fb1c78dce6b3969f189f8d2a9ffb679414",
+    "quick_release_tool/final_verification.json": "70b171767245b75acbf3c8c60dcefb40189eddbef94b746a8a5eb94df621a1e7",
+    "quick_release_tool/original_v2_preservation.json": "464029d830efd810f10943fc53eb9a942534a42b1d7d76a035483298592fd430",
+    "quick_release_tool/quick_release_tool.manifest": "5b6e62235781a7ca08fc41fa24ee21666fb41a089fc687724789068877da21fd",
+    "quick_release_tool/quick_release_tool.py": "3dcb93966f4208168e64f8a1f172468db010855b43d6e53425a143d2fe432507",
+    "quick_release_tool/validate_mesh.py": "b3b999fad43d7db11a68f22d1758eac891e1227e66d4549daa23964be93c22e1",
+    "quick_release_tool/validate_optimized.py": "9467fa5153abd811d881107eea08f147c4c99173791415e0203c5c5aa2b7b451",
+    "quick_release_tool/.vscode/launch.json": "b7d5c7d3c87e4f55c1ae7af6598aeefd85b54e73cc478260145c3acb8f247099"
+  },
+  "all_passed": true,
+  "operation": "translation only; XY centered and minimum Z zero; no rotation or rescaling",
+  "parts": [
+    {
+      "source": "output_v3_usb/camera_plate.stl",
+      "file": "01_V3_USB优化版/03_相机快装板_中心1-4英寸螺丝.stl",
+      "quantity": 1,
+      "use": "相机板二选一",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -20.0,
+        -12.300000190734863
+      ],
+      "source_sha256": "86eed1efab251851bfa4e65655eb3e726a853e8ab894d68effe072be8903217b",
+      "target_sha256": "0945b87d0d3bcf15dde5fd5da45d3e2c83a3b33a8603ae785c17c360b971f3ba",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 3.3306690738754696e-16,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 416,
+        "vertices": 208,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -19.0,
+            -35.0,
+            0.0
+          ],
+          [
+            19.0,
+            35.0,
+            8.999999046325684
+          ]
+        ],
+        "dimensions_mm": [
+          38.0,
+          70.0,
+          8.999999046325684
+        ],
+        "volume_mm3": 15031.692919690393
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v3_usb/camera_plate_four_screw.stl",
+      "file": "01_V3_USB优化版/04_相机快装板_中心螺丝及四角固定件.stl",
+      "quantity": 1,
+      "use": "相机板二选一；立边与板一体成型",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -20.0,
+        -12.300000190734863
+      ],
+      "source_sha256": "cf6d64e5cfa4abcb4e749770efc237e30a3d36e5711dd5fbb4192dec47f595eb",
+      "target_sha256": "807bda199392d2f30147ff9741b567b299a34c6272b632f5fd6028c0f8abe7f2",
+      "dimension_error_mm": 9.5367431640625e-07,
+      "relative_volume_error": 4.273066567250794e-09,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 1016,
+        "vertices": 500,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -19.0,
+            -35.0,
+            0.0
+          ],
+          [
+            19.0,
+            35.0,
+            58.000003814697266
+          ]
+        ],
+        "dimensions_mm": [
+          38.0,
+          70.0,
+          58.000003814697266
+        ],
+        "volume_mm3": 16854.81103983234
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v3_usb/fit_coupon_gap_0.15.stl",
+      "file": "01_V3_USB优化版/试装件/02_燕尾母件_单侧间隙0.15mm.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+      "target_sha256": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 28,
+        "vertices": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -25.0,
+            -9.0,
+            0.0
+          ],
+          [
+            25.0,
+            9.0,
+            7.199999809265137
+          ]
+        ],
+        "dimensions_mm": [
+          50.0,
+          18.0,
+          7.199999809265137
+        ],
+        "volume_mm3": 3052.368054038998
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v3_usb/fit_coupon_gap_0.25.stl",
+      "file": "01_V3_USB优化版/试装件/03_燕尾母件_单侧间隙0.25mm.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+      "target_sha256": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 28,
+        "vertices": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -25.0,
+            -9.0,
+            0.0
+          ],
+          [
+            25.0,
+            9.0,
+            7.199999809265137
+          ]
+        ],
+        "dimensions_mm": [
+          50.0,
+          18.0,
+          7.199999809265137
+        ],
+        "volume_mm3": 3033.647983314513
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v3_usb/fit_coupon_gap_0.35.stl",
+      "file": "01_V3_USB优化版/试装件/04_燕尾母件_单侧间隙0.35mm.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+      "target_sha256": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 28,
+        "vertices": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -25.0,
+            -9.0,
+            0.0
+          ],
+          [
+            25.0,
+            9.0,
+            7.199999809265137
+          ]
+        ],
+        "dimensions_mm": [
+          50.0,
+          18.0,
+          7.199999809265137
+        ],
+        "volume_mm3": 3014.9279125900284
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v3_usb/fit_coupon_male.stl",
+      "file": "01_V3_USB优化版/试装件/01_燕尾公件.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -2.299999952316284
+      ],
+      "source_sha256": "5b951c91518453cc23a065ced79a709e18f162302602100f7e308e4af4b44620",
+      "target_sha256": "3ac5fc14c1d98a9a662c0eca68104f60eb1ef8bafc6a7dbec182836892f26954",
+      "dimension_error_mm": 2.384185791015625e-07,
+      "relative_volume_error": 4.768371353325307e-08,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 12,
+        "vertices": 8,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -20.0,
+            -9.0,
+            0.0
+          ],
+          [
+            20.0,
+            9.0,
+            5.0
+          ]
+        ],
+        "dimensions_mm": [
+          40.0,
+          18.0,
+          5.0
+        ],
+        "volume_mm3": 3240.0
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v3_usb/receiver_heat_stake.stl",
+      "file": "01_V3_USB优化版/01_摩擦快拆底座_一体热铆柱.stl",
+      "quantity": 1,
+      "use": "底座二选一",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -7.924999237060547,
+        5.5
+      ],
+      "source_sha256": "c45c67895a2d34098c428cf1cf6b5e245c73b34b16bd788312c5c215fcebaded",
+      "target_sha256": "41953cc96f3f4ab5ad4fe29e41425d688269c87a1a7ffba36537d752c8628dea",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 1.9260165240453375e-08,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 2122,
+        "vertices": 1051,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -22.0,
+            -40.07500076293945,
+            0.0
+          ],
+          [
+            22.0,
+            40.07500076293945,
+            22.700000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          44.0,
+          80.1500015258789,
+          22.700000762939453
+        ],
+        "volume_mm3": 31844.816780098638
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v3_usb/receiver_M2_bolt.stl",
+      "file": "01_V3_USB优化版/02_摩擦快拆底座_M2螺丝固定.stl",
+      "quantity": 1,
+      "use": "底座二选一",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -7.924999237060547,
+        2.0999999046325684
+      ],
+      "source_sha256": "867244e5bc70ec85228957fdd20cf6589f70a571bf5515b80017ab4ba7f67ef1",
+      "target_sha256": "09ea3b4842fa10277011eca4ca896c67087c3ecd4074095c6a14984293c99dce",
+      "dimension_error_mm": 4.76837158203125e-07,
+      "relative_volume_error": 1.7282769437798606e-08,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 2130,
+        "vertices": 1051,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -22.0,
+            -40.07500076293945,
+            0.0
+          ],
+          [
+            22.0,
+            40.07500076293945,
+            19.30000114440918
+          ]
+        ],
+        "dimensions_mm": [
+          44.0,
+          80.1500015258789,
+          19.30000114440918
+        ],
+        "volume_mm3": 31619.83823751206
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v3_usb/side_heat_rivet_print_2.stl",
+      "file": "01_V3_USB优化版/05_独立侧向热铆销_单颗_打印2颗.stl",
+      "quantity": 2,
+      "use": "加强版和USB版侧向两孔固定",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "0b687910feaf34afbacfc815bc77540bf885d88c85f8da675c40dd41a7815b89",
+      "target_sha256": "0b687910feaf34afbacfc815bc77540bf885d88c85f8da675c40dd41a7815b89",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 788,
+        "vertices": 396,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -2.75,
+            -2.75,
+            0.0
+          ],
+          [
+            2.75,
+            2.75,
+            11.0
+          ]
+        ],
+        "dimensions_mm": [
+          5.5,
+          5.5,
+          11.0
+        ],
+        "volume_mm3": 110.96482326280871
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2_reinforced/camera_plate.stl",
+      "file": "02_V2_原位置加强版/03_相机快装板_中心1-4英寸螺丝.stl",
+      "quantity": 1,
+      "use": "相机板二选一",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -7.300000190734863
+      ],
+      "source_sha256": "e6895fcf0a9d87dad2e80705641baa148a50471861d90ae699b586b0a32e7fb7",
+      "target_sha256": "cd7189308528f821b7bfd0abbcf7d02be05df76e453b8486ccf453675f39b304",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 3.3306690738754696e-16,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 416,
+        "vertices": 208,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -19.0,
+            -35.0,
+            0.0
+          ],
+          [
+            19.0,
+            35.0,
+            8.999999046325684
+          ]
+        ],
+        "dimensions_mm": [
+          38.0,
+          70.0,
+          8.999999046325684
+        ],
+        "volume_mm3": 15031.692075169729
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2_reinforced/camera_plate_four_screw.stl",
+      "file": "02_V2_原位置加强版/04_相机快装板_中心螺丝及四角固定件.stl",
+      "quantity": 1,
+      "use": "相机板二选一；立边与板一体成型",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -7.300000190734863
+      ],
+      "source_sha256": "a090625848078db747c58d8cdb35416080d065f93c534016960b48cb85a73174",
+      "target_sha256": "89f7003d1e80f88f4414426fabf149281c334fb0a4ba7f38cccf02f2f27c6153",
+      "dimension_error_mm": 9.5367431640625e-07,
+      "relative_volume_error": 2.1727386556591455e-09,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 1016,
+        "vertices": 500,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -19.0,
+            -35.0,
+            0.0
+          ],
+          [
+            19.0,
+            35.0,
+            58.000003814697266
+          ]
+        ],
+        "dimensions_mm": [
+          38.0,
+          70.0,
+          58.000003814697266
+        ],
+        "volume_mm3": 16854.81023829956
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2_reinforced/fit_coupon_gap_0.15.stl",
+      "file": "02_V2_原位置加强版/试装件/02_燕尾母件_单侧间隙0.15mm.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+      "target_sha256": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 28,
+        "vertices": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -25.0,
+            -9.0,
+            0.0
+          ],
+          [
+            25.0,
+            9.0,
+            7.199999809265137
+          ]
+        ],
+        "dimensions_mm": [
+          50.0,
+          18.0,
+          7.199999809265137
+        ],
+        "volume_mm3": 3052.368054038998
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2_reinforced/fit_coupon_gap_0.25.stl",
+      "file": "02_V2_原位置加强版/试装件/03_燕尾母件_单侧间隙0.25mm.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+      "target_sha256": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 28,
+        "vertices": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -25.0,
+            -9.0,
+            0.0
+          ],
+          [
+            25.0,
+            9.0,
+            7.199999809265137
+          ]
+        ],
+        "dimensions_mm": [
+          50.0,
+          18.0,
+          7.199999809265137
+        ],
+        "volume_mm3": 3033.647983314513
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2_reinforced/fit_coupon_gap_0.35.stl",
+      "file": "02_V2_原位置加强版/试装件/04_燕尾母件_单侧间隙0.35mm.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+      "target_sha256": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 28,
+        "vertices": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -25.0,
+            -9.0,
+            0.0
+          ],
+          [
+            25.0,
+            9.0,
+            7.199999809265137
+          ]
+        ],
+        "dimensions_mm": [
+          50.0,
+          18.0,
+          7.199999809265137
+        ],
+        "volume_mm3": 3014.9279125900284
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2_reinforced/fit_coupon_male.stl",
+      "file": "02_V2_原位置加强版/试装件/01_燕尾公件.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -2.299999952316284
+      ],
+      "source_sha256": "5b951c91518453cc23a065ced79a709e18f162302602100f7e308e4af4b44620",
+      "target_sha256": "3ac5fc14c1d98a9a662c0eca68104f60eb1ef8bafc6a7dbec182836892f26954",
+      "dimension_error_mm": 2.384185791015625e-07,
+      "relative_volume_error": 4.768371353325307e-08,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 12,
+        "vertices": 8,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -20.0,
+            -9.0,
+            0.0
+          ],
+          [
+            20.0,
+            9.0,
+            5.0
+          ]
+        ],
+        "dimensions_mm": [
+          40.0,
+          18.0,
+          5.0
+        ],
+        "volume_mm3": 3240.0
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2_reinforced/receiver_heat_stake.stl",
+      "file": "02_V2_原位置加强版/01_摩擦快拆底座_一体热铆柱.stl",
+      "quantity": 1,
+      "use": "底座二选一",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -4.349998474121094,
+        5.5
+      ],
+      "source_sha256": "142b76dec5107f8016ba420ca0651df2574af1b1239f4764f9b91b55c9ae7d93",
+      "target_sha256": "b05a791d00016441dd0654d1ddc0b1693743c6b9c095b653d049e6d8e7049f05",
+      "dimension_error_mm": 9.5367431640625e-07,
+      "relative_volume_error": 4.971457645552846e-08,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 2052,
+        "vertices": 1018,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -22.0,
+            -36.5,
+            0.0
+          ],
+          [
+            22.0,
+            36.5,
+            17.700000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          44.0,
+          73.0,
+          17.700000762939453
+        ],
+        "volume_mm3": 20697.723858815796
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2_reinforced/receiver_M2_bolt.stl",
+      "file": "02_V2_原位置加强版/02_摩擦快拆底座_M2螺丝固定.stl",
+      "quantity": 1,
+      "use": "底座二选一",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -4.349998474121094,
+        2.0999999046325684
+      ],
+      "source_sha256": "76ed0722159d22950b5e0c86febb8ea7f934394041bb98a67ef0028c3cc73801",
+      "target_sha256": "4320a0bd63c9914871d0a0120a4cdab1b66dad8c18c9fd4ada478eb09437d195",
+      "dimension_error_mm": 4.76837158203125e-07,
+      "relative_volume_error": 1.3685970912113987e-08,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 1928,
+        "vertices": 952,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -22.0,
+            -36.5,
+            0.0
+          ],
+          [
+            22.0,
+            36.5,
+            14.299999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          44.0,
+          73.0,
+          14.299999237060547
+        ],
+        "volume_mm3": 20520.305672402235
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2_reinforced/side_heat_rivet_print_2.stl",
+      "file": "02_V2_原位置加强版/05_独立侧向热铆销_单颗_打印2颗.stl",
+      "quantity": 2,
+      "use": "加强版和USB版侧向两孔固定",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "0b687910feaf34afbacfc815bc77540bf885d88c85f8da675c40dd41a7815b89",
+      "target_sha256": "0b687910feaf34afbacfc815bc77540bf885d88c85f8da675c40dd41a7815b89",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 788,
+        "vertices": 396,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -2.75,
+            -2.75,
+            0.0
+          ],
+          [
+            2.75,
+            2.75,
+            11.0
+          ]
+        ],
+        "dimensions_mm": [
+          5.5,
+          5.5,
+          11.0
+        ],
+        "volume_mm3": 110.96482326280871
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2/camera_plate.stl",
+      "file": "03_V2_原版/03_相机快装板_中心1-4英寸螺丝.stl",
+      "quantity": 1,
+      "use": "相机板二选一",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -7.300000190734863
+      ],
+      "source_sha256": "e6895fcf0a9d87dad2e80705641baa148a50471861d90ae699b586b0a32e7fb7",
+      "target_sha256": "cd7189308528f821b7bfd0abbcf7d02be05df76e453b8486ccf453675f39b304",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 3.3306690738754696e-16,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 416,
+        "vertices": 208,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -19.0,
+            -35.0,
+            0.0
+          ],
+          [
+            19.0,
+            35.0,
+            8.999999046325684
+          ]
+        ],
+        "dimensions_mm": [
+          38.0,
+          70.0,
+          8.999999046325684
+        ],
+        "volume_mm3": 15031.692075169729
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2/camera_plate_four_screw.stl",
+      "file": "03_V2_原版/04_相机快装板_中心螺丝及四角固定件.stl",
+      "quantity": 1,
+      "use": "相机板二选一；立边与板一体成型",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -7.300000190734863
+      ],
+      "source_sha256": "a090625848078db747c58d8cdb35416080d065f93c534016960b48cb85a73174",
+      "target_sha256": "89f7003d1e80f88f4414426fabf149281c334fb0a4ba7f38cccf02f2f27c6153",
+      "dimension_error_mm": 9.5367431640625e-07,
+      "relative_volume_error": 2.1727386556591455e-09,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 1016,
+        "vertices": 500,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -19.0,
+            -35.0,
+            0.0
+          ],
+          [
+            19.0,
+            35.0,
+            58.000003814697266
+          ]
+        ],
+        "dimensions_mm": [
+          38.0,
+          70.0,
+          58.000003814697266
+        ],
+        "volume_mm3": 16854.81023829956
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2/fit_coupon_gap_0.15.stl",
+      "file": "03_V2_原版/试装件/02_燕尾母件_单侧间隙0.15mm.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+      "target_sha256": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 28,
+        "vertices": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -25.0,
+            -9.0,
+            0.0
+          ],
+          [
+            25.0,
+            9.0,
+            7.199999809265137
+          ]
+        ],
+        "dimensions_mm": [
+          50.0,
+          18.0,
+          7.199999809265137
+        ],
+        "volume_mm3": 3052.368054038998
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2/fit_coupon_gap_0.25.stl",
+      "file": "03_V2_原版/试装件/03_燕尾母件_单侧间隙0.25mm.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+      "target_sha256": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 28,
+        "vertices": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -25.0,
+            -9.0,
+            0.0
+          ],
+          [
+            25.0,
+            9.0,
+            7.199999809265137
+          ]
+        ],
+        "dimensions_mm": [
+          50.0,
+          18.0,
+          7.199999809265137
+        ],
+        "volume_mm3": 3033.647983314513
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2/fit_coupon_gap_0.35.stl",
+      "file": "03_V2_原版/试装件/04_燕尾母件_单侧间隙0.35mm.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+      "target_sha256": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 28,
+        "vertices": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -25.0,
+            -9.0,
+            0.0
+          ],
+          [
+            25.0,
+            9.0,
+            7.199999809265137
+          ]
+        ],
+        "dimensions_mm": [
+          50.0,
+          18.0,
+          7.199999809265137
+        ],
+        "volume_mm3": 3014.9279125900284
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2/fit_coupon_male.stl",
+      "file": "03_V2_原版/试装件/01_燕尾公件.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -2.299999952316284
+      ],
+      "source_sha256": "5b951c91518453cc23a065ced79a709e18f162302602100f7e308e4af4b44620",
+      "target_sha256": "3ac5fc14c1d98a9a662c0eca68104f60eb1ef8bafc6a7dbec182836892f26954",
+      "dimension_error_mm": 2.384185791015625e-07,
+      "relative_volume_error": 4.768371353325307e-08,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 12,
+        "vertices": 8,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -20.0,
+            -9.0,
+            0.0
+          ],
+          [
+            20.0,
+            9.0,
+            5.0
+          ]
+        ],
+        "dimensions_mm": [
+          40.0,
+          18.0,
+          5.0
+        ],
+        "volume_mm3": 3240.0
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2/receiver_heat_stake.stl",
+      "file": "03_V2_原版/01_摩擦快拆底座_一体热铆柱.stl",
+      "quantity": 1,
+      "use": "底座二选一",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        4.5
+      ],
+      "source_sha256": "ac35d19c9b9dc0e652cdff1b4643d5d225a2a2a9e669194ea04f89e0da0dd0cd",
+      "target_sha256": "45b2ace658fc17372c3fb08eb0320624d83025f138ef214bf6bae1b48c7a02d0",
+      "dimension_error_mm": 9.5367431640625e-07,
+      "relative_volume_error": 5.0532318329743475e-08,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 926,
+        "vertices": 459,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -22.0,
+            -28.0,
+            0.0
+          ],
+          [
+            22.0,
+            28.0,
+            16.700000762939453
+          ]
+        ],
+        "dimensions_mm": [
+          44.0,
+          56.0,
+          16.700000762939453
+        ],
+        "volume_mm3": 20310.011420976563
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v2/receiver_M2_bolt.stl",
+      "file": "03_V2_原版/02_摩擦快拆底座_M2螺丝固定.stl",
+      "quantity": 1,
+      "use": "底座二选一",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        2.0999999046325684
+      ],
+      "source_sha256": "1ac4a0a35a4c5b03c05877fff1d953fd0f88b158490007ae4950c43da0ff6457",
+      "target_sha256": "41b2b3fc31df0761e10fd476094c512436e3fcd051f8400821f59f35afa60d08",
+      "dimension_error_mm": 4.76837158203125e-07,
+      "relative_volume_error": 1.2235504498470107e-08,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 1234,
+        "vertices": 609,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -22.0,
+            -28.0,
+            0.0
+          ],
+          [
+            22.0,
+            28.0,
+            14.299999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          44.0,
+          56.0,
+          14.299999237060547
+        ],
+        "volume_mm3": 20184.78410313989
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v1/camera_plate.stl",
+      "file": "04_V1_历史方向试作_未采用/03_相机快装板_中心1-4英寸螺丝.stl",
+      "quantity": 1,
+      "use": "相机板二选一",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -4.300000190734863
+      ],
+      "source_sha256": "f8aadd844ad6226547169ffd92cd555b9ce60e02b4587d5e22fa93ae1297ef56",
+      "target_sha256": "5d4fe1b598864c63aa89243e3cf427f3ca9fff57784354e8b8e1263830b356ab",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 416,
+        "vertices": 208,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -35.0,
+            -19.0,
+            0.0
+          ],
+          [
+            35.0,
+            19.0,
+            9.0
+          ]
+        ],
+        "dimensions_mm": [
+          70.0,
+          38.0,
+          9.0
+        ],
+        "volume_mm3": 15031.69416930262
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v1/camera_plate_four_screw.stl",
+      "file": "04_V1_历史方向试作_未采用/04_相机快装板_中心螺丝及四角固定件.stl",
+      "quantity": 1,
+      "use": "相机板二选一；立边与板一体成型",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -4.300000190734863
+      ],
+      "source_sha256": "33d10d45f9df52856174295edddc9e9907f71e9c520219c8db31e3e2ed0fe62c",
+      "target_sha256": "92618ebe32f0232030838fe9d93204725270c76df7dbbdd7fd93e43cf90f15f7",
+      "dimension_error_mm": 9.5367431640625e-07,
+      "relative_volume_error": 2.1727388777037504e-09,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 1016,
+        "vertices": 500,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -35.0,
+            -19.0,
+            0.0
+          ],
+          [
+            35.0,
+            19.0,
+            58.0
+          ]
+        ],
+        "dimensions_mm": [
+          70.0,
+          38.0,
+          58.0
+        ],
+        "volume_mm3": 16854.812149336292
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v1/fit_coupon_gap_0.15.stl",
+      "file": "04_V1_历史方向试作_未采用/试装件/02_燕尾母件_单侧间隙0.15mm.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+      "target_sha256": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 28,
+        "vertices": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -25.0,
+            -9.0,
+            0.0
+          ],
+          [
+            25.0,
+            9.0,
+            7.199999809265137
+          ]
+        ],
+        "dimensions_mm": [
+          50.0,
+          18.0,
+          7.199999809265137
+        ],
+        "volume_mm3": 3052.368054038998
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v1/fit_coupon_gap_0.25.stl",
+      "file": "04_V1_历史方向试作_未采用/试装件/03_燕尾母件_单侧间隙0.25mm.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+      "target_sha256": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 28,
+        "vertices": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -25.0,
+            -9.0,
+            0.0
+          ],
+          [
+            25.0,
+            9.0,
+            7.199999809265137
+          ]
+        ],
+        "dimensions_mm": [
+          50.0,
+          18.0,
+          7.199999809265137
+        ],
+        "volume_mm3": 3033.647983314513
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v1/fit_coupon_gap_0.35.stl",
+      "file": "04_V1_历史方向试作_未采用/试装件/04_燕尾母件_单侧间隙0.35mm.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -0.0
+      ],
+      "source_sha256": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+      "target_sha256": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 0.0,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 28,
+        "vertices": 16,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -25.0,
+            -9.0,
+            0.0
+          ],
+          [
+            25.0,
+            9.0,
+            7.199999809265137
+          ]
+        ],
+        "dimensions_mm": [
+          50.0,
+          18.0,
+          7.199999809265137
+        ],
+        "volume_mm3": 3014.9279125900284
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v1/fit_coupon_male.stl",
+      "file": "04_V1_历史方向试作_未采用/试装件/01_燕尾公件.stl",
+      "quantity": 1,
+      "use": "可选间隙试装件",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        -2.299999952316284
+      ],
+      "source_sha256": "5b951c91518453cc23a065ced79a709e18f162302602100f7e308e4af4b44620",
+      "target_sha256": "3ac5fc14c1d98a9a662c0eca68104f60eb1ef8bafc6a7dbec182836892f26954",
+      "dimension_error_mm": 2.384185791015625e-07,
+      "relative_volume_error": 4.768371353325307e-08,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 12,
+        "vertices": 8,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -20.0,
+            -9.0,
+            0.0
+          ],
+          [
+            20.0,
+            9.0,
+            5.0
+          ]
+        ],
+        "dimensions_mm": [
+          40.0,
+          18.0,
+          5.0
+        ],
+        "volume_mm3": 3240.0
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v1/receiver_heat_stake.stl",
+      "file": "04_V1_历史方向试作_未采用/01_摩擦快拆底座_一体热铆柱.stl",
+      "quantity": 1,
+      "use": "底座二选一",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        4.5
+      ],
+      "source_sha256": "cb0271404689adaf114fc774153960b8d78e2584223b82de62e4767875ec8ed0",
+      "target_sha256": "e8fcba1fd612e38ed25a9958ea2d40bd70963c1eb4c07e44d74f7852aa682ae2",
+      "dimension_error_mm": 0.0,
+      "relative_volume_error": 1.3373430474139525e-08,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 870,
+        "vertices": 431,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -28.0,
+            -22.0,
+            0.0
+          ],
+          [
+            28.0,
+            22.0,
+            13.699999809265137
+          ]
+        ],
+        "dimensions_mm": [
+          56.0,
+          44.0,
+          13.699999809265137
+        ],
+        "volume_mm3": 13807.713363223664
+      },
+      "passed": true
+    },
+    {
+      "source": "output_v1/receiver_M2_bolt.stl",
+      "file": "04_V1_历史方向试作_未采用/02_摩擦快拆底座_M2螺丝固定.stl",
+      "quantity": 1,
+      "use": "底座二选一",
+      "units": "mm",
+      "translation_mm": [
+        -0.0,
+        -0.0,
+        2.0999999046325684
+      ],
+      "source_sha256": "afa36161cc63931419a498dbb46f2b78729f945ca0c574ce07d2bded6a1f3dbd",
+      "target_sha256": "505b104e44579634977fd87aef18f0433963cd47242065c36148b06f515d0588",
+      "dimension_error_mm": 4.76837158203125e-07,
+      "relative_volume_error": 2.087780981430143e-08,
+      "normals_and_attributes_preserved": true,
+      "mesh": {
+        "triangles": 1022,
+        "vertices": 503,
+        "boundary_edges": 0,
+        "nonmanifold_edges": 0,
+        "inconsistent_edges": 0,
+        "connected_meshes": 1,
+        "degenerate_triangles": 0,
+        "bbox_mm": [
+          [
+            -28.0,
+            -22.0,
+            0.0
+          ],
+          [
+            28.0,
+            22.0,
+            11.299999237060547
+          ]
+        ],
+        "dimensions_mm": [
+          56.0,
+          44.0,
+          11.299999237060547
+        ],
+        "volume_mm3": 13702.19387174942
+      },
+      "passed": true
+    }
+  ]
+}

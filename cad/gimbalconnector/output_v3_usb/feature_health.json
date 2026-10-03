@@ -1,0 +1,436 @@
+{
+  "Receiver_heat_stake_optimized": [
+    {
+      "name": "56 x 44 x 7 platform",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Dovetail retaining rail 0.8 to 1 -1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "0.9 mm longitudinal flexure slot -1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "0.8 mm flexure underside relief -1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Tapered friction contact rib -1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Dovetail retaining rail 0.8 to 1 1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "0.9 mm longitudinal flexure slot 1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "0.8 mm flexure underside relief 1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Tapered friction contact rib 1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Closed insertion end stop",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "15 mm screw and driver access",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Align camera long edge with gimbal arm - 90 degrees",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Clear original raised tab and root fillet",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Arm lateral locating shoulder",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Arm lateral locating shoulder (1)",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Reinforced 2.2 x 5.5 mm heat stake pin at arm y -4",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Reinforced 2.2 x 5.5 mm heat stake pin at arm y 4",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Reinforced 2.2 x 5.5 mm heat stake pin at arm y 10",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Reinforced 2.2 x 5.5 mm heat stake pin at arm y 32",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Ear for original 3.2 mm side hole at arm y -28.15",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Ear relief around original arm root radius",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Side rivet full passage clearance",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Side rivet flange counterbore",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Ear for original 3.2 mm side hole at arm y 36.85",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Ear relief around original arm root radius (1)",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Side rivet full passage clearance (1)",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Side rivet flange counterbore (1)",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Move outward toward free end 20.0 mm",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Trim locating shoulder before raised side ear root",
+      "health": "0",
+      "message": ""
+    }
+  ],
+  "Receiver_M2_bolt_optimized": [
+    {
+      "name": "56 x 44 x 7 platform",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Dovetail retaining rail 0.8 to 1 -1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "0.9 mm longitudinal flexure slot -1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "0.8 mm flexure underside relief -1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Tapered friction contact rib -1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Dovetail retaining rail 0.8 to 1 1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "0.9 mm longitudinal flexure slot 1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "0.8 mm flexure underside relief 1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Tapered friction contact rib 1",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Closed insertion end stop",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "15 mm screw and driver access",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Align camera long edge with gimbal arm - 90 degrees",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Clear original raised tab and root fillet",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Arm lateral locating shoulder",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Arm lateral locating shoulder (1)",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "M2 through clearance at y -20.0",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "M2 head recess at y -20.0",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "M2 through clearance at y 12.0",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "M2 head recess at y 12.0",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Ear for original 3.2 mm side hole at arm y -28.15",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Ear relief around original arm root radius",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Side rivet full passage clearance",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Side rivet flange counterbore",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Ear for original 3.2 mm side hole at arm y 36.85",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Ear relief around original arm root radius (1)",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Side rivet full passage clearance (1)",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Side rivet flange counterbore (1)",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Move outward toward free end 20.0 mm",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Trim locating shoulder before raised side ear root",
+      "health": "0",
+      "message": ""
+    }
+  ],
+  "Camera_plate_1_4_optimized": [
+    {
+      "name": "70 x 32 camera support plate",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "40 to 32 mm male dovetail",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "1/4 inch metal screw clearance 6.8 mm",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "14 x 3.5 mm screw head recess",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Align camera long edge with gimbal arm - 90 degrees",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Move outward toward free end 20.0 mm",
+      "health": "0",
+      "message": ""
+    }
+  ],
+  "Camera_plate_1_4_four_screw_optimized": [
+    {
+      "name": "70 x 32 camera support plate",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "40 to 32 mm male dovetail",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "1/4 inch metal screw clearance 6.8 mm",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "14 x 3.5 mm screw head recess",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Front four screw support column",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Front four screw support column (1)",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Four 2.8 mm auxiliary screw clearances",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Align camera long edge with gimbal arm - 90 degrees",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "Move outward toward free end 20.0 mm",
+      "health": "0",
+      "message": ""
+    }
+  ],
+  "Reference_original_gimbal_connector": [
+    {
+      "name": "\u57fa\u7840\u7279\u5f811",
+      "health": "0",
+      "message": ""
+    }
+  ],
+  "Reference_camera_casing_0": [
+    {
+      "name": "\u57fa\u7840\u7279\u5f811",
+      "health": "0",
+      "message": ""
+    }
+  ],
+  "Reference_camera_casing_1": [
+    {
+      "name": "\u57fa\u7840\u7279\u5f811",
+      "health": "0",
+      "message": ""
+    }
+  ],
+  "Reference_camera_casing_2": [
+    {
+      "name": "\u57fa\u7840\u7279\u5f811",
+      "health": "0",
+      "message": ""
+    }
+  ],
+  "Side_heat_rivet_3mm": [
+    {
+      "name": "Rivet flange 5.5 x 2 mm",
+      "health": "0",
+      "message": ""
+    },
+    {
+      "name": "3 mm rivet shank through ear and metal tab",
+      "health": "0",
+      "message": ""
+    }
+  ],
+  "Installed_side_heat_rivet_0": [
+    {
+      "name": "\u57fa\u7840\u7279\u5f811",
+      "health": "0",
+      "message": ""
+    }
+  ],
+  "Installed_side_heat_rivet_1": [
+    {
+      "name": "\u57fa\u7840\u7279\u5f811",
+      "health": "0",
+      "message": ""
+    }
+  ],
+  "USB_plug_keepout_24x14x14": [
+    {
+      "name": "Assumed USB plug space 24 x 14 x 14 mm",
+      "health": "0",
+      "message": ""
+    }
+  ]
+}
