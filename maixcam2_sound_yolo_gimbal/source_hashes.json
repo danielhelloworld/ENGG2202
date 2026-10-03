@@ -1,0 +1,10 @@
+{
+  "src\\config.py": "24026e17f4b677c9aa938c6a7872ff481b086845d86012fedf6ce9191f1b8346",
+  "vendor\\micarray.py": "84ca3545a379859726c9ceec0588293b8d0eb2efb4dab891bf53de9b3606e156",
+  "vendor\\protocol.py": "8f2f101dd74d69f8f8e8defc1a38414a4195391b25b226de0df235a3849ae556",
+  "src\\core.py": "032dafa22fde6bb19023a308872c03d607b22dea94aa0501d2a146748ae3b743",
+  "src\\motor.py": "e7eeaad54ee6b148ed06b390baf28c156ac5d9ef1508e5339a9f0c850579961f",
+  "src\\vision.py": "22383f807aca720b657d4ebbb66c0472e45436f4ed35cf34256c0eab14a90b94",
+  "src\\runtime.py": "b06c590c13b49dff017a6bfb463c398471e45663377597823e7ea86ebbab8ab1",
+  "src/zero_runtime.py": "ad1e3780af6eeb26f6a21bce99f541441db01d39a1d22a4a6547b9217bd352be"
+}
