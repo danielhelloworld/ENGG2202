@@ -18,6 +18,8 @@ class RecordingTransport(DryRunTransport):
             motor_id, parameter_address = data[1], data[3]
             if parameter_address == 0x01:
                 value = self.position.get(motor_id, 0)
+            elif parameter_address == 0x02:
+                value = (self.position.get(motor_id, 0) - self.mechanical_offset.get(motor_id, 0)) % 3600
             elif parameter_address == 0x04:
                 value = 1200
             else:

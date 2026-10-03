@@ -4,8 +4,9 @@
 
 当前 `demo.py` 使用以下定义：
 
-- 软件零点 `0°`：相机垂直于地面时的 Y 轴位置；
-- 允许范围：相对软件零点 `-100°～+100°`；
+- 固定机械零点 `0°`：人工标定相机垂直于地面时的 Y 轴位置，GUI 默认采用；CLI 使用 `--reference mechanical`；
+- 旧模式 `software`：把本次连接姿态当作零点，不具备固定物理参考；
+- 允许范围：相对所选零点 `-100°～+100°`；
 - 禁止范围：上述区间之外的所有位置。
 
 在圆周死区表达中，这等价于“以 180°为中心、宽 160°的禁止区”，因此命令行默认参数是：
@@ -35,6 +36,8 @@
 ```powershell
 python demo.py --port COM5 manual --x 5 --y 10 --status-rate 2
 ```
+
+固定零点下运行应加 `--reference mechanical`。标定和断电复测步骤见 [MECHANICAL_ZERO.md](MECHANICAL_ZERO.md)。
 
 查询 `0x00～0x04` 全部状态：
 

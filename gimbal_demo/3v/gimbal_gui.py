@@ -11,7 +11,7 @@ import time
 import tkinter as tk
 from tkinter import messagebox, ttk
 
-from f32c_protocol import F32CError, F32CTimeout, MODE_MULTI_T
+from f32c_protocol import F32CError, MODE_MULTI_T
 from safe_f32c_driver import (
     DEFAULT_Y_MAX_DEG,
     DEFAULT_Y_MIN_DEG,
@@ -44,6 +44,7 @@ class GimbalWorker(threading.Thread):
     def __init__(
         self, port, speed_rpm, acceleration, events, demo_mode=False,
         x_id=1, y_id=2,
+        reference_mode="software", start_enabled=True,
     ):
         super().__init__(daemon=True)
         self.port = port
@@ -53,6 +54,8 @@ class GimbalWorker(threading.Thread):
         self.demo_mode = demo_mode
         self.x_id = x_id
         self.y_id = y_id
+        self.reference_mode = reference_mode
+        self.start_enabled = start_enabled
         self.stop_event = threading.Event()
         self.target_lock = threading.Lock()
         self.pending_target = None
@@ -95,6 +98,13 @@ class GimbalWorker(threading.Thread):
 
     def request_stop(self):
         self.stop_event.set()
+
+    def calibrate_zero(self, axis):
+        if axis not in ("X", "Y"):
+            raise ValueError("零点轴必须是 X 或 Y")
+        if self.motor_enabled:
+            raise F32CError("请先失能并支撑云台，再设置机械零点")
+        self.control_queue.put(("zero", axis))
 
     def _open_transport(self):
         if self.demo_mode:
@@ -140,12 +150,13 @@ class GimbalWorker(threading.Thread):
             if action == "enabled":
                 if payload:
                     if not self.gimbal.referenced:
-                        self.gimbal.capture_software_zero()
+                        self.gimbal.capture_reference()
                         self.gimbal.configure_position_mode(
                             MODE_MULTI_T, self.speed_rpm, self.acceleration
                         )
                         self.events.put(("referenced", self.gimbal.get_software_zero()))
-                    self.gimbal.enable_at_current_position()
+                    pose = self.gimbal.enable_at_current_position()
+                    self.events.put(("pose_held", pose))
                 else:
                     self.gimbal.disable()
                     self._clear_target()
@@ -165,6 +176,18 @@ class GimbalWorker(threading.Thread):
                 if save:
                     self.gimbal.save_parameters(motor_id)
                 self.events.put(("pid", payload))
+            elif action == "zero":
+                self._clear_target()
+                disabled = True
+                motor_id = self.x_id if payload == "X" else self.y_id
+                try:
+                    self.gimbal.set_mechanical_zero(motor_id)
+                except Exception:
+                    self.events.put(("zero_failed", self.gimbal.referenced))
+                    raise
+                self.reference_mode = "mechanical"
+                self.events.put(("referenced", self.gimbal.get_software_zero()))
+                self.events.put(("zero_saved", payload))
 
     def run(self):
         try:
@@ -178,6 +201,7 @@ class GimbalWorker(threading.Thread):
                 y_max_deg=DEFAULT_Y_MAX_DEG,
                 feedback_timeout_s=0.35,
                 feedback_retries=3,
+                reference_mode=self.reference_mode,
             )
             startup_issue = None
             try:
@@ -187,14 +211,14 @@ class GimbalWorker(threading.Thread):
                     acceleration=self.acceleration,
                     power_on_delay_s=0.0 if self.demo_mode else 1.5,
                     require_feedback=True,
+                    enable_motors=self.start_enabled,
                 )
-            except F32CTimeout as exc:
+            except F32CError as exc:
                 # Keep the COM port open for diagnosis and automatic read-only
                 # retries. A silent bus must never be treated as motor ready.
                 startup_issue = str(exc)
             else:
-                self.motor_enabled = True
-                self.gimbal.return_to_zero()
+                self.motor_enabled = self.gimbal.enabled
             zero_deg = (
                 self.gimbal.get_software_zero()
                 if self.gimbal.referenced else None
@@ -215,6 +239,8 @@ class GimbalWorker(threading.Thread):
                     if self._process_control_commands():
                         target_dirty = False
                 except F32CError as exc:
+                    if not self.motor_enabled:
+                        target_dirty = False
                     self.events.put(("command_error", str(exc)))
 
                 now = time.monotonic()
@@ -231,18 +257,24 @@ class GimbalWorker(threading.Thread):
                 # Feedback requests remain active even while torque is disabled.
                 if now >= next_status_s:
                     try:
+                        mechanical = self.gimbal.read_mechanical_angles()
+                        self.events.put(("mechanical", mechanical))
                         if not self.gimbal.referenced:
-                            zero_deg = self.gimbal.capture_software_zero()
+                            zero_deg = self.gimbal.capture_reference()
                             self.gimbal.configure_position_mode(
                                 MODE_MULTI_T, self.speed_rpm, self.acceleration
                             )
                             self.events.put(("referenced", zero_deg))
                         x_deg, y_deg = self.gimbal.read_relative_angles()
-                    except F32CTimeout as exc:
+                        if self.motor_enabled:
+                            self.gimbal.validate_relative_angles(x_deg, y_deg)
+                    except F32CError as exc:
                         attempted_disable = self.motor_enabled
                         if self.motor_enabled:
                             self.gimbal.stop()
                             self.motor_enabled = False
+                            target_dirty = False
+                            self._clear_target()
                             self.events.put(("motor_enabled", False))
                         if not feedback_missing:
                             self.events.put(
@@ -287,8 +319,8 @@ class GimbalGUI(tk.Tk):
         self.connected_port = ""
 
         self.title("WHEELTEC F32C 双轴云台控制")
-        self.geometry("880x730")
-        self.minsize(820, 690)
+        self.geometry("940x820")
+        self.minsize(900, 600)
         self.protocol("WM_DELETE_WINDOW", self.on_close)
 
         self.port_var = tk.StringVar()
@@ -309,14 +341,24 @@ class GimbalGUI(tk.Tk):
         self.pid_ki_var = tk.IntVar(value=10)
         self.feedback_var = tk.StringVar(value="等待连接")
         self.diagnostic_var = tk.StringVar(value="")
+        self.reference_var = tk.StringVar(value="mechanical")
+        self.zero_axis_var = tk.StringVar(value="Y")
+        self.mechanical_var = tk.StringVar(value="单圈机械角度：等待反馈")
 
         self._build_ui()
         self.refresh_ports()
         self.after(50, self.process_events)
 
     def _build_ui(self):
-        root = ttk.Frame(self, padding=16)
-        root.pack(fill="both", expand=True)
+        canvas = tk.Canvas(self, highlightthickness=0)
+        scrollbar = ttk.Scrollbar(self, orient="vertical", command=canvas.yview)
+        scrollbar.pack(side="right", fill="y")
+        canvas.pack(side="left", fill="both", expand=True)
+        canvas.configure(yscrollcommand=scrollbar.set)
+        root = ttk.Frame(canvas, padding=16)
+        content = canvas.create_window((0, 0), window=root, anchor="nw")
+        root.bind("<Configure>", lambda _event: canvas.configure(scrollregion=canvas.bbox("all")))
+        canvas.bind("<Configure>", lambda event: canvas.itemconfigure(content, width=event.width))
 
         connection = ttk.LabelFrame(root, text="连接与运动参数", padding=12)
         connection.pack(fill="x")
@@ -355,7 +397,7 @@ class GimbalGUI(tk.Tk):
         self.motion_button.grid(row=0, column=7, padx=5)
 
         self.connect_button = ttk.Button(
-            connection, text="连接并使能", command=self.connect
+            connection, text="连接并保持失能", command=self.connect
         )
         self.connect_button.grid(row=1, column=0, columnspan=2, pady=(10, 0))
         self.enable_button = ttk.Button(
@@ -384,6 +426,15 @@ class GimbalGUI(tk.Tk):
         ttk.Label(connection, textvariable=self.zero_var).grid(
             row=3, column=0, columnspan=8, sticky="w", pady=(4, 0)
         )
+        ttk.Label(connection, text="零点参考").grid(row=4, column=0, pady=(6, 0))
+        self.reference_box = ttk.Combobox(
+            connection, textvariable=self.reference_var,
+            values=("mechanical", "software"), state="readonly", width=14,
+        )
+        self.reference_box.grid(row=4, column=1, pady=(6, 0))
+        ttk.Label(connection, text="mechanical = 电机固定零点；software = 本次连接姿态").grid(
+            row=4, column=2, columnspan=6, sticky="w", pady=(6, 0)
+        )
 
         position = ttk.LabelFrame(root, text="实时反馈位置（失能时继续读取）", padding=12)
         position.pack(fill="x", pady=10)
@@ -400,6 +451,19 @@ class GimbalGUI(tk.Tk):
         ).grid(row=1, column=2, padx=50)
         position.columnconfigure(0, weight=1)
         position.columnconfigure(2, weight=1)
+        ttk.Label(position, textvariable=self.mechanical_var).grid(
+            row=2, column=0, columnspan=3, pady=(6, 0)
+        )
+
+        calibration = ttk.LabelFrame(root, text="机械零点标定（写入电机）", padding=10)
+        calibration.pack(fill="x", pady=(0, 10))
+        ttk.Combobox(calibration, textvariable=self.zero_axis_var, values=("X", "Y"),
+                     width=5, state="readonly").pack(side="left")
+        self.zero_button = ttk.Button(calibration, text="当前位置设为零点并保存",
+                                      command=self.calibrate_zero, state="disabled")
+        self.zero_button.pack(side="left", padx=10)
+        ttk.Label(calibration, text="先失能并支撑住；Y 必须放在真实垂直零位。\n保存后需断电复测确认。"
+                  ).pack(side="left")
 
         controls = ttk.LabelFrame(root, text="目标位置（多圈 T 型轨迹）", padding=12)
         controls.pack(fill="x")
@@ -558,10 +622,11 @@ class GimbalGUI(tk.Tk):
             messagebox.showerror("运动参数错误", str(exc))
             return
         self.connect_button.config(state="disabled")
-        self.state_var.set("正在连接；请保持相机垂直地面作为 0°…")
+        self.state_var.set("正在连接并失能；请支撑云台，读取角度参考…")
         self.worker = GimbalWorker(
             port, speed, acceleration, self.events, self.demo_mode,
             x_id=x_id, y_id=y_id,
+            reference_mode=self.reference_var.get(), start_enabled=False,
         )
         self.worker.start()
 
@@ -569,6 +634,28 @@ class GimbalGUI(tk.Tk):
         if self.worker is not None:
             self.state_var.set("正在失能并断开串口…")
             self.worker.request_stop()
+
+    def calibrate_zero(self):
+        if self.worker is None or not self.worker.is_alive():
+            return
+        if self.motor_enabled:
+            messagebox.showerror("电机仍使能", "请先失能并支撑云台，再标定。")
+            return
+        axis = self.zero_axis_var.get()
+        if not messagebox.askyesno(
+            "确认机械零点",
+            "将 %s 轴当前位置设为永久机械 0°，并保存当前电机参数。\n"
+            "请确认负载已支撑、轴已静止；Y 轴必须处于真实垂直零位。\n"
+            "完成后保持失能，断电复测确认保存。是否继续？" % axis,
+        ):
+            return
+        if self.send_after_id is not None:
+            self.after_cancel(self.send_after_id)
+            self.send_after_id = None
+        self.enable_button.config(state="disabled")
+        self.zero_button.config(state="disabled")
+        self.feedback_var.set("正在检查静止状态并标定 %s 轴…" % axis)
+        self.worker.calibrate_zero(axis)
 
     def toggle_motor_enabled(self):
         if self.worker is not None and self.worker.is_alive():
@@ -653,6 +740,8 @@ class GimbalGUI(tk.Tk):
         self.schedule_target(immediate=True)
 
     def _set_connected_controls(self, connected):
+        self.reference_box.config(state="disabled" if connected else "readonly")
+        self.zero_button.config(state="normal" if connected and not self.motor_enabled else "disabled")
         self.connect_button.config(state="disabled" if connected else "normal")
         self.disconnect_button.config(state="normal" if connected else "disabled")
         self.enable_button.config(state="normal" if connected else "disabled")
@@ -679,7 +768,7 @@ class GimbalGUI(tk.Tk):
                         self.zero_var.set("尚未收到双轴有效反馈；正在重试")
                     else:
                         self.zero_var.set(
-                            "软件零点（电机总角度）：X %+.1f° / Y %+.1f°"
+                            "控制零点在累计角度寄存器中的坐标：X %+.1f° / Y %+.1f°"
                             % zero_deg
                         )
                     self.enable_button.config(
@@ -690,7 +779,7 @@ class GimbalGUI(tk.Tk):
                         self.enable_button.config(state="disabled")
                 elif kind == "referenced":
                     self.zero_var.set(
-                        "软件零点（电机总角度）：X %+.1f° / Y %+.1f°"
+                        "控制零点在累计角度寄存器中的坐标：X %+.1f° / Y %+.1f°"
                         % payload
                     )
                     self.enable_button.config(state="normal")
@@ -706,7 +795,7 @@ class GimbalGUI(tk.Tk):
                             "串口已连接，无有效反馈，本程序未使能：%s"
                         ) % self.connected_port
                     )
-                    self.feedback_var.set("反馈超时；检查电源、共地、TX/RX 和 ID")
+                    self.feedback_var.set("反馈或参考异常；详见下方诊断")
                     self.diagnostic_var.set(detail)
                     self.current_x_var.set("--.-°")
                     self.current_y_var.set("--.-°")
@@ -724,6 +813,7 @@ class GimbalGUI(tk.Tk):
                     self.feedback_var.set("命令未执行：%s" % payload)
                 elif kind == "motor_enabled":
                     self.motor_enabled = payload
+                    self.zero_button.config(state="disabled" if payload else "normal")
                     if payload:
                         self.state_var.set("已连接并使能：%s" % self.connected_port)
                         self.enable_button.config(text="电机失能")
@@ -736,6 +826,21 @@ class GimbalGUI(tk.Tk):
                 elif kind == "position":
                     self.current_x_var.set("%+.1f°" % payload[0])
                     self.current_y_var.set("%+.1f°" % payload[1])
+                elif kind == "pose_held":
+                    self.target_x_var.set(payload[0])
+                    self.target_y_var.set(payload[1])
+                    self.entry_x_var.set("%.1f" % payload[0])
+                    self.entry_y_var.set("%.1f" % payload[1])
+                elif kind == "mechanical":
+                    self.mechanical_var.set("单圈机械角度：X %.1f° / Y %.1f°（0～360°）" % payload)
+                elif kind == "zero_saved":
+                    self.reference_var.set("mechanical")
+                    self.zero_button.config(state="normal")
+                    self.enable_button.config(state="normal")
+                    self.feedback_var.set("%s 零点回读通过，已发送保存；保持失能，请断电复测" % payload)
+                elif kind == "zero_failed":
+                    self.zero_button.config(state="normal")
+                    self.enable_button.config(state="normal" if payload else "disabled")
                 elif kind == "target":
                     self.feedback_var.set(
                         "已下发：X %.1f° / Y %.1f°" % (payload[0], payload[1])
@@ -758,6 +863,7 @@ class GimbalGUI(tk.Tk):
                     self.connected_port = ""
                     self.state_var.set("已失能并断开串口")
                     self.zero_var.set("尚未读取电机零点")
+                    self.mechanical_var.set("单圈机械角度：等待反馈")
                     self.diagnostic_var.set("")
                     self.enable_button.config(text="电机失能")
                     self._set_connected_controls(False)

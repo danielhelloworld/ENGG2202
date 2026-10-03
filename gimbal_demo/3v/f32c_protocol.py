@@ -117,6 +117,11 @@ def save_parameters_frame(motor_id: int) -> bytes:
     return _frame(motor_id, 0x08)
 
 
+def mechanical_zero_frame(motor_id: int) -> bytes:
+    """Make the current physical pose single-turn zero (manual section 4.2.10)."""
+    return _frame(motor_id, 0x0A)
+
+
 def multi_turn_position_frame(motor_id: int, angle_deg: float) -> bytes:
     deci_deg = int(round(angle_deg * 10.0))
     if not -(2**31) <= deci_deg < 2**31:
@@ -170,6 +175,7 @@ class F32CGimbal:
         feedback_retries: int = 3,
         y_min_deg: float = DEFAULT_Y_MIN_DEG,
         y_max_deg: float = DEFAULT_Y_MAX_DEG,
+        reference_mode: str = "software",
     ) -> None:
         _validate_motor_id(x_id)
         _validate_motor_id(y_id)
@@ -186,6 +192,10 @@ class F32CGimbal:
         if y_min_deg >= y_max_deg:
             raise ValueError("y_min_deg must be smaller than y_max_deg")
         self.transport = transport
+        if reference_mode not in ("software", "mechanical"):
+            raise ValueError("reference_mode must be software or mechanical")
+        self.reference_mode = reference_mode
+        self.calibration_fault = False
         self.x_id = x_id
         self.y_id = y_id
         self.frame_gap_s = frame_gap_s
@@ -281,8 +291,9 @@ class F32CGimbal:
         acceleration: int | None = None,
         power_on_delay_s: float = 1.5,
         require_feedback: bool = True,
+        enable_motors: bool = True,
     ) -> None:
-        """Check feedback before enabling, then reference both axes in place."""
+        """Read the chosen reference and optionally enable while holding pose."""
         if not 1 <= speed_rpm <= 1000:
             raise ValueError("position-mode speed must be in 1..1000 RPM")
         # The vendor examples send one disposable byte, then wait for startup.
@@ -292,12 +303,19 @@ class F32CGimbal:
         # An open COM port alone does not prove the motors are responding.
         # Probe before any torque command, so a silent/wrong port stays disabled.
         try:
-            self.capture_software_zero()
+            if not enable_motors:
+                # Explicitly turn torque off even if a previous process enabled it.
+                for motor_id in (self.x_id, self.y_id):
+                    self._write(disable_frame(motor_id))
+                self.enabled = False
+            self.capture_reference()
         except F32CError:
             self.referenced = False
             if require_feedback:
                 raise
         self.configure_position_mode(mode, speed_rpm, acceleration)
+        if not enable_motors:
+            return
         if self.referenced:
             self.enable_at_current_position()
         else:
@@ -394,6 +412,8 @@ class F32CGimbal:
 
     def capture_software_zero(self) -> tuple[float, float]:
         """Read both total-angle registers and save them as software zero."""
+        if self.calibration_fault:
+            raise F32CError("zero calibration incomplete; retry calibration before referencing")
         zero_values = {}
         for axis, motor_id in (("X", self.x_id), ("Y", self.y_id)):
             try:
@@ -410,6 +430,84 @@ class F32CGimbal:
         self.last_relative_deg[self.y_id] = 0.0
         self.referenced = True
         return self.get_software_zero()
+
+    def read_mechanical_angles(self) -> tuple[float, float]:
+        """Read current single-turn angles, not the controller's flash offset."""
+        return tuple(
+            self.request_feedback(motor_id, FEEDBACK_MECHANICAL_ANGLE) % 3600 / 10.0
+            for motor_id in (self.x_id, self.y_id)
+        )
+
+    def capture_reference(self) -> tuple[float, float]:
+        """Map a saved mechanical zero into this power session's total-angle space.
+
+        No movement or cumulative-angle reset is sent. Single-turn feedback
+        cannot reconstruct the number of turns lost at a power cycle.
+        """
+        if self.calibration_fault:
+            raise F32CError("zero calibration incomplete; retry calibration before enabling")
+        if self.reference_mode == "software":
+            return self.capture_software_zero()
+        if self.enabled:
+            raise F32CError("disable motors before rebuilding the mechanical reference")
+        self.referenced = False
+        zeros, angles = {}, {}
+        for motor_id in (self.x_id, self.y_id):
+            first = self.request_feedback(motor_id, FEEDBACK_TOTAL_ANGLE)
+            mechanical = self.request_feedback(motor_id, FEEDBACK_MECHANICAL_ANGLE)
+            last = self.request_feedback(motor_id, FEEDBACK_TOTAL_ANGLE)
+            if abs(last - first) > 2:
+                raise F32CError("motor moved while reading reference; support it and retry")
+            signed = ((mechanical + 1800) % 3600) - 1800
+            zeros[motor_id] = first - signed
+            angles[motor_id] = signed / 10.0
+        self.zero_deci_deg.update(zeros)
+        self.last_relative_deg.update(angles)
+        self.referenced = True
+        return self.get_software_zero()
+
+    def set_mechanical_zero(self, motor_id: int) -> None:
+        """Calibrate one supported, stationary, disabled axis and send flash save.
+
+        The documented commands have no save ACK. Read-back verifies the live
+        zero only; persistence must be checked after a real power cycle.
+        """
+        if motor_id not in (self.x_id, self.y_id):
+            raise ValueError("motor_id is not an axis of this gimbal")
+        if self.enabled:
+            raise F32CError("disable and support the motors before setting mechanical zero")
+        for axis_id in (self.x_id, self.y_id):
+            self._write(disable_frame(axis_id))
+        samples = []
+        for _ in range(3):
+            samples.append(self.request_feedback(motor_id, FEEDBACK_TOTAL_ANGLE))
+            if self.request_feedback(motor_id, FEEDBACK_SPEED) != 0:
+                raise F32CError("motor is moving; zero was not changed")
+            time.sleep(0.10)
+        if max(samples) - min(samples) > 2:
+            raise F32CError("motor is not stationary; zero was not changed")
+        self.referenced = False
+        self.calibration_fault = True
+        self._write(mechanical_zero_frame(motor_id))
+        time.sleep(0.20)
+        for _ in range(3):
+            raw = self.request_feedback(motor_id, FEEDBACK_MECHANICAL_ANGLE)
+            error = ((raw + 1800) % 3600) - 1800
+            if abs(error) > 5:
+                raise F32CError("mechanical zero read-back failed; flash save was not sent")
+            if abs(self.request_feedback(motor_id, FEEDBACK_TOTAL_ANGLE) - samples[-1]) > 2:
+                raise F32CError("motor moved during calibration; flash save was not sent")
+            time.sleep(0.10)
+        self.save_parameters(motor_id)
+        time.sleep(0.20)
+        self.reference_mode = "mechanical"
+        self.calibration_fault = False
+        try:
+            self.capture_reference()
+        except Exception:
+            self.calibration_fault = True
+            self.referenced = False
+            raise
 
     def get_software_zero(self) -> tuple[float, float]:
         """Return the stored X/Y zero references in motor total-angle degrees."""
@@ -445,6 +543,11 @@ class F32CGimbal:
         for motor_id in (self.x_id, self.y_id):
             raw = self.request_feedback(motor_id, FEEDBACK_TOTAL_ANGLE)
             values.append((raw - self.zero_deci_deg[motor_id]) / 10.0)
+        if self.reference_mode == "mechanical":
+            mechanical_y = self.request_feedback(self.y_id, FEEDBACK_MECHANICAL_ANGLE)
+            mismatch = ((round(values[1] * 10) - mechanical_y + 1800) % 3600) - 1800
+            if abs(mismatch) > 10:
+                raise F32CError("Y reference disagrees with mechanical feedback; reconnect before enabling")
         return values[0], values[1]
 
     def hold(self) -> None:

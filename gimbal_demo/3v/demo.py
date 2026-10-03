@@ -10,6 +10,8 @@ import time
 from collections import deque
 
 from f32c_protocol import (
+    FEEDBACK_MECHANICAL_ANGLE,
+    F32CError,
     FEEDBACK_TOTAL_ANGLE,
     F32CGimbal,
     F32CTimeout,
@@ -25,9 +27,16 @@ class DryRunTransport:
     def __init__(self) -> None:
         self.rx = deque()
         self.position = {1: 0, 2: 0}
+        self.mechanical_offset = {1: 0, 2: 0}
+        self.saved_offset = dict(self.mechanical_offset)
 
     def write(self, data: bytes) -> int:
         print("TX", data.hex(" ").upper())
+        if len(data) == 5 and data[1] in self.position:
+            if data[2] == 0x0A:
+                self.mechanical_offset[data[1]] = self.position[data[1]] % 3600
+            elif data[2] == 0x08:
+                self.saved_offset[data[1]] = self.mechanical_offset[data[1]]
         if len(data) == 9 and data[2] == 0x02:
             self.position[data[1]] = int.from_bytes(data[3:7], "big", signed=True)
         if len(data) == 6 and data[2] == 0x0E:
@@ -39,7 +48,7 @@ class DryRunTransport:
             elif parameter_address == 0x01:
                 value = self.position.get(motor_id, 0)
             elif parameter_address == 0x02:
-                value = self.position.get(motor_id, 0) % 3600
+                value = (self.position[motor_id] - self.mechanical_offset[motor_id]) % 3600
             elif parameter_address == 0x03:
                 value = 100
             else:
@@ -143,6 +152,8 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument("--y-id", type=int, default=2)
     parser.add_argument("--feedback-timeout", type=float, default=0.5)
     parser.add_argument("--feedback-retries", type=int, default=3)
+    parser.add_argument("--reference", choices=("software", "mechanical"), default="software",
+                        help="mechanical uses the saved physical zero; software captures startup pose")
     sub = parser.add_subparsers(dest="command", required=True)
 
     manual = sub.add_parser("manual", help="move both axes once")
@@ -169,6 +180,9 @@ def build_parser() -> argparse.ArgumentParser:
     probe.add_argument(
         "--ids", type=int, nargs="+", help="motor IDs to query (defaults to X/Y IDs)"
     )
+    zero = sub.add_parser("set-zero", help="calibrate current physical pose and save; never enables motors")
+    zero.add_argument("--axis", choices=("X", "Y"), required=True)
+    zero.add_argument("--confirm", action="store_true", help="confirm supported, stationary physical zero")
     return parser
 
 
@@ -218,11 +232,12 @@ def _run_probe(transport, bus, args) -> None:
     for motor_id in (args.ids or (args.x_id, args.y_id)):
         try:
             raw = bus.request_feedback(motor_id, FEEDBACK_TOTAL_ANGLE)
+            mechanical = bus.request_feedback(motor_id, FEEDBACK_MECHANICAL_ANGLE)
         except F32CTimeout as exc:
             print("ID %d: NO VALID REPLY - %s" % (motor_id, exc))
         else:
             found.append(motor_id)
-            print("ID %d: OK, total_angle=%+.1f deg (raw=%d)" % (motor_id, raw / 10.0, raw))
+            print("ID %d: OK, total_angle=%+.1f deg, mechanical_angle=%.1f deg" % (motor_id, raw / 10.0, mechanical / 10.0))
     if not found:
         print("No motor replied. Check 8-15 V motor power, common GND, and crossed TX/RX.")
         print("Also confirm the USB-TTL adapter uses 3.3 V logic, not RS-232 levels.")
@@ -231,6 +246,8 @@ def _run_probe(transport, bus, args) -> None:
 
 
 def run(args) -> None:
+    if args.command == "set-zero" and not args.confirm:
+        raise SystemExit("set-zero requires --confirm: support the load and place the selected axis at its physical zero")
     transport = _build_transport(args)
     bus = F32CGimbal(
         transport,
@@ -238,16 +255,29 @@ def run(args) -> None:
         y_id=args.y_id,
         feedback_timeout_s=args.feedback_timeout,
         feedback_retries=args.feedback_retries,
+        reference_mode=args.reference,
     )
     try:
         if args.command == "probe":
             _run_probe(transport, bus, args)
+            return
+        if args.command == "set-zero":
+            transport.write(b"\x00")
+            time.sleep(0 if args.dry_run else args.startup_delay)
+            bus.set_mechanical_zero(bus.x_id if args.axis == "X" else bus.y_id)
+            print("%s zero read-back passed; save command sent. Motors remain disabled." % args.axis)
+            print("Power-cycle with the load supported and run probe to verify persistence.")
             return
         bus.start(
             speed_rpm=args.speed,
             power_on_delay_s=0.0 if args.dry_run else args.startup_delay,
         )
         controller = _build_controller(args)
+        # Tracking starts at the held physical pose, which is not necessarily
+        # zero when the reference is a saved mechanical zero.
+        if bus.reference_mode == "mechanical":
+            controller.x_deg = bus.last_relative_deg[bus.x_id]
+            controller.y_deg = bus.last_relative_deg[bus.y_id]
         print(
             "Y allowed interval: %.1f..%.1f deg"
             % (controller.y_dead_zone.low, controller.y_dead_zone.high)
@@ -306,6 +336,9 @@ def run(args) -> None:
             "RX=<no bytes received> usually means power/wiring/RX-TX; damaged bytes usually mean ID collision or electrical noise.",
             file=sys.stderr,
         )
+        raise SystemExit(2)
+    except F32CError as exc:
+        print("F32C operation rejected: %s" % exc, file=sys.stderr)
         raise SystemExit(2)
     finally:
         bus.stop()
