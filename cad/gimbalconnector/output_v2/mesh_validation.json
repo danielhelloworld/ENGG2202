@@ -1,0 +1,234 @@
+{
+  "camera_plate.stl": {
+    "triangles": 416,
+    "vertices": 208,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_edges": 0,
+    "connected_meshes": 1,
+    "degenerate_triangles": 0,
+    "bbox_mm": [
+      [
+        -19.0,
+        -35.0,
+        7.300000190734863
+      ],
+      [
+        19.0,
+        35.0,
+        16.299999237060547
+      ]
+    ],
+    "dimensions_mm": [
+      38.0,
+      70.0,
+      8.999999046325684
+    ],
+    "volume_mm3": 15031.692075169734,
+    "cad_dimension_error_mm": 9.536743128535363e-07,
+    "relative_volume_error": 0.00014755513844177948,
+    "passed": true
+  },
+  "camera_plate_four_screw.stl": {
+    "triangles": 1016,
+    "vertices": 500,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_edges": 0,
+    "connected_meshes": 1,
+    "degenerate_triangles": 0,
+    "bbox_mm": [
+      [
+        -19.0,
+        -35.0,
+        7.300000190734863
+      ],
+      [
+        19.0,
+        35.0,
+        65.30000305175781
+      ]
+    ],
+    "dimensions_mm": [
+      38.0,
+      70.0,
+      58.00000286102295
+    ],
+    "volume_mm3": 16854.81020167846,
+    "cad_dimension_error_mm": 2.8610229350078953e-06,
+    "relative_volume_error": 0.0001690016878677092,
+    "passed": true
+  },
+  "fit_coupon_gap_0.15.stl": {
+    "triangles": 28,
+    "vertices": 16,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_edges": 0,
+    "connected_meshes": 1,
+    "degenerate_triangles": 0,
+    "bbox_mm": [
+      [
+        -25.0,
+        -9.0,
+        0.0
+      ],
+      [
+        25.0,
+        9.0,
+        7.199999809265137
+      ]
+    ],
+    "dimensions_mm": [
+      50.0,
+      18.0,
+      7.199999809265137
+    ],
+    "volume_mm3": 3052.368054038998,
+    "passed": true
+  },
+  "fit_coupon_gap_0.25.stl": {
+    "triangles": 28,
+    "vertices": 16,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_edges": 0,
+    "connected_meshes": 1,
+    "degenerate_triangles": 0,
+    "bbox_mm": [
+      [
+        -25.0,
+        -9.0,
+        0.0
+      ],
+      [
+        25.0,
+        9.0,
+        7.199999809265137
+      ]
+    ],
+    "dimensions_mm": [
+      50.0,
+      18.0,
+      7.199999809265137
+    ],
+    "volume_mm3": 3033.647983314513,
+    "passed": true
+  },
+  "fit_coupon_gap_0.35.stl": {
+    "triangles": 28,
+    "vertices": 16,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_edges": 0,
+    "connected_meshes": 1,
+    "degenerate_triangles": 0,
+    "bbox_mm": [
+      [
+        -25.0,
+        -9.0,
+        0.0
+      ],
+      [
+        25.0,
+        9.0,
+        7.199999809265137
+      ]
+    ],
+    "dimensions_mm": [
+      50.0,
+      18.0,
+      7.199999809265137
+    ],
+    "volume_mm3": 3014.9279125900284,
+    "passed": true
+  },
+  "fit_coupon_male.stl": {
+    "triangles": 12,
+    "vertices": 8,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_edges": 0,
+    "connected_meshes": 1,
+    "degenerate_triangles": 0,
+    "bbox_mm": [
+      [
+        -20.0,
+        -9.0,
+        2.299999952316284
+      ],
+      [
+        20.0,
+        9.0,
+        7.300000190734863
+      ]
+    ],
+    "dimensions_mm": [
+      40.0,
+      18.0,
+      5.000000238418579
+    ],
+    "volume_mm3": 3240.0001544952393,
+    "passed": true
+  },
+  "receiver_heat_stake.stl": {
+    "triangles": 926,
+    "vertices": 459,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_edges": 0,
+    "connected_meshes": 1,
+    "degenerate_triangles": 0,
+    "bbox_mm": [
+      [
+        -22.0,
+        -28.0,
+        -4.5
+      ],
+      [
+        22.0,
+        28.0,
+        12.199999809265137
+      ]
+    ],
+    "dimensions_mm": [
+      44.0,
+      56.0,
+      16.699999809265137
+    ],
+    "volume_mm3": 20310.010394664652,
+    "cad_dimension_error_mm": 1.9073486612342094e-07,
+    "relative_volume_error": 9.263813696014367e-05,
+    "passed": true
+  },
+  "receiver_M2_bolt.stl": {
+    "triangles": 1234,
+    "vertices": 609,
+    "boundary_edges": 0,
+    "nonmanifold_edges": 0,
+    "inconsistent_edges": 0,
+    "connected_meshes": 1,
+    "degenerate_triangles": 0,
+    "bbox_mm": [
+      [
+        -22.0,
+        -28.0,
+        -2.0999999046325684
+      ],
+      [
+        22.0,
+        28.0,
+        12.199999809265137
+      ]
+    ],
+    "dimensions_mm": [
+      44.0,
+      56.0,
+      14.299999713897705
+    ],
+    "volume_mm3": 20184.78435011091,
+    "cad_dimension_error_mm": 2.861022974087746e-07,
+    "relative_volume_error": 0.00012268588520059076,
+    "passed": true
+  }
+}

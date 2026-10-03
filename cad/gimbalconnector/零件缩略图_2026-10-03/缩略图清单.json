@@ -1,0 +1,620 @@
+{
+  "thumbnail_count": 34,
+  "overview_count": 4,
+  "existing_files_unchanged": 188,
+  "rendering": "STL triangles, orthographic projection, z-buffer visibility, two directions",
+  "parts": [
+    {
+      "id": "P01",
+      "title": "摩擦快拆底座 · 一体热铆柱",
+      "version": "V3 USB 优化版",
+      "version_index": 0,
+      "category": "底座",
+      "quantity": 1,
+      "dimensions": [
+        44.0,
+        80.1500015258789,
+        22.700000762939453
+      ],
+      "use": "底座二选一",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/01_V3_USB%E4%BC%98%E5%8C%96%E7%89%88/01_%E6%91%A9%E6%93%A6%E5%BF%AB%E6%8B%86%E5%BA%95%E5%BA%A7_%E4%B8%80%E4%BD%93%E7%83%AD%E9%93%86%E6%9F%B1.stl",
+      "source": "01_V3_USB优化版/01_摩擦快拆底座_一体热铆柱.stl",
+      "sha256": "41953cc96f3f4ab5ad4fe29e41425d688269c87a1a7ffba36537d752c8628dea",
+      "thumbnail": "缩略图/P01.png"
+    },
+    {
+      "id": "P02",
+      "title": "摩擦快拆底座 · M2螺丝固定",
+      "version": "V3 USB 优化版",
+      "version_index": 0,
+      "category": "底座",
+      "quantity": 1,
+      "dimensions": [
+        44.0,
+        80.1500015258789,
+        19.30000114440918
+      ],
+      "use": "底座二选一",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/01_V3_USB%E4%BC%98%E5%8C%96%E7%89%88/02_%E6%91%A9%E6%93%A6%E5%BF%AB%E6%8B%86%E5%BA%95%E5%BA%A7_M2%E8%9E%BA%E4%B8%9D%E5%9B%BA%E5%AE%9A.stl",
+      "source": "01_V3_USB优化版/02_摩擦快拆底座_M2螺丝固定.stl",
+      "sha256": "09ea3b4842fa10277011eca4ca896c67087c3ecd4074095c6a14984293c99dce",
+      "thumbnail": "缩略图/P02.png"
+    },
+    {
+      "id": "P03",
+      "title": "相机快装板 · 中心1/4英寸螺丝",
+      "version": "V3 USB 优化版",
+      "version_index": 0,
+      "category": "相机板",
+      "quantity": 1,
+      "dimensions": [
+        38.0,
+        70.0,
+        8.999999046325684
+      ],
+      "use": "相机板二选一",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/01_V3_USB%E4%BC%98%E5%8C%96%E7%89%88/03_%E7%9B%B8%E6%9C%BA%E5%BF%AB%E8%A3%85%E6%9D%BF_%E4%B8%AD%E5%BF%831-4%E8%8B%B1%E5%AF%B8%E8%9E%BA%E4%B8%9D.stl",
+      "source": "01_V3_USB优化版/03_相机快装板_中心1-4英寸螺丝.stl",
+      "sha256": "0945b87d0d3bcf15dde5fd5da45d3e2c83a3b33a8603ae785c17c360b971f3ba",
+      "thumbnail": "缩略图/P03.png"
+    },
+    {
+      "id": "P04",
+      "title": "相机快装板 · 中心螺丝及四角固定件",
+      "version": "V3 USB 优化版",
+      "version_index": 0,
+      "category": "相机板",
+      "quantity": 1,
+      "dimensions": [
+        38.0,
+        70.0,
+        58.000003814697266
+      ],
+      "use": "相机板二选一；立边与板一体成型",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/01_V3_USB%E4%BC%98%E5%8C%96%E7%89%88/04_%E7%9B%B8%E6%9C%BA%E5%BF%AB%E8%A3%85%E6%9D%BF_%E4%B8%AD%E5%BF%83%E8%9E%BA%E4%B8%9D%E5%8F%8A%E5%9B%9B%E8%A7%92%E5%9B%BA%E5%AE%9A%E4%BB%B6.stl",
+      "source": "01_V3_USB优化版/04_相机快装板_中心螺丝及四角固定件.stl",
+      "sha256": "807bda199392d2f30147ff9741b567b299a34c6272b632f5fd6028c0f8abe7f2",
+      "thumbnail": "缩略图/P04.png"
+    },
+    {
+      "id": "P05",
+      "title": "独立侧向热铆销 · 单颗 · 打印2颗",
+      "version": "V3 USB 优化版",
+      "version_index": 0,
+      "category": "铆销",
+      "quantity": 2,
+      "dimensions": [
+        5.5,
+        5.5,
+        11.0
+      ],
+      "use": "加强版和USB版侧向两孔固定",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/01_V3_USB%E4%BC%98%E5%8C%96%E7%89%88/05_%E7%8B%AC%E7%AB%8B%E4%BE%A7%E5%90%91%E7%83%AD%E9%93%86%E9%94%80_%E5%8D%95%E9%A2%97_%E6%89%93%E5%8D%B02%E9%A2%97.stl",
+      "source": "01_V3_USB优化版/05_独立侧向热铆销_单颗_打印2颗.stl",
+      "sha256": "0b687910feaf34afbacfc815bc77540bf885d88c85f8da675c40dd41a7815b89",
+      "thumbnail": "缩略图/P05.png"
+    },
+    {
+      "id": "P06",
+      "title": "燕尾公件",
+      "version": "V3 USB 优化版",
+      "version_index": 0,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        40.0,
+        18.0,
+        5.0
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/01_V3_USB%E4%BC%98%E5%8C%96%E7%89%88/%E8%AF%95%E8%A3%85%E4%BB%B6/01_%E7%87%95%E5%B0%BE%E5%85%AC%E4%BB%B6.stl",
+      "source": "01_V3_USB优化版/试装件/01_燕尾公件.stl",
+      "sha256": "3ac5fc14c1d98a9a662c0eca68104f60eb1ef8bafc6a7dbec182836892f26954",
+      "thumbnail": "缩略图/P06.png"
+    },
+    {
+      "id": "P07",
+      "title": "燕尾母件 · 单侧间隙0.15mm",
+      "version": "V3 USB 优化版",
+      "version_index": 0,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        50.0,
+        18.0,
+        7.199999809265137
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/01_V3_USB%E4%BC%98%E5%8C%96%E7%89%88/%E8%AF%95%E8%A3%85%E4%BB%B6/02_%E7%87%95%E5%B0%BE%E6%AF%8D%E4%BB%B6_%E5%8D%95%E4%BE%A7%E9%97%B4%E9%9A%990.15mm.stl",
+      "source": "01_V3_USB优化版/试装件/02_燕尾母件_单侧间隙0.15mm.stl",
+      "sha256": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+      "thumbnail": "缩略图/P07.png"
+    },
+    {
+      "id": "P08",
+      "title": "燕尾母件 · 单侧间隙0.25mm",
+      "version": "V3 USB 优化版",
+      "version_index": 0,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        50.0,
+        18.0,
+        7.199999809265137
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/01_V3_USB%E4%BC%98%E5%8C%96%E7%89%88/%E8%AF%95%E8%A3%85%E4%BB%B6/03_%E7%87%95%E5%B0%BE%E6%AF%8D%E4%BB%B6_%E5%8D%95%E4%BE%A7%E9%97%B4%E9%9A%990.25mm.stl",
+      "source": "01_V3_USB优化版/试装件/03_燕尾母件_单侧间隙0.25mm.stl",
+      "sha256": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+      "thumbnail": "缩略图/P08.png"
+    },
+    {
+      "id": "P09",
+      "title": "燕尾母件 · 单侧间隙0.35mm",
+      "version": "V3 USB 优化版",
+      "version_index": 0,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        50.0,
+        18.0,
+        7.199999809265137
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/01_V3_USB%E4%BC%98%E5%8C%96%E7%89%88/%E8%AF%95%E8%A3%85%E4%BB%B6/04_%E7%87%95%E5%B0%BE%E6%AF%8D%E4%BB%B6_%E5%8D%95%E4%BE%A7%E9%97%B4%E9%9A%990.35mm.stl",
+      "source": "01_V3_USB优化版/试装件/04_燕尾母件_单侧间隙0.35mm.stl",
+      "sha256": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+      "thumbnail": "缩略图/P09.png"
+    },
+    {
+      "id": "P10",
+      "title": "摩擦快拆底座 · 一体热铆柱",
+      "version": "V2 原位置加强版",
+      "version_index": 1,
+      "category": "底座",
+      "quantity": 1,
+      "dimensions": [
+        44.0,
+        73.0,
+        17.700000762939453
+      ],
+      "use": "底座二选一",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/02_V2_%E5%8E%9F%E4%BD%8D%E7%BD%AE%E5%8A%A0%E5%BC%BA%E7%89%88/01_%E6%91%A9%E6%93%A6%E5%BF%AB%E6%8B%86%E5%BA%95%E5%BA%A7_%E4%B8%80%E4%BD%93%E7%83%AD%E9%93%86%E6%9F%B1.stl",
+      "source": "02_V2_原位置加强版/01_摩擦快拆底座_一体热铆柱.stl",
+      "sha256": "b05a791d00016441dd0654d1ddc0b1693743c6b9c095b653d049e6d8e7049f05",
+      "thumbnail": "缩略图/P10.png"
+    },
+    {
+      "id": "P11",
+      "title": "摩擦快拆底座 · M2螺丝固定",
+      "version": "V2 原位置加强版",
+      "version_index": 1,
+      "category": "底座",
+      "quantity": 1,
+      "dimensions": [
+        44.0,
+        73.0,
+        14.299999237060547
+      ],
+      "use": "底座二选一",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/02_V2_%E5%8E%9F%E4%BD%8D%E7%BD%AE%E5%8A%A0%E5%BC%BA%E7%89%88/02_%E6%91%A9%E6%93%A6%E5%BF%AB%E6%8B%86%E5%BA%95%E5%BA%A7_M2%E8%9E%BA%E4%B8%9D%E5%9B%BA%E5%AE%9A.stl",
+      "source": "02_V2_原位置加强版/02_摩擦快拆底座_M2螺丝固定.stl",
+      "sha256": "4320a0bd63c9914871d0a0120a4cdab1b66dad8c18c9fd4ada478eb09437d195",
+      "thumbnail": "缩略图/P11.png"
+    },
+    {
+      "id": "P12",
+      "title": "相机快装板 · 中心1/4英寸螺丝",
+      "version": "V2 原位置加强版",
+      "version_index": 1,
+      "category": "相机板",
+      "quantity": 1,
+      "dimensions": [
+        38.0,
+        70.0,
+        8.999999046325684
+      ],
+      "use": "相机板二选一",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/02_V2_%E5%8E%9F%E4%BD%8D%E7%BD%AE%E5%8A%A0%E5%BC%BA%E7%89%88/03_%E7%9B%B8%E6%9C%BA%E5%BF%AB%E8%A3%85%E6%9D%BF_%E4%B8%AD%E5%BF%831-4%E8%8B%B1%E5%AF%B8%E8%9E%BA%E4%B8%9D.stl",
+      "source": "02_V2_原位置加强版/03_相机快装板_中心1-4英寸螺丝.stl",
+      "sha256": "cd7189308528f821b7bfd0abbcf7d02be05df76e453b8486ccf453675f39b304",
+      "thumbnail": "缩略图/P12.png"
+    },
+    {
+      "id": "P13",
+      "title": "相机快装板 · 中心螺丝及四角固定件",
+      "version": "V2 原位置加强版",
+      "version_index": 1,
+      "category": "相机板",
+      "quantity": 1,
+      "dimensions": [
+        38.0,
+        70.0,
+        58.000003814697266
+      ],
+      "use": "相机板二选一；立边与板一体成型",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/02_V2_%E5%8E%9F%E4%BD%8D%E7%BD%AE%E5%8A%A0%E5%BC%BA%E7%89%88/04_%E7%9B%B8%E6%9C%BA%E5%BF%AB%E8%A3%85%E6%9D%BF_%E4%B8%AD%E5%BF%83%E8%9E%BA%E4%B8%9D%E5%8F%8A%E5%9B%9B%E8%A7%92%E5%9B%BA%E5%AE%9A%E4%BB%B6.stl",
+      "source": "02_V2_原位置加强版/04_相机快装板_中心螺丝及四角固定件.stl",
+      "sha256": "89f7003d1e80f88f4414426fabf149281c334fb0a4ba7f38cccf02f2f27c6153",
+      "thumbnail": "缩略图/P13.png"
+    },
+    {
+      "id": "P14",
+      "title": "独立侧向热铆销 · 单颗 · 打印2颗",
+      "version": "V2 原位置加强版",
+      "version_index": 1,
+      "category": "铆销",
+      "quantity": 2,
+      "dimensions": [
+        5.5,
+        5.5,
+        11.0
+      ],
+      "use": "加强版和USB版侧向两孔固定",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/02_V2_%E5%8E%9F%E4%BD%8D%E7%BD%AE%E5%8A%A0%E5%BC%BA%E7%89%88/05_%E7%8B%AC%E7%AB%8B%E4%BE%A7%E5%90%91%E7%83%AD%E9%93%86%E9%94%80_%E5%8D%95%E9%A2%97_%E6%89%93%E5%8D%B02%E9%A2%97.stl",
+      "source": "02_V2_原位置加强版/05_独立侧向热铆销_单颗_打印2颗.stl",
+      "sha256": "0b687910feaf34afbacfc815bc77540bf885d88c85f8da675c40dd41a7815b89",
+      "thumbnail": "缩略图/P14.png"
+    },
+    {
+      "id": "P15",
+      "title": "燕尾公件",
+      "version": "V2 原位置加强版",
+      "version_index": 1,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        40.0,
+        18.0,
+        5.0
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/02_V2_%E5%8E%9F%E4%BD%8D%E7%BD%AE%E5%8A%A0%E5%BC%BA%E7%89%88/%E8%AF%95%E8%A3%85%E4%BB%B6/01_%E7%87%95%E5%B0%BE%E5%85%AC%E4%BB%B6.stl",
+      "source": "02_V2_原位置加强版/试装件/01_燕尾公件.stl",
+      "sha256": "3ac5fc14c1d98a9a662c0eca68104f60eb1ef8bafc6a7dbec182836892f26954",
+      "thumbnail": "缩略图/P15.png"
+    },
+    {
+      "id": "P16",
+      "title": "燕尾母件 · 单侧间隙0.15mm",
+      "version": "V2 原位置加强版",
+      "version_index": 1,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        50.0,
+        18.0,
+        7.199999809265137
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/02_V2_%E5%8E%9F%E4%BD%8D%E7%BD%AE%E5%8A%A0%E5%BC%BA%E7%89%88/%E8%AF%95%E8%A3%85%E4%BB%B6/02_%E7%87%95%E5%B0%BE%E6%AF%8D%E4%BB%B6_%E5%8D%95%E4%BE%A7%E9%97%B4%E9%9A%990.15mm.stl",
+      "source": "02_V2_原位置加强版/试装件/02_燕尾母件_单侧间隙0.15mm.stl",
+      "sha256": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+      "thumbnail": "缩略图/P16.png"
+    },
+    {
+      "id": "P17",
+      "title": "燕尾母件 · 单侧间隙0.25mm",
+      "version": "V2 原位置加强版",
+      "version_index": 1,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        50.0,
+        18.0,
+        7.199999809265137
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/02_V2_%E5%8E%9F%E4%BD%8D%E7%BD%AE%E5%8A%A0%E5%BC%BA%E7%89%88/%E8%AF%95%E8%A3%85%E4%BB%B6/03_%E7%87%95%E5%B0%BE%E6%AF%8D%E4%BB%B6_%E5%8D%95%E4%BE%A7%E9%97%B4%E9%9A%990.25mm.stl",
+      "source": "02_V2_原位置加强版/试装件/03_燕尾母件_单侧间隙0.25mm.stl",
+      "sha256": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+      "thumbnail": "缩略图/P17.png"
+    },
+    {
+      "id": "P18",
+      "title": "燕尾母件 · 单侧间隙0.35mm",
+      "version": "V2 原位置加强版",
+      "version_index": 1,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        50.0,
+        18.0,
+        7.199999809265137
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/02_V2_%E5%8E%9F%E4%BD%8D%E7%BD%AE%E5%8A%A0%E5%BC%BA%E7%89%88/%E8%AF%95%E8%A3%85%E4%BB%B6/04_%E7%87%95%E5%B0%BE%E6%AF%8D%E4%BB%B6_%E5%8D%95%E4%BE%A7%E9%97%B4%E9%9A%990.35mm.stl",
+      "source": "02_V2_原位置加强版/试装件/04_燕尾母件_单侧间隙0.35mm.stl",
+      "sha256": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+      "thumbnail": "缩略图/P18.png"
+    },
+    {
+      "id": "P19",
+      "title": "摩擦快拆底座 · 一体热铆柱",
+      "version": "V2 原版",
+      "version_index": 2,
+      "category": "底座",
+      "quantity": 1,
+      "dimensions": [
+        44.0,
+        56.0,
+        16.700000762939453
+      ],
+      "use": "底座二选一",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/03_V2_%E5%8E%9F%E7%89%88/01_%E6%91%A9%E6%93%A6%E5%BF%AB%E6%8B%86%E5%BA%95%E5%BA%A7_%E4%B8%80%E4%BD%93%E7%83%AD%E9%93%86%E6%9F%B1.stl",
+      "source": "03_V2_原版/01_摩擦快拆底座_一体热铆柱.stl",
+      "sha256": "45b2ace658fc17372c3fb08eb0320624d83025f138ef214bf6bae1b48c7a02d0",
+      "thumbnail": "缩略图/P19.png"
+    },
+    {
+      "id": "P20",
+      "title": "摩擦快拆底座 · M2螺丝固定",
+      "version": "V2 原版",
+      "version_index": 2,
+      "category": "底座",
+      "quantity": 1,
+      "dimensions": [
+        44.0,
+        56.0,
+        14.299999237060547
+      ],
+      "use": "底座二选一",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/03_V2_%E5%8E%9F%E7%89%88/02_%E6%91%A9%E6%93%A6%E5%BF%AB%E6%8B%86%E5%BA%95%E5%BA%A7_M2%E8%9E%BA%E4%B8%9D%E5%9B%BA%E5%AE%9A.stl",
+      "source": "03_V2_原版/02_摩擦快拆底座_M2螺丝固定.stl",
+      "sha256": "41b2b3fc31df0761e10fd476094c512436e3fcd051f8400821f59f35afa60d08",
+      "thumbnail": "缩略图/P20.png"
+    },
+    {
+      "id": "P21",
+      "title": "相机快装板 · 中心1/4英寸螺丝",
+      "version": "V2 原版",
+      "version_index": 2,
+      "category": "相机板",
+      "quantity": 1,
+      "dimensions": [
+        38.0,
+        70.0,
+        8.999999046325684
+      ],
+      "use": "相机板二选一",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/03_V2_%E5%8E%9F%E7%89%88/03_%E7%9B%B8%E6%9C%BA%E5%BF%AB%E8%A3%85%E6%9D%BF_%E4%B8%AD%E5%BF%831-4%E8%8B%B1%E5%AF%B8%E8%9E%BA%E4%B8%9D.stl",
+      "source": "03_V2_原版/03_相机快装板_中心1-4英寸螺丝.stl",
+      "sha256": "cd7189308528f821b7bfd0abbcf7d02be05df76e453b8486ccf453675f39b304",
+      "thumbnail": "缩略图/P21.png"
+    },
+    {
+      "id": "P22",
+      "title": "相机快装板 · 中心螺丝及四角固定件",
+      "version": "V2 原版",
+      "version_index": 2,
+      "category": "相机板",
+      "quantity": 1,
+      "dimensions": [
+        38.0,
+        70.0,
+        58.000003814697266
+      ],
+      "use": "相机板二选一；立边与板一体成型",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/03_V2_%E5%8E%9F%E7%89%88/04_%E7%9B%B8%E6%9C%BA%E5%BF%AB%E8%A3%85%E6%9D%BF_%E4%B8%AD%E5%BF%83%E8%9E%BA%E4%B8%9D%E5%8F%8A%E5%9B%9B%E8%A7%92%E5%9B%BA%E5%AE%9A%E4%BB%B6.stl",
+      "source": "03_V2_原版/04_相机快装板_中心螺丝及四角固定件.stl",
+      "sha256": "89f7003d1e80f88f4414426fabf149281c334fb0a4ba7f38cccf02f2f27c6153",
+      "thumbnail": "缩略图/P22.png"
+    },
+    {
+      "id": "P23",
+      "title": "燕尾公件",
+      "version": "V2 原版",
+      "version_index": 2,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        40.0,
+        18.0,
+        5.0
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/03_V2_%E5%8E%9F%E7%89%88/%E8%AF%95%E8%A3%85%E4%BB%B6/01_%E7%87%95%E5%B0%BE%E5%85%AC%E4%BB%B6.stl",
+      "source": "03_V2_原版/试装件/01_燕尾公件.stl",
+      "sha256": "3ac5fc14c1d98a9a662c0eca68104f60eb1ef8bafc6a7dbec182836892f26954",
+      "thumbnail": "缩略图/P23.png"
+    },
+    {
+      "id": "P24",
+      "title": "燕尾母件 · 单侧间隙0.15mm",
+      "version": "V2 原版",
+      "version_index": 2,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        50.0,
+        18.0,
+        7.199999809265137
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/03_V2_%E5%8E%9F%E7%89%88/%E8%AF%95%E8%A3%85%E4%BB%B6/02_%E7%87%95%E5%B0%BE%E6%AF%8D%E4%BB%B6_%E5%8D%95%E4%BE%A7%E9%97%B4%E9%9A%990.15mm.stl",
+      "source": "03_V2_原版/试装件/02_燕尾母件_单侧间隙0.15mm.stl",
+      "sha256": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+      "thumbnail": "缩略图/P24.png"
+    },
+    {
+      "id": "P25",
+      "title": "燕尾母件 · 单侧间隙0.25mm",
+      "version": "V2 原版",
+      "version_index": 2,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        50.0,
+        18.0,
+        7.199999809265137
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/03_V2_%E5%8E%9F%E7%89%88/%E8%AF%95%E8%A3%85%E4%BB%B6/03_%E7%87%95%E5%B0%BE%E6%AF%8D%E4%BB%B6_%E5%8D%95%E4%BE%A7%E9%97%B4%E9%9A%990.25mm.stl",
+      "source": "03_V2_原版/试装件/03_燕尾母件_单侧间隙0.25mm.stl",
+      "sha256": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+      "thumbnail": "缩略图/P25.png"
+    },
+    {
+      "id": "P26",
+      "title": "燕尾母件 · 单侧间隙0.35mm",
+      "version": "V2 原版",
+      "version_index": 2,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        50.0,
+        18.0,
+        7.199999809265137
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/03_V2_%E5%8E%9F%E7%89%88/%E8%AF%95%E8%A3%85%E4%BB%B6/04_%E7%87%95%E5%B0%BE%E6%AF%8D%E4%BB%B6_%E5%8D%95%E4%BE%A7%E9%97%B4%E9%9A%990.35mm.stl",
+      "source": "03_V2_原版/试装件/04_燕尾母件_单侧间隙0.35mm.stl",
+      "sha256": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+      "thumbnail": "缩略图/P26.png"
+    },
+    {
+      "id": "P27",
+      "title": "摩擦快拆底座 · 一体热铆柱",
+      "version": "V1 历史试作（未采用）",
+      "version_index": 3,
+      "category": "底座",
+      "quantity": 1,
+      "dimensions": [
+        56.0,
+        44.0,
+        13.699999809265137
+      ],
+      "use": "底座二选一",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/04_V1_%E5%8E%86%E5%8F%B2%E6%96%B9%E5%90%91%E8%AF%95%E4%BD%9C_%E6%9C%AA%E9%87%87%E7%94%A8/01_%E6%91%A9%E6%93%A6%E5%BF%AB%E6%8B%86%E5%BA%95%E5%BA%A7_%E4%B8%80%E4%BD%93%E7%83%AD%E9%93%86%E6%9F%B1.stl",
+      "source": "04_V1_历史方向试作_未采用/01_摩擦快拆底座_一体热铆柱.stl",
+      "sha256": "e8fcba1fd612e38ed25a9958ea2d40bd70963c1eb4c07e44d74f7852aa682ae2",
+      "thumbnail": "缩略图/P27.png"
+    },
+    {
+      "id": "P28",
+      "title": "摩擦快拆底座 · M2螺丝固定",
+      "version": "V1 历史试作（未采用）",
+      "version_index": 3,
+      "category": "底座",
+      "quantity": 1,
+      "dimensions": [
+        56.0,
+        44.0,
+        11.299999237060547
+      ],
+      "use": "底座二选一",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/04_V1_%E5%8E%86%E5%8F%B2%E6%96%B9%E5%90%91%E8%AF%95%E4%BD%9C_%E6%9C%AA%E9%87%87%E7%94%A8/02_%E6%91%A9%E6%93%A6%E5%BF%AB%E6%8B%86%E5%BA%95%E5%BA%A7_M2%E8%9E%BA%E4%B8%9D%E5%9B%BA%E5%AE%9A.stl",
+      "source": "04_V1_历史方向试作_未采用/02_摩擦快拆底座_M2螺丝固定.stl",
+      "sha256": "505b104e44579634977fd87aef18f0433963cd47242065c36148b06f515d0588",
+      "thumbnail": "缩略图/P28.png"
+    },
+    {
+      "id": "P29",
+      "title": "相机快装板 · 中心1/4英寸螺丝",
+      "version": "V1 历史试作（未采用）",
+      "version_index": 3,
+      "category": "相机板",
+      "quantity": 1,
+      "dimensions": [
+        70.0,
+        38.0,
+        9.0
+      ],
+      "use": "相机板二选一",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/04_V1_%E5%8E%86%E5%8F%B2%E6%96%B9%E5%90%91%E8%AF%95%E4%BD%9C_%E6%9C%AA%E9%87%87%E7%94%A8/03_%E7%9B%B8%E6%9C%BA%E5%BF%AB%E8%A3%85%E6%9D%BF_%E4%B8%AD%E5%BF%831-4%E8%8B%B1%E5%AF%B8%E8%9E%BA%E4%B8%9D.stl",
+      "source": "04_V1_历史方向试作_未采用/03_相机快装板_中心1-4英寸螺丝.stl",
+      "sha256": "5d4fe1b598864c63aa89243e3cf427f3ca9fff57784354e8b8e1263830b356ab",
+      "thumbnail": "缩略图/P29.png"
+    },
+    {
+      "id": "P30",
+      "title": "相机快装板 · 中心螺丝及四角固定件",
+      "version": "V1 历史试作（未采用）",
+      "version_index": 3,
+      "category": "相机板",
+      "quantity": 1,
+      "dimensions": [
+        70.0,
+        38.0,
+        58.0
+      ],
+      "use": "相机板二选一；立边与板一体成型",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/04_V1_%E5%8E%86%E5%8F%B2%E6%96%B9%E5%90%91%E8%AF%95%E4%BD%9C_%E6%9C%AA%E9%87%87%E7%94%A8/04_%E7%9B%B8%E6%9C%BA%E5%BF%AB%E8%A3%85%E6%9D%BF_%E4%B8%AD%E5%BF%83%E8%9E%BA%E4%B8%9D%E5%8F%8A%E5%9B%9B%E8%A7%92%E5%9B%BA%E5%AE%9A%E4%BB%B6.stl",
+      "source": "04_V1_历史方向试作_未采用/04_相机快装板_中心螺丝及四角固定件.stl",
+      "sha256": "92618ebe32f0232030838fe9d93204725270c76df7dbbdd7fd93e43cf90f15f7",
+      "thumbnail": "缩略图/P30.png"
+    },
+    {
+      "id": "P31",
+      "title": "燕尾公件",
+      "version": "V1 历史试作（未采用）",
+      "version_index": 3,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        40.0,
+        18.0,
+        5.0
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/04_V1_%E5%8E%86%E5%8F%B2%E6%96%B9%E5%90%91%E8%AF%95%E4%BD%9C_%E6%9C%AA%E9%87%87%E7%94%A8/%E8%AF%95%E8%A3%85%E4%BB%B6/01_%E7%87%95%E5%B0%BE%E5%85%AC%E4%BB%B6.stl",
+      "source": "04_V1_历史方向试作_未采用/试装件/01_燕尾公件.stl",
+      "sha256": "3ac5fc14c1d98a9a662c0eca68104f60eb1ef8bafc6a7dbec182836892f26954",
+      "thumbnail": "缩略图/P31.png"
+    },
+    {
+      "id": "P32",
+      "title": "燕尾母件 · 单侧间隙0.15mm",
+      "version": "V1 历史试作（未采用）",
+      "version_index": 3,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        50.0,
+        18.0,
+        7.199999809265137
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/04_V1_%E5%8E%86%E5%8F%B2%E6%96%B9%E5%90%91%E8%AF%95%E4%BD%9C_%E6%9C%AA%E9%87%87%E7%94%A8/%E8%AF%95%E8%A3%85%E4%BB%B6/02_%E7%87%95%E5%B0%BE%E6%AF%8D%E4%BB%B6_%E5%8D%95%E4%BE%A7%E9%97%B4%E9%9A%990.15mm.stl",
+      "source": "04_V1_历史方向试作_未采用/试装件/02_燕尾母件_单侧间隙0.15mm.stl",
+      "sha256": "75b4b379ec8db6168330fa035172548def77878264b7ed43bf47a672877539dc",
+      "thumbnail": "缩略图/P32.png"
+    },
+    {
+      "id": "P33",
+      "title": "燕尾母件 · 单侧间隙0.25mm",
+      "version": "V1 历史试作（未采用）",
+      "version_index": 3,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        50.0,
+        18.0,
+        7.199999809265137
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/04_V1_%E5%8E%86%E5%8F%B2%E6%96%B9%E5%90%91%E8%AF%95%E4%BD%9C_%E6%9C%AA%E9%87%87%E7%94%A8/%E8%AF%95%E8%A3%85%E4%BB%B6/03_%E7%87%95%E5%B0%BE%E6%AF%8D%E4%BB%B6_%E5%8D%95%E4%BE%A7%E9%97%B4%E9%9A%990.25mm.stl",
+      "source": "04_V1_历史方向试作_未采用/试装件/03_燕尾母件_单侧间隙0.25mm.stl",
+      "sha256": "b5eba2e5e62d745cd8edd3c39bc1aa64cc9f4379dfc17d2e893ac904b212a966",
+      "thumbnail": "缩略图/P33.png"
+    },
+    {
+      "id": "P34",
+      "title": "燕尾母件 · 单侧间隙0.35mm",
+      "version": "V1 历史试作（未采用）",
+      "version_index": 3,
+      "category": "试装件",
+      "quantity": 1,
+      "dimensions": [
+        50.0,
+        18.0,
+        7.199999809265137
+      ],
+      "use": "可选间隙试装件",
+      "stl": "../STL_%E5%8D%95%E4%BB%B6%E6%89%93%E5%8D%B0_2026-10-03/04_V1_%E5%8E%86%E5%8F%B2%E6%96%B9%E5%90%91%E8%AF%95%E4%BD%9C_%E6%9C%AA%E9%87%87%E7%94%A8/%E8%AF%95%E8%A3%85%E4%BB%B6/04_%E7%87%95%E5%B0%BE%E6%AF%8D%E4%BB%B6_%E5%8D%95%E4%BE%A7%E9%97%B4%E9%9A%990.35mm.stl",
+      "source": "04_V1_历史方向试作_未采用/试装件/04_燕尾母件_单侧间隙0.35mm.stl",
+      "sha256": "b618f0ea1e5a09060ab9f4e2b01558b4f2049826a93fc2fa1dbcc311ca55dfb9",
+      "thumbnail": "缩略图/P34.png"
+    }
+  ]
+}

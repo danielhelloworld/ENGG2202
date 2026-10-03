@@ -1,0 +1,193 @@
+{
+  "version": "v2",
+  "source_camera": "MaixCAM2_3.0.step",
+  "source_gimbal": "云台连接件.step",
+  "dimensions_mm": {
+    "receiver": [
+      44,
+      56,
+      12.2
+    ],
+    "plate": [
+      38,
+      70,
+      9
+    ],
+    "plate_top": 16.3,
+    "rail_gap_each_side": 0.25,
+    "friction_interference_each_side": 0.1,
+    "mount_slot_width": 2.4,
+    "mount_slot_length_between_end_centres": 65,
+    "arm_thickness": 2,
+    "heat_pin_diameter": 2.1,
+    "heat_pin_length": 4.5,
+    "pins_y": [
+      -16,
+      16
+    ],
+    "centre_screw_clearance": 6.8,
+    "head_recess_diameter": 14,
+    "head_recess_depth": 3.5,
+    "camera_screw_bearing_thickness": 5.5,
+    "four_screw_pitch": [
+      55.67811,
+      40.27408
+    ],
+    "four_screw_clearance": 2.8,
+    "front_frame_added_thickness": 2.4
+  },
+  "exports": {
+    "receiver_heat_stake": {
+      "f3d": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\receiver_heat_stake.f3d",
+      "step": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\receiver_heat_stake.step",
+      "stl": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\receiver_heat_stake.stl"
+    },
+    "receiver_M2_bolt": {
+      "f3d": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\receiver_M2_bolt.f3d",
+      "step": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\receiver_M2_bolt.step",
+      "stl": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\receiver_M2_bolt.stl"
+    },
+    "camera_plate": {
+      "f3d": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\camera_plate.f3d",
+      "step": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\camera_plate.step",
+      "stl": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\camera_plate.stl"
+    },
+    "camera_plate_four_screw": {
+      "f3d": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\camera_plate_four_screw.f3d",
+      "step": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\camera_plate_four_screw.step",
+      "stl": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\camera_plate_four_screw.stl"
+    },
+    "coupon_0.15": {
+      "f3d": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\fit_coupon_gap_0.15.f3d",
+      "step": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\fit_coupon_gap_0.15.step",
+      "stl": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\fit_coupon_gap_0.15.stl"
+    },
+    "coupon_0.25": {
+      "f3d": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\fit_coupon_gap_0.25.f3d",
+      "step": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\fit_coupon_gap_0.25.step",
+      "stl": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\fit_coupon_gap_0.25.stl"
+    },
+    "coupon_0.35": {
+      "f3d": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\fit_coupon_gap_0.35.f3d",
+      "step": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\fit_coupon_gap_0.35.step",
+      "stl": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\fit_coupon_gap_0.35.stl"
+    },
+    "coupon_male": {
+      "f3d": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\fit_coupon_male.f3d",
+      "step": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\fit_coupon_male.step",
+      "stl": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\fit_coupon_male.stl"
+    },
+    "assembly_f3d": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\MaixCAM2_quick_release_assembly.f3d",
+    "assembly_step": "C:\\Users\\danie\\Desktop\\Coding\\ENGG2202\\gimbalconnector\\quick_release_tool\\..\\output_v2\\MaixCAM2_quick_release_assembly.step"
+  },
+  "checks": {
+    "coincident_face_retry_offset_xyz_mm": [
+      -0.005,
+      0.005,
+      0.005
+    ],
+    "Receiver_heat_stake_v2": {
+      "one_solid": true,
+      "volume_mm3": 20308.129087420846,
+      "bbox_mm": [
+        [
+          -22.000000000000007,
+          -28.0,
+          -4.5
+        ],
+        [
+          22.000000000000007,
+          28.0,
+          12.200000000000003
+        ]
+      ],
+      "features": 17
+    },
+    "Receiver_M2_bolt_v2": {
+      "one_solid": true,
+      "volume_mm3": 20182.30826575593,
+      "bbox_mm": [
+        [
+          -22.000000000000007,
+          -28.0,
+          -2.1
+        ],
+        [
+          21.999999999999996,
+          28.0,
+          12.200000000000003
+        ]
+      ],
+      "features": 19
+    },
+    "Camera_plate_1_4_v2": {
+      "one_solid": true,
+      "volume_mm3": 15029.474398994083,
+      "bbox_mm": [
+        [
+          -19.000000000000004,
+          -35.00000000000001,
+          7.3
+        ],
+        [
+          19.000000000000004,
+          34.99999999999999,
+          16.299999999999997
+        ]
+      ],
+      "features": 4
+    },
+    "Camera_plate_1_4_four_screw_v2": {
+      "one_solid": true,
+      "volume_mm3": 16851.962191624196,
+      "bbox_mm": [
+        [
+          -19.000000000000004,
+          -35.00000000000001,
+          7.3
+        ],
+        [
+          19.000000000000004,
+          34.99999999999999,
+          65.30000000000001
+        ]
+      ],
+      "features": 7
+    },
+    "receiver_to_original_arm_intersection_mm3": 0.0,
+    "plate_to_original_arm_intersection_mm3": 0.0,
+    "plate_to_camera_casing_intersections_mm3": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "receiver_to_camera_casing_intersections_mm3": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "camera_casing_to_original_arm_intersections_mm3": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "receiver_to_plate_designed_friction_interference_mm3": 8.3066666666671
+  },
+  "orientation": {
+    "camera_long_edge_axis": "Y",
+    "gimbal_arm_long_axis": "Y",
+    "insert_direction": "-X",
+    "withdraw_direction": "+X",
+    "underside_mount_pins_remain_along_original_Y_slot": true
+  },
+  "preview_saved": true,
+  "physical_validation": "Not printed or tested. Rail friction and fastener engagement require physical checks.",
+  "visible_opacity": {
+    "Receiver_heat_stake_v2": 1.0,
+    "Camera_plate_1_4_four_screw_v2": 1.0,
+    "Reference_original_gimbal_connector": 1.0,
+    "Reference_camera_casing_0": 1.0,
+    "Reference_camera_casing_1": 1.0,
+    "Reference_camera_casing_2": 1.0
+  }
+}
