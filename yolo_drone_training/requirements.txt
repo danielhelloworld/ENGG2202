@@ -1,0 +1,9 @@
+ultralytics==8.4.104
+ultralytics-thop
+onnx
+onnxruntime
+onnxslim
+Pillow
+PyYAML
+mcos-decoder==0.1.0
+

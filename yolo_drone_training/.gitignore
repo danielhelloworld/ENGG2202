@@ -1,0 +1,14 @@
+.venv/
+.cache/
+runs/
+artifacts/
+raw/
+dataset/incoming/
+dataset/calibration/
+dataset/images/
+dataset/labels/
+*.pt
+*.onnx
+*.zip
+__pycache__/
+*.pyc

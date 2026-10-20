@@ -1,0 +1,8 @@
+-r requirements.txt
+
+# Compatible Apple-MPS stack for this project's macOS / Python 3.11 host.
+numpy==1.26.4
+ml-dtypes==0.5.4
+torch==2.2.2
+torchvision==0.17.2
+opencv-python==4.11.0.86
