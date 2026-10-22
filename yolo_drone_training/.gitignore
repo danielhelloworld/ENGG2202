@@ -1,4 +1,11 @@
 .venv/
+.python/
+.ultralytics/
+Ultralytics/
+.runtime_rgbt/
+.mplconfig/
+smoke_subset/
+smoke_subset_v3new/
 .cache/
 runs/
 artifacts/
