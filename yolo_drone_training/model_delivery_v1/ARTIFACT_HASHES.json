@@ -1,0 +1,7 @@
+{
+  "best.pt": "6a5629f0442a955bbaee625669c49f9a630884d2bf695177f9d4dce9d855ccc3",
+  "best.onnx": "618f733011cf2141fa82081c3a097244c28780be03dfc46c8203d090866a641e",
+  "board_model/model_10515_vnpu.axmodel": "303cc01a69682a21dcc390bf6254f15cfdcc3679c976560be45dd17f0d0a54d3",
+  "board_model/model_10515.mud": "061496df91d95dd77867efdaf3e99a75e5944f211f2d3c555b5ffb14e8eeae8a",
+  "board_model/model_10515_npu.axmodel": "a5c83f60b023c5ec7c77cd9d33545e485a9e14563caf8887d66a6967f6b3cf83"
+}

@@ -1,0 +1,43 @@
+{
+  "version": "drone_rgb_v3_20261030",
+  "classes": {
+    "0": "drone"
+  },
+  "modality": "RGB",
+  "counts": {
+    "train": {
+      "images": 21737,
+      "positive": 18600,
+      "negative": 3137,
+      "objects": 18757
+    },
+    "val": {
+      "images": 1692,
+      "positive": 1043,
+      "negative": 649,
+      "objects": 1043
+    },
+    "final_test": {
+      "images": 528,
+      "positive": 463,
+      "negative": 65,
+      "objects": 471
+    },
+    "regression_test": {
+      "images": 889,
+      "positive": 475,
+      "negative": 414,
+      "objects": 493
+    }
+  },
+  "train_ready": true,
+  "review": "Automated full-file audit plus documented targeted visual review; active flagged queue resolved by keep/quarantine decisions",
+  "historical_regression": "V1 comparison only, not independent",
+  "manifest_sha256": "e8b0268c257760838eaff6498c4587838b759a234b76b2ed31ca25f57d03d17e",
+  "known_limitations": [
+    "Internet-to-MaxiCAM2 domain gap; perform real camera test",
+    "Near-target validation includes grounded drones",
+    "USC supplement is a size-targeted diagnostic"
+  ],
+  "default_training": "V1 best.pt fine-tune; resume=False; 640; AdamW lr0=.001; 60 epochs; patience15; batch16"
+}

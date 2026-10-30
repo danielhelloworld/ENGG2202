@@ -1,0 +1,13 @@
+{
+  "metrics/precision(B)": 0.7842147772058764,
+  "metrics/recall(B)": 0.5043144774688398,
+  "metrics/mAP50(B)": 0.5007873989023495,
+  "metrics/mAP50-95(B)": 0.2099381535869628,
+  "fitness": 0.2099381535869628,
+  "split": "val",
+  "weights_sha256": "6a5629f0442a955bbaee625669c49f9a630884d2bf695177f9d4dce9d855ccc3",
+  "data_version": "drone_rgb_v3_20261030",
+  "confidence_for_AP": 0.001,
+  "nms_iou": 0.7,
+  "operating_threshold_note": "AP uses a confidence sweep; deployment confidence is selected on validation."
+}

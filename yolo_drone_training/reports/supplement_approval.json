@@ -1,0 +1,17 @@
+{
+  "candidates": 363,
+  "kept": {
+    "Zagreb-RGB-2025": 258,
+    "USC-MCL-RGB": 91
+  },
+  "manual_quarantine": 9,
+  "internal_redundant_views": 5,
+  "annotations_and_files": "PASS",
+  "source_split_policy": "Entire Zagreb source validation-only; entire USC source final-test-only",
+  "limitations": [
+    "Visual screening does not certify subpixel box accuracy",
+    "Zagreb large targets include grounded drones and a limited set of sites/models",
+    "USC test addition is a size-targeted diagnostic, not an unbiased estimate of deployment prevalence"
+  ],
+  "approved_for_evaluation_merge": true
+}

@@ -1,0 +1,2 @@
+yolo_drone_training/reports/*.csv text eol=lf
+yolo_drone_training/model_delivery_v1/board_model/*.mud -text -diff

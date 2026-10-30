@@ -1,5 +1,7 @@
 # Drone YOLO11n 640×480 v1 — independent test
 
+**2026-10-30 数据复核更新：下文是保留的 V1 历史结果。复核发现旧来源之间存在缩放重包及视频场景重叠，因此这里的“independent test”不再作为已确认独立的评估使用。当前数据将它命名为 regression_test，仅作历史对比。新方案使用独立来源划分后的 val / final_test。**
+
 The model was trained on `dataset_v2` at 640×640, starting from the official `yolo11n.pt`. Early stopping ended training after epoch 75; the selected `best.pt` comes from epoch 50. These numbers describe an independent test of that PyTorch model at **640×640**, before ONNX conversion or MaixCAM2 deployment.
 
 Command: `python scripts/evaluate.py --model <best.pt> --data dataset_v2/data.yaml --imgsz 640 --device 0 --conf 0.25`.

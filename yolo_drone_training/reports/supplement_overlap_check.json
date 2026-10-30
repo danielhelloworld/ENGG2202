@@ -1,0 +1,7 @@
+{
+  "base_RGB_images": 25112,
+  "supplement_candidates": 363,
+  "exact_duplicates": 0,
+  "visual_review_candidates": 0,
+  "scope": "Exact file hashes plus perceptual hashes and normalized grayscale pixels; candidate screening cannot prove all videos/scenes are independent."
+}

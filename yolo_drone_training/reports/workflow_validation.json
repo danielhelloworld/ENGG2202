@@ -1,0 +1,35 @@
+{
+  "status": "PASS",
+  "checks": {
+    "dataset_full_hash_decode_labels": "PASS",
+    "short_training": "64 train + 32 val, 1 epoch, CPU, original V1 unchanged",
+    "error_analysis": {
+      "images": 16,
+      "confidence": 0.25,
+      "nms_iou": 0.45,
+      "match_iou": 0.5,
+      "tp": 3,
+      "fp": 2,
+      "fn": 8
+    },
+    "onnx_parity": {
+      "status": "PASS",
+      "input": [
+        1,
+        3,
+        480,
+        640
+      ],
+      "output": [
+        1,
+        5,
+        6300
+      ],
+      "max_absolute_error": 0.00042724609375,
+      "mean_absolute_error": 1.4475752323050983e-05,
+      "scope": "FP32 ONNX vs PyTorch on one representative RGB image; quantized board model still tested after conversion"
+    }
+  },
+  "windows_gpu": "Bootstrap performs the CUDA check and smoke test on the destination Windows machine",
+  "formal_v2_training_started": false
+}

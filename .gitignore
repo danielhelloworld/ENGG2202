@@ -1,0 +1,9 @@
+**/.venv/
+**/__pycache__/
+**/.DS_Store
+**/._*
+yolo_drone_training/runs/
+yolo_drone_training/outputs/
+yolo_drone_training/dataset_v3/
+yolo_drone_training/*.cache
+*.part

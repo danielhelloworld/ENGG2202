@@ -1,10 +1,14 @@
-# Drone YOLO11n 640×480 v1 — board deployment
+# V1 模型与板端文件
 
-This package is a **pre-board-validation candidate** for MaixCAM2. Class mapping: `0 = drone` (UAV and drone are the same class). The model requires image input width 640 and height 480. Upload the `.mud` and **all** `.axmodel` files from `board_model/` into `/root/models/` on the board. The application must load the `.mud`, not an `.axmodel` or the training `.pt` file.
+类别 `0: drone`，YOLO11n Detect。此目录保留 V1，不是新训练的 V2。
 
-The board package contains `model_10515.mud`, `model_10515_npu.axmodel`, and `model_10515_vnpu.axmodel`. Update the Fusion and F32C gimbal programs' `model_path` to `/root/models/model_10515.mud` after copying the board files. This release does not change either teammate program. Validate camera preprocessing, bounding boxes, confidence thresholds, false alarms, missed UAVs, frame rate, and gimbal motion on MaxiCAM2 and F32C hardware before claiming deployment success.
+- `best.pt`：下一轮微调起点。
+- `best.onnx`：原V1固定640×480导出。
+- `board_model/model_10515.mud`、`model_10515_npu.axmodel`、`model_10515_vnpu.axmodel`：已完成转换的V1板端包，三个文件一起传到MaxiCAM2。
+- 原V1量化校准图保留在U盘V1交付目录，数据图片不推送GitHub。
+- `TEST_METRICS.md`：历史评估；旧测试集有来源重叠，当前只作历史对比。
+- `SHA256SUMS.txt`：当前目录文件的校验值。
 
-The 100 calibration images are for INT8 conversion and are **not** published as GitHub Release assets. The model, calibration ZIP, and complete independent test output live in the versioned USB delivery folder. `SHA256SUMS.txt` in that folder records the exact artifact hashes.
+板上加载 `.mud`，模型输入640宽×480高。现有融合程序应使用YOLO11及drone类别，控制接口由队友确认。转换文件存在不代表相机识别和F32C闭环已实机通过。完整V1训练曲线、误检漏检图和旧部署记录保留在U盘同级 `deliverables/`。
 
-Independent test: 889 images / 493 drone instances, precision 0.838825, recall 0.758621, mAP50 0.718590, mAP50–95 0.290373, using `best.pt` at 640×640 and confidence 0.25. This does not measure the 640×480 converted board model.
-
+新V2训练和转换流程见上级 `README.md`、`DEPLOYMENT.md`，以及U盘 `READY_TO_TRAIN/START_HERE.md`。

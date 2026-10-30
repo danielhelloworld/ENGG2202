@@ -1,0 +1,7 @@
+{
+  "flagged_active_training_images_reviewed": 59,
+  "keep": 39,
+  "quarantine": 20,
+  "unresolved_active_flagged_images": 0,
+  "review_scope": "Full-file automated audit plus documented targeted visual screening; not a claim of exhaustive manual review of every training image."
+}

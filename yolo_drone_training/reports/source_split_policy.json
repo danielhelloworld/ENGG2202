@@ -1,0 +1,30 @@
+{
+  "active_splits": [
+    "train",
+    "val",
+    "final_test"
+  ],
+  "legacy_train_only_sources": [
+    "aerial",
+    "mendeley"
+  ],
+  "archived_validation_images": 322,
+  "archived_by_source": {
+    "aerial": 128,
+    "mendeley": 194
+  },
+  "active_counts": {
+    "train": 21737,
+    "val": 1692,
+    "final_test": 528,
+    "regression_test": 889
+  },
+  "active_canonical_group_conflicts": {},
+  "historical_overlap_groups": [
+    "legacy_repackaged_aerial_mendeley_unresolved"
+  ],
+  "regression_role": "Historical comparison only; not a certified independent test. Prior V1 training exposure cannot be undone.",
+  "scope": "Canonical known source IDs and conservative legacy-source separation. Unrecorded reused scenes across other public sources remain possible.",
+  "original_files_preserved": true,
+  "ready_for_training": false
+}
