@@ -26,5 +26,6 @@
   "regression_role": "Historical comparison only; not a certified independent test. Prior V1 training exposure cannot be undone.",
   "scope": "Canonical known source IDs and conservative legacy-source separation. Unrecorded reused scenes across other public sources remain possible.",
   "original_files_preserved": true,
-  "ready_for_training": false
+  "ready_for_training": true,
+  "status": "FINAL_POLICY_APPLIED"
 }
