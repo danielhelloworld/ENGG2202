@@ -1,0 +1,8 @@
+{
+  "src\\config.py": "87df6c42e21af43ebe49248088b84118619195bffc3930eb0dd706eb4c1ef3fe",
+  "vendor\\protocol.py": "8f2f101dd74d69f8f8e8defc1a38414a4195391b25b226de0df235a3849ae556",
+  "vendor\\motor_base.py": "c0923a66c43c4611c3ab36846fe0c379db8fac83cb7481fba36edb5b0dab0892",
+  "src\\service.py": "4cb7ee9ac20f2a62b9c3968e63bccdbe3369c1b8ce9562e2c65a9bacb113b7c3",
+  "src\\mechanical_only.py": "b978d542e6fe0e9ad1337f3c84f95ba0c0f7f26634958b477339171652b40063",
+  "src\\ui.py": "93e565c5ec091789f2fdd40800f02510a793c143c65d688fd427cd8175ad93ac"
+}

@@ -1,0 +1,63 @@
+{
+  "app_version": "manual-half-soft-v6",
+  "evidence": "Offline Python motor models and Node browser event model",
+  "physical_validation": false,
+  "hardware_commands_issued": false,
+  "camera_read_only_attempt": {
+    "state": "timed out",
+    "telemetry": "timed out",
+    "exact_physical_fault": "not available"
+  },
+  "app_tests": 154,
+  "shared_motor_tests": 81,
+  "node_event_tests": "passed",
+  "main_sha256": "e519ccff3431b53bdc163cbf32b767ee7245c558e19afbe1b8ba23e40139f6f9",
+  "rates_deg_s": {
+    "manual": [
+      240.0,
+      180.0
+    ],
+    "tracking": [
+      150.0,
+      120.0
+    ],
+    "home": [
+      108.0,
+      90.0
+    ],
+    "outside_recovery": [
+      108.0,
+      90.0
+    ]
+  },
+  "manual_acceleration_ceiling_deg_s2": [
+    900.0,
+    750.0
+  ],
+  "manual_jerk_deg_s3": [
+    6000.0,
+    5000.0
+  ],
+  "position_horizons_deg": {
+    "manual": [
+      12.0,
+      9.0
+    ],
+    "tracking": [
+      10.0,
+      8.0
+    ],
+    "home": [
+      8.0,
+      6.0
+    ],
+    "outside_manual": [
+      3,
+      3
+    ]
+  },
+  "stall_total_s": 1.8,
+  "feedback_loss_grace_s": 0.5,
+  "bounded_feedback_phase_credit_s": 0.04,
+  "source_hashes_valid": true
+}

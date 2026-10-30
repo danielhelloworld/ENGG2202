@@ -1,0 +1,136 @@
+{
+  "source": "GitHub\\Daniel's code\\mainweb.py",
+  "sha256": "993b3923556f50d7417a7dc070da1c4dec3a75adb9a3c1d67d35ded8b1720354",
+  "reference_behavior": "same track ID during 2s loss; timeout clears target and calls gimbal.reset()",
+  "requested_changes": "no sound; screen/web click; both axes reversed; pitch -100..30; optional automatic startup home using inward steps; ARM only holds, HOME separately returns and holds enabled; suspected obstruction disables; two C presses; bounded prediction; blur releases manual and hands off onboard tracking/home/hold, focus reconnects; built-in NPU YOLO double-buffer pipeline",
+  "rates_deg_s": {
+    "manual": [
+      240.0,
+      180.0
+    ],
+    "tracking": [
+      150.0,
+      120.0
+    ],
+    "home": [
+      108.0,
+      90.0
+    ],
+    "outside_recovery": [
+      108.0,
+      90.0
+    ]
+  },
+  "vision": {
+    "model": "/root/models/yolo11n.mud",
+    "dual_buff": true,
+    "aligned_previous_frame": true,
+    "target_inference_fps": 30,
+    "requested_camera_fps": 60,
+    "camera_rotation_preferred": true
+  },
+  "response": {
+    "default_saved_zero": true,
+    "feedback_loss_grace_s": 0.5,
+    "vision_pause_s": 0.45,
+    "vision_disable_s": 2.0,
+    "software_adaptation": true,
+    "scale_bounds": [
+      0.8,
+      1.15
+    ],
+    "torque_feedback": false,
+    "driver_pid_modified": false,
+    "telemetry_samples": 600,
+    "feedback_loss_policy": "actual failed query streak; refresh old data first",
+    "packet_wait_s": 0.04,
+    "refresh_age_s": 0.25,
+    "manual_home_requires_arm": true,
+    "arm_any_valid_pose": true,
+    "outside_manual": "local inward only; release holds current pose",
+    "home_feedback_margin_deg": 2.0,
+    "home_hard_margin_deg": 5.0,
+    "motion_violation_grace_s": 0.3,
+    "stall_observation_s": 1.8,
+    "reverse_confirm_s": 0.4,
+    "control_pause_age_s": 0.5,
+    "watchdog_s": 1.2,
+    "motor_rpm": 40,
+    "software_accel_ceiling_deg_s2": [
+      900.0,
+      750.0
+    ],
+    "manual_jerk_deg_s3": [
+      6000.0,
+      5000.0
+    ],
+    "manual_response_s": 0.1,
+    "manual_limit_braking": true,
+    "manual_lead_saturation_restarts": false,
+    "motor_rpm_ceiling": 40,
+    "driver_rpm_by_mode": {
+      "manual": [
+        40,
+        30
+      ],
+      "tracking": [
+        25,
+        20
+      ],
+      "home": [
+        18,
+        15
+      ]
+    },
+    "tracking_accel_ceiling_deg_s2": [
+      900.0,
+      750.0
+    ],
+    "home_accel_ceiling_deg_s2": [
+      540.0,
+      450.0
+    ],
+    "tracking_correction_multiplier": 5.0,
+    "position_horizons_deg": {
+      "manual": [
+        12.0,
+        9.0
+      ],
+      "tracking": [
+        10.0,
+        8.0
+      ],
+      "home": [
+        8.0,
+        6.0
+      ],
+      "outside_manual": [
+        3,
+        3
+      ]
+    },
+    "feedback_jump_gate": "one position period phase credit AND last successfully written target corridor; rejected sample does not refresh time",
+    "feedback_phase_credit_s": 0.04,
+    "manual_damping_cannot_reverse_request": true,
+    "manual_forward_target_retraction": false
+  },
+  "prediction": {
+    "lead_s": 0.12,
+    "latency_cap_s": 0.12,
+    "max_image_shift": 0.06,
+    "loss_coast_s": 0.15,
+    "coast_rate_deg_s": [
+      4,
+      3
+    ],
+    "same_id_loss_timeout_s": 2.0
+  },
+  "validation": "154 app PC tests, 81 shared motor regressions, Node event model; legitimate written-target feedback phase mismatch reproduced offline and fixed; uncommanded jumps still rejected and expire; camera state/telemetry HTTP timed out; exact physical fault and v6 hardware behavior unverified; no hardware commands issued",
+  "app_version": "manual-half-soft-v6",
+  "speed_multipliers_from_v4": {
+    "home": 3,
+    "tracking": 5,
+    "manual": 5
+  },
+  "manual_speed_multiplier_from_v5": 0.5
+}

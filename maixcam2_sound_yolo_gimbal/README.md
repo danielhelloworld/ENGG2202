@@ -100,7 +100,7 @@
 建立 UTF-8 CSV，列名为 `vx,vy,yaw_deg,pitch_deg`；至少 3 个不同方向，每个方向 ≥5 行。角度应来自底座参照／量角器或确认过的电机实际位置。不要把 SIM 角度拿来作标定真值。
 
 ```powershell
-python -B maixcam2_sound_yolo_gimbal/calibration_table.py measured_sound.csv
+python -B MaixCam/apps/sound_yolo_gimbal/calibration_table.py measured_sound.csv
 ```
 
 脚本输出 `sound_samples`，每行 `[vx,vy,yaw,pitch]`；复制到配置。它会拒绝非数值、明显不稳定、不同角度却热图重合的样本。随后用未参与标定的中间方向测试，确认转向落在相机视场内，再设 `sound_calibrated=True`。代码只允许在最近样本距离 `sound_radius=0.18` 内插值，超过范围就等待，不盲目外推；覆盖不足应补测样本，不宜直接增大半径。
@@ -110,9 +110,9 @@ python -B maixcam2_sound_yolo_gimbal/calibration_table.py measured_sound.csv
 ## 本机验证与维护
 
 ```powershell
-python -B maixcam2_sound_yolo_gimbal/build.py
-python -B -m unittest discover -s maixcam2_sound_yolo_gimbal/tests -v
-python -B maixcam2_sound_yolo_gimbal/simulate.py
+python -B MaixCam/apps/sound_yolo_gimbal/build.py
+python -B -m unittest discover -s MaixCam/apps/sound_yolo_gimbal/tests -v
+python -B MaixCam/apps/sound_yolo_gimbal/simulate.py
 ```
 
 这些命令不导入 MaixPy、不连接硬件；仿真脚本只用标记为 synthetic 的输入演示完整状态变化。`src/` 为维护源码；`vendor/` 为已有声学算法与协议的固定快照；`source_hashes.json` 记录构建输入。原声音模块、电机 demo、1101 代码均未修改或上传。

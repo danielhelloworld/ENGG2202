@@ -5,19 +5,29 @@ without MaixPy, so another application can call SoundDirectionSensor.feed_bytes(
 or poll() and read snapshot(). No camera, YOLO, thermal module or audio input.
 """
 
+import json
 import math
+import os
 import statistics
 import time
 
 
 # Standalone wiring: MA-USB8 TX0 -> MaixCAM2 A31 (UART1 RX),
-# MA-USB8 RX0 -> A30 (UART1 TX), common GND. Power MA-USB8 by its USB-C.
+# Configuration control also needs MaixCAM2 A30 (UART1 TX) -> MA-USB8 RX0.
+# Common GND and independent power are required. No motor commands are sent.
 # UART1 leaves Thermal160 UART2 and MaixVision communication UART4 alone.
 UART_PORT = "/dev/ttyS1"
 UART_BAUD = 2_000_000
 ROTATION_DEG = 0  # Clockwise screen correction: 0/90/180/270.
 MIRROR_X = False
 DISPLAY_INTERVAL_S = 0.08
+LOG_INTERVAL_S = 1.0
+ENABLE_DISPLAY = True  # False: UART diagnostics in MaixVision console only.
+CONFIG_ENABLED = True  # False: retain the original two-wire, read-only test.
+CONFIG_PATH = "/root/micarray_direction/config.json"
+CONFIG_CHECK_INTERVAL_S = 1.0
+COMMAND_INTERVAL_S = 0.03
+DEFAULT_CONFIG = {"detection_threshold": 650, "led_enabled": True}
 STALE_AFTER_S = 1.0
 CENTER_DEAD_ZONE = 0.14  # About one 16x16 cell; do not invent a bearing near center.
 
@@ -29,6 +39,142 @@ PIN_MAP = {
     "/dev/ttyS2": (("B0", "UART2_TX"), ("B1", "UART2_RX")),
     "/dev/ttyS4": (("A21", "UART4_TX"), ("A22", "UART4_RX")),
 }
+
+
+def validate_board_config(value):
+    if not isinstance(value, dict) or set(value) != set(DEFAULT_CONFIG):
+        raise ValueError("Config needs exactly detection_threshold and led_enabled")
+    threshold = value["detection_threshold"]
+    if type(threshold) is not int or not 0 <= threshold <= 2000 or threshold % 50:
+        raise ValueError("detection_threshold must be an integer 0..2000 in steps of 50")
+    if type(value["led_enabled"]) is not bool:
+        raise ValueError("led_enabled must be JSON true or false")
+    return dict(value)
+
+
+def save_board_config(path, value):
+    """Atomically save on the CAMERA filesystem, not in MA-USB8 flash."""
+    value = validate_board_config(value)
+    parent = os.path.dirname(path)
+    if parent:
+        os.makedirs(parent, exist_ok=True)
+    temp = path + ".tmp"
+    try:
+        with open(temp, "w", encoding="utf-8") as stream:
+            stream.write(json.dumps(value, indent=2) + "\n")
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(temp, path)
+    finally:
+        if os.path.exists(temp):
+            os.remove(temp)
+
+
+def load_board_config(path, create=False):
+    try:
+        with open(path, "r", encoding="utf-8-sig") as stream:
+            text = stream.read(4097)
+    except FileNotFoundError:
+        if not create:
+            raise
+        save_board_config(path, DEFAULT_CONFIG)
+        return dict(DEFAULT_CONFIG)
+    if len(text) > 4096:
+        raise ValueError("Config is larger than 4096 characters")
+    return validate_board_config(json.loads(text))
+
+
+class BoardConfigController:
+    """Paced documented t/T/e/E requests; no ACK, readback or flash command.
+
+    An unknown threshold is driven to the documented lower bound by 40 t's,
+    then raised in steps of 50. Correct execution depends on firmware clamping
+    and every command arriving; the requested value is never called readback.
+    """
+
+    def __init__(self, serial):
+        self.serial = serial
+        self.desired = None
+        self.pending = []
+        self.last_send = None
+        self.sent_commands = 0
+        self.status = "NOT_REQUESTED"
+        self.error = None
+
+    def submit(self, value):
+        value = validate_board_config(value)
+        if value == self.desired:
+            return False
+        led_only = (self.status == "SENT_UNCONFIRMED" and self.desired is not None
+                    and value["detection_threshold"] == self.desired["detection_threshold"])
+        self.pending = ([] if led_only else [b"t"] * 40
+                        + [b"T"] * (value["detection_threshold"] // 50))
+        self.pending.append(b"E" if value["led_enabled"] else b"e")
+        self.desired = value
+        self.status = "PENDING"
+        self.error = None
+        print("MICARRAY_CONFIG_REQUEST " + json.dumps(self.snapshot()), flush=True)
+        return True
+
+    def cancel(self, exc):
+        self.pending = []
+        self.desired = None
+        self.status = "CONFIG_ERROR"
+        self.error = str(exc)
+
+    def tick(self, now):
+        if not self.pending or (self.last_send is not None
+                                and now - self.last_send < COMMAND_INTERVAL_S):
+            return
+        command = self.pending[0]
+        try:
+            written = self.serial.write(command)
+            if written != len(command):
+                raise IOError("UART short write: %r" % written)
+        except Exception as exc:
+            self.pending = []
+            self.status = "WRITE_FAILED"
+            self.error = str(exc)
+            print("MICARRAY_CONFIG_WRITE_FAILED", repr(exc), flush=True)
+            return
+        del self.pending[0]
+        self.last_send = now
+        self.sent_commands += 1
+        if not self.pending:
+            self.status = "SENT_UNCONFIRMED"
+            print("MICARRAY_CONFIG_SENT_UNCONFIRMED " + json.dumps(self.snapshot()), flush=True)
+
+    def snapshot(self):
+        return {"requested": self.desired, "status": self.status,
+                "pending_commands": len(self.pending), "sent_commands": self.sent_commands,
+                "error": self.error, "execution_confirmed": False,
+                "driver_flash_save_supported": False}
+
+
+class ConfigFileWatcher:
+    """Reload valid JSON changes without repeatedly shifting the threshold."""
+
+    def __init__(self, path, controller):
+        self.path = path
+        self.controller = controller
+        self.last_check = None
+        self.last_error = None
+
+    def poll(self, now, create=False):
+        if self.last_check is not None and now - self.last_check < CONFIG_CHECK_INTERVAL_S:
+            return
+        self.last_check = now
+        try:
+            value = load_board_config(self.path, create=create)
+        except Exception as exc:
+            self.controller.cancel(exc)
+            message = repr(exc)
+            if message != self.last_error:
+                print("MICARRAY_CONFIG_FILE_ERROR path=%s %s" % (self.path, message), flush=True)
+            self.last_error = message
+            return
+        self.last_error = None
+        self.controller.submit(value)
 
 
 class HotmapFrameParser:
@@ -141,7 +287,7 @@ class SoundDirectionEstimator:
             return self.snapshot(now)
         x = sum(((i % 16) - 7.5) / 7.5 * weight for i, weight in zip(cells, weights)) / mass
         y = sum((7.5 - (i // 16)) / 7.5 * weight for i, weight in zip(cells, weights)) / mass
-        if (self.center is None or gap >= 2 or self.smoothing_s <= 0
+        if (self.center is None or gap >= self.stale_after_s or self.smoothing_s <= 0
                 or math.hypot(x - self.center[0], y - self.center[1]) > 0.5):
             self.center = (x, y)
         else:
@@ -206,9 +352,25 @@ class SoundDirectionSensor:
         self.serial = None
         self.last_payload = None
         self.total_frames = 0
+        self.received_bytes = 0
+        self.last_byte_time = None
+        self.first_rx_hex = ""
+        self.last_rx_hex = ""
+        self.byte_rate = 0.0
+        self.frame_rate = 0.0
+        self._rate_time = None
+        self._rate_bytes = 0
+        self._rate_frames = 0
+        self.board_config = None
 
     def feed_bytes(self, data, now=None):
         now = time.monotonic() if now is None else float(now)
+        if data:
+            self.received_bytes += len(data)
+            self.last_byte_time = now
+            self.last_rx_hex = bytes(data[:32]).hex(" ")
+            if not self.first_rx_hex:
+                self.first_rx_hex = self.last_rx_hex
         frames = self.parser.feed(data)
         for payload in frames:
             self.last_payload = payload
@@ -239,15 +401,73 @@ class SoundDirectionSensor:
         return self.feed_bytes(bytes(data)) if data else 0
 
     def snapshot(self, now=None):
+        now = time.monotonic() if now is None else float(now)
         result = self.estimator.snapshot(now, self.rotation, self.mirror)
         result["frames"] = self.total_frames
         result["discarded_bytes"] = self.parser.discarded_bytes
+        result["received_bytes"] = self.received_bytes
+        result["buffered_bytes"] = len(self.parser.buffer)
+        result["byte_age_seconds"] = (None if self.last_byte_time is None
+                                       else max(0.0, now - self.last_byte_time))
+        result["bytes_per_second"] = self.byte_rate
+        result["frames_per_second"] = self.frame_rate
+        if self.last_byte_time is None:
+            status = "WAIT_BYTES"
+        elif result["byte_age_seconds"] >= self.estimator.stale_after_s:
+            status = "UART_SILENT"
+        elif result["age_seconds"] is None or result["reason"] == "stale":
+            status = "BYTES_NO_FRAME"
+        elif not result["valid"]:
+            status = "FRAME_NO_DIRECTION"
+        elif result["unit_direction_xy"] is None:
+            status = "SOURCE_CENTER"
+        else:
+            status = "DIRECTION_OK"
+        result["status"] = status
+        result["map_direction"] = map_direction(result["image_bearing_deg"])
+        return result
+
+    def sample_rates(self, now=None):
+        """Update rates over actual elapsed time, not over display refreshes."""
+        now = time.monotonic() if now is None else float(now)
+        if self._rate_time is not None and now > self._rate_time:
+            elapsed = now - self._rate_time
+            self.byte_rate = (self.received_bytes - self._rate_bytes) / elapsed
+            self.frame_rate = (self.total_frames - self._rate_frames) / elapsed
+        self._rate_time = now
+        self._rate_bytes = self.received_bytes
+        self._rate_frames = self.total_frames
+
+    def diagnostic_record(self, now=None):
+        result = self.snapshot(now)
+        result["first_rx_hex"] = self.first_rx_hex
+        result["last_rx_hex"] = self.last_rx_hex
+        result["hint"] = STATUS_HINTS[result["status"]]
+        if self.board_config is not None:
+            result["board_control"] = self.board_config.snapshot()
         return result
 
     def close(self):
         serial, self.serial = self.serial, None
         if serial is not None:
             serial.close()
+
+
+STATUS_HINTS = {
+    "WAIT_BYTES": "Check MA-USB8 power, TX0 -> A31, common GND and UART1 ownership",
+    "UART_SILENT": "UART bytes stopped; check power, cable and slip-ring contact",
+    "BYTES_NO_FRAME": "Waiting for binary sync; if persistent, check 2M baud, output mode and HEX",
+    "FRAME_NO_DIRECTION": "Fresh heatmaps received; try one steady sound source and inspect reason",
+    "SOURCE_CENTER": "Source near map center; no unique map bearing",
+    "DIRECTION_OK": "Fresh heatmap with dominant source; map bearing is not calibrated physical DOA",
+}
+
+
+def map_direction(angle):
+    if angle is None:
+        return "--"
+    names = ("UP", "UP-RIGHT", "RIGHT", "DOWN-RIGHT", "DOWN", "DOWN-LEFT", "LEFT", "UP-LEFT")
+    return names[int((angle + 22.5) // 45) % 8]
 
 
 def display_hotmap(img, payload, left, top, size, image, rotation=0, mirror=False):
@@ -284,15 +504,23 @@ def draw_screen(disp, sensor):
     cyan = image.Color.from_rgb(50, 225, 220)
     yellow = image.Color.from_rgb(255, 204, 75)
     muted = image.Color.from_rgb(145, 160, 180)
-    img.draw_string(12, 10, "MICARRAY DIRECTION", white, scale=1.5)
-    img.draw_string(12, 42, "UART 2M | 16x16 SOUND MAP", muted)
-    size = max(128, min(width - 40, height - 210, 320))
-    left, top = (width - size) // 2, 78
+    img.draw_string(12, 10, "MICARRAY MODULE TEST", white, scale=1.5)
+    mode = "TX=A30 RX=A31" if CONFIG_ENABLED else "RX=A31 READ ONLY"
+    img.draw_string(12, 42, "UART1 %s | 2000000 8N1" % mode, muted)
     result = sensor.snapshot()
-    payload = sensor.last_payload if result["age_seconds"] is not None and result["age_seconds"] < STALE_AFTER_S else None
+    img.draw_string(12, 68, result["status"], cyan if result["status"] == "DIRECTION_OK" else yellow)
+    size = max(64, min(width - 72, height - 280, 256))
+    size = size // 16 * 16
+    left, top = (width - size) // 2, 114
+    fresh = (result["age_seconds"] is not None
+             and result["age_seconds"] < sensor.estimator.stale_after_s)
+    payload = sensor.last_payload if fresh else None
     drawn = display_hotmap(img, payload, left, top, size, image,
                            sensor.rotation, sensor.mirror)
     cx, cy = left + drawn // 2, top + drawn // 2
+    img.draw_string(cx - 8, top - 20, "UP", muted)
+    img.draw_string(left - 20, cy - 8, "L", muted)
+    img.draw_string(left + drawn + 8, cy - 8, "R", muted)
     img.draw_circle(cx, cy, 5, white, -1)
     if result["valid"] and result["unit_direction_xy"] is not None:
         x, y = result["unit_direction_xy"]
@@ -304,19 +532,30 @@ def draw_screen(disp, sensor):
                       int(end_y + y * wing + x * wing * .6), cyan, 4)
         img.draw_line(end_x, end_y, int(end_x - x * wing - y * wing * .6),
                       int(end_y + y * wing - x * wing * .6), cyan, 4)
-        line = "MAP ANGLE %03.0f DEG" % result["image_bearing_deg"]
+        line = "MAP %03.0f DEG | %s" % (result["image_bearing_deg"], result["map_direction"])
         quality = "QUALITY %.2f | PEAK AREA %d" % (result["quality"], result["region_cells"])
     elif result["valid"]:
         line, quality = "SOURCE NEAR CENTER", "NO UNIQUE BEARING"
     else:
-        line, quality = "NO DIRECTION: " + result["reason"].upper(), "CHECK SOUND / UART / ALIGNMENT"
-    y0 = min(height - 100, top + drawn + 16)
+        line = "NO DIRECTION"
+        quality = "REASON: " + result["reason"].upper()
+    y0 = top + drawn + 12
     img.draw_string(12, y0, line, yellow, scale=1.2)
-    img.draw_string(12, y0 + 32, quality, muted)
+    img.draw_string(12, y0 + 26, quality, muted)
     age = "--" if result["age_seconds"] is None else "%.1f" % result["age_seconds"]
-    img.draw_string(12, min(height - 34, y0 + 60),
-                    "FRAMES %d | AGE %ss | DROP %d" %
+    img.draw_string(12, y0 + 52, "RX %d B | %.0f B/s | %.1f FPS" %
+                    (result["received_bytes"], result["bytes_per_second"], result["frames_per_second"]), muted)
+    img.draw_string(12, y0 + 76, "FRAMES %d | AGE %ss | DISCARD %d B" %
                     (result["frames"], age, result["discarded_bytes"]), muted)
+    if sensor.board_config is not None:
+        config = sensor.board_config.snapshot()
+        requested = config["requested"]
+        settings = ("THR %d LED %s" % (requested["detection_threshold"],
+                                      "ON" if requested["led_enabled"] else "OFF")
+                    if requested else "CONFIG INVALID")
+        img.draw_string(12, y0 + 100, settings + " | " + config["status"], muted)
+    else:
+        img.draw_string(12, y0 + 100, "Map direction only; physical angle NOT calibrated", muted)
     disp.show(img)
 
 
@@ -327,25 +566,66 @@ def main():
     sensor = SoundDirectionSensor(rotation=ROTATION_DEG, mirror=MIRROR_X)
     disp = None
     try:
-        disp = display.Display()
-        print("MICARRAY_START port=%s baud=%d" % (UART_PORT, UART_BAUD))
+        print("MICARRAY_START port=%s baud=%d read_only=%s" % (UART_PORT, UART_BAUD, not CONFIG_ENABLED), flush=True)
+        print("WIRING: MA-USB8 TX0 -> A31; GND -> GND; independent power", flush=True)
+        if CONFIG_ENABLED:
+            print("CONFIG WIRING: MaixCAM2 A30 -> MA-USB8 RX0 is REQUIRED", flush=True)
         sensor.open_uart(UART_PORT, UART_BAUD)
+        print("MICARRAY_UART_READY (port opened; no received signal confirmed yet)", flush=True)
+        watcher = None
+        if CONFIG_ENABLED:
+            print("MICARRAY_CONFIG_PATH", CONFIG_PATH, flush=True)
+            print("CONFIG saved on camera; requests have no ACK; driver flash persistence unsupported", flush=True)
+            sensor.board_config = BoardConfigController(sensor.serial)
+            watcher = ConfigFileWatcher(CONFIG_PATH, sensor.board_config)
+            watcher.poll(time.monotonic(), create=True)
+        if ENABLE_DISPLAY:
+            try:
+                disp = display.Display()
+            except Exception as exc:
+                print("MICARRAY_DISPLAY_ERROR console diagnostics continue:", repr(exc), flush=True)
         last_draw = 0.0
         last_log = time.monotonic()
+        sensor.sample_rates(last_log)
+        previous_status = None
         while not app.need_exit():
             sensor.poll()
             now = time.monotonic()
-            if now - last_draw >= DISPLAY_INTERVAL_S:
-                draw_screen(disp, sensor)
-                last_draw = now
-            if now - last_log >= 5.0:
-                print("MICARRAY_DIRECTION", sensor.snapshot(now))
+            if watcher is not None:
+                watcher.poll(now)
+                sensor.board_config.tick(now)
+            status = sensor.snapshot(now)["status"]
+            if now - last_log >= LOG_INTERVAL_S:
+                sensor.sample_rates(now)
+                print("MICARRAY_DIAG " + json.dumps(sensor.diagnostic_record(now)), flush=True)
                 last_log = now
+            if status != previous_status:
+                print("MICARRAY_STATE %s: %s" % (status, STATUS_HINTS[status]), flush=True)
+                previous_status = status
+            if disp is not None and now - last_draw >= DISPLAY_INTERVAL_S:
+                try:
+                    draw_screen(disp, sensor)
+                except Exception as exc:
+                    print("MICARRAY_DRAW_ERROR console diagnostics continue:", repr(exc), flush=True)
+                    try:
+                        if hasattr(disp, "close"):
+                            disp.close()
+                    except Exception as close_exc:
+                        print("MICARRAY_CLOSE_ERROR", repr(close_exc), flush=True)
+                    finally:
+                        disp = None
+                last_draw = now
+    except Exception as exc:
+        print("MICARRAY_ERROR", repr(exc), flush=True)
+        raise
     finally:
-        sensor.close()
-        if disp is not None and hasattr(disp, "close"):
-            disp.close()
-        print("MICARRAY_STOP")
+        for resource in (sensor, disp):
+            if resource is not None and hasattr(resource, "close"):
+                try:
+                    resource.close()
+                except Exception as exc:
+                    print("MICARRAY_CLOSE_ERROR", repr(exc), flush=True)
+        print("MICARRAY_STOP", flush=True)
 
 
 if __name__ == "__main__":

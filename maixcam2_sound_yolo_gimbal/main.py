@@ -10,12 +10,11 @@ CONFIG = {
     "motor_ids": (1, 2), "motor_signs": (1, 1),
     "motor_reference": "mechanical",  # Saved physical zero, rebuilt at every connection.
     "motor_raw_zero": (0.0, 0.0),     # Only used in explicit legacy raw mode.
-    "limits": ((-150.0, 150.0), (-100.0, 100.0)),
+    "limits": ((-150.0, 150.0), (-90.0, 90.0)),
     "motor_rpm": 5, "motor_acceleration": 30,
     "max_rate": (25.0, 15.0), "feedback_timeout": 0.15, "watchdog_s": 0.8,
     "feedback_retries": 2, "reference_stationary_deg": 0.2,
     "reference_mismatch_deg": 1.0,
-    "reference_max_age_s": 0.5, "reference_jump_slack_deg": 2.0,
     "motion_guard": True, "motion_error_deg": 3.0,
     "motion_grace_s": 0.8, "motion_window_s": 1.5,
     "motion_progress_deg": 0.5, "motion_reverse_deg": 1.5,
@@ -34,7 +33,7 @@ CONFIG = {
     "settle_tolerance": 2.0, "settle_s": 0.35, "turn_timeout": 15.0,
     "search_timeout": 6.0, "search_amplitude": 12.0, "search_rate": 4.0,
     # mainweb normalized dead zones, EMA and step caps. Gains below act on angles.
-    "deadzone": (70.0 / 1920, 40.0 / 1080), "ema": (0.06, 0.10),
+    "deadzone": (70.0 / 800, 40.0 / 600), "ema": (0.06, 0.10),
     "step_cap": (0.8, 1.0), "visual_gain": (0.7, 0.7),
     "camera_fov": (87.0, 49.0), "pixel_sign": (1, -1),
 }
@@ -62,8 +61,7 @@ def validate_config(c):
     for key in ("feedback_timeout", "watchdog_s", "inference_fps", "vision_max_age", "lost_timeout",
                 "sound_radius", "sound_stable_s", "sound_stable_deg", "sound_fresh_s", "settle_s",
                 "settle_tolerance", "turn_timeout", "search_timeout", "search_amplitude", "search_rate",
-                "reference_stationary_deg", "reference_mismatch_deg", "reference_max_age_s",
-                "reference_jump_slack_deg", "motion_error_deg", "motion_grace_s",
+                "reference_stationary_deg", "reference_mismatch_deg", "motion_error_deg", "motion_grace_s",
                 "motion_window_s", "motion_progress_deg", "motion_reverse_deg"):
         if not finite(c[key]) or c[key] <= 0:
             raise ValueError("Invalid " + key)
@@ -86,8 +84,6 @@ def validate_config(c):
         raise ValueError("Real motion requires motor and sound calibration")
     if c["motor_reference"] not in ("mechanical", "raw"):
         raise ValueError("Invalid motor_reference")
-    if c["motor_enabled"] and c["motor_reference"] != "mechanical":
-        raise ValueError("Real tracking requires mechanical reference for zero-loss protection")
     if not isinstance(c["feedback_retries"], int) or not 1 <= c["feedback_retries"] <= 3:
         raise ValueError("feedback_retries must be 1..3")
     if c["motor_reference"] == "mechanical" and any(lo <= -180 or hi >= 180 for lo, hi in c["limits"]):
@@ -202,7 +198,7 @@ class SoundDirectionEstimator:
 
     def update(self, payload, now=None):
         if len(payload) != 256:
-            raise ValueError("hotmap payload must be 256 bytes")
+            raise ValueError("hotmap payload must be 256 bytes
         now = time.monotonic() if now is None else float(now)
         if self.last_time is not None and now < self.last_time:
             raise ValueError("timestamp moved backward")
@@ -355,6 +351,9 @@ class SoundDirectionSensor:
         serial, self.serial = self.serial, None
         if serial is not None:
             serial.close()
+
+
+
 
 
 # ---- vendor\protocol.py ----
@@ -712,11 +711,6 @@ class MotorService:
         self.armed = False
         self.arm_requested = False
         self.guard = MotionGuard(c)
-        self.reference_valid = False
-        self.reference_fault = None
-        self.captured_reference = None
-        self.raw_feedback = (None, None)
-        self.total_samples = [None, None]
 
     def start(self):
         validate_config(self.c)
@@ -731,8 +725,6 @@ class MotorService:
         with self.lock:
             if self.fault is not None:
                 raise RuntimeError(self.fault)
-            if self.c["motor_enabled"] and not self.reference_valid:
-                raise RuntimeError("ZERO_REFERENCE_LOST: no valid reference")
             self.command_target = tuple(target)
             self.command_time = time.monotonic()
 
@@ -741,13 +733,11 @@ class MotorService:
             return {"angles": self.angles, "ready": self.ready, "fault": self.fault,
                     "age": time.monotonic() - self.feedback_time,
                     "simulated": not self.c["motor_enabled"], "armed": self.armed,
-                    "mechanical_angles": self.mechanical, "reference_zero": self.reference_zero,
-                    "reference_valid": self.reference_valid, "reference_fault": self.reference_fault,
-                    "raw_feedback": self.raw_feedback}
+                    "mechanical_angles": self.mechanical, "reference_zero": self.reference_zero}
 
     def request_arm(self, armed):
         with self.lock:
-            if armed and (self.fault or not self.ready or not self.reference_valid):
+            if armed and (self.fault or not self.ready):
                 raise RuntimeError(self.fault or "Motor not ready")
             self.arm_requested = bool(armed)
 
@@ -766,9 +756,6 @@ class MotorService:
         time.sleep(.002)
         if self.stop_event.is_set() and data[2] != FUNCTION_DISABLE:
             raise RuntimeError("Motor stop requested")
-        # Final transmission gate: no enable or position frame with a lost/stale zero.
-        if data[2] in (FUNCTION_ENABLE, FUNCTION_MULTI_TURN_POSITION):
-            self._require_reference(fresh=True)
         if self.serial.write(data) != len(data):
             raise RuntimeError("Incomplete motor UART write")
 
@@ -799,52 +786,14 @@ class MotorService:
         raise RuntimeError("No valid feedback from motor %d type=%d RX=%s" % (motor_id, kind, bytes(received[-64:]).hex()))
 
     def _feedback(self, motor_id, kind=FEEDBACK_TOTAL_ANGLE):
-        attempts = 1 if self.armed else self.c["feedback_retries"]
-        for attempt in range(attempts):
+        for attempt in range(self.c["feedback_retries"]):
             try:
                 return self._feedback_once(motor_id, kind)
             except RuntimeError:
-                if self.stop_event.is_set() or attempt + 1 >= attempts:
+                if self.stop_event.is_set() or attempt + 1 >= self.c["feedback_retries"]:
                     raise
 
-    def _latch_fault(self, reason, reference_lost=False):
-        with self.lock:
-            self.fault = self.fault or reason
-            self.ready = self.armed = self.arm_requested = self.reference_valid = False
-            self.command_target = self.sent_target = None
-            if reference_lost:
-                self.reference_fault = self.reference_fault or reason
-        self._disable_all()  # Attempt each axis even if the first UART write fails.
-
-    def _lose_reference(self, reason):
-        message = "ZERO_REFERENCE_LOST: " + reason
-        self._latch_fault(message, reference_lost=True)
-        raise RuntimeError(message)
-
-    def _require_reference(self, fresh=False):
-        if self.fault or not self.reference_valid:
-            self._lose_reference("reference unavailable; restart and verify physical zero")
-        if (not isinstance(self.reference_zero, (tuple, list)) or len(self.reference_zero) != 2
-                or any(not isinstance(v, (int, float)) or not math.isfinite(v) for v in self.reference_zero)):
-            self._lose_reference("reference missing or nonfinite")
-        if self.c["motor_enabled"] and tuple(self.reference_zero) != self.captured_reference:
-            self._lose_reference("captured zero reference changed unexpectedly")
-        if fresh and time.monotonic()-self.feedback_time > self.c["reference_max_age_s"]:
-            self._lose_reference("reference feedback expired")
-
-    def _check_total_continuity(self, axis, angle):
-        now = time.monotonic()
-        previous = self.total_samples[axis]
-        if previous is not None:
-            dt = max(0.0, now-previous[0])
-            # Use physical RPM cap, not modulo 360, so whole-turn resets are caught.
-            bound = self.c["motor_rpm"] * 6.0 * dt + self.c["reference_jump_slack_deg"]
-            if abs(angle-previous[1]) > bound:
-                self._lose_reference("total angle discontinuity/reference mismatch on axis %d" % axis)
-        self.total_samples[axis] = (now, angle)
-
     def _capture_reference(self):
-        self.reference_valid = False
         zeros = []
         for mid in self.c["motor_ids"]:
             first = self._feedback(mid)
@@ -853,30 +802,15 @@ class MotorService:
             if abs(last-first) > self.c["reference_stationary_deg"]:
                 raise RuntimeError("Motor moved while reading fixed reference; support load and retry")
             zeros.append(first-mechanical)
-        with self.lock:
-            self.reference_zero = tuple(zeros)
-            self.captured_reference = tuple(zeros)
-            self.reference_valid = True
-        self.total_samples = [None, None]
+        self.reference_zero = tuple(zeros)
 
     def _measure(self):
-        try:
-            self._require_reference(fresh=self.armed)
-            return self._read_measurement()
-        except Exception as exc:
-            if self.stop_event.is_set() or self.reference_fault:
-                raise
-            self._lose_reference(str(exc))
-
-    def _read_measurement(self):
         raw, mechanical = [], []
-        for axis, (mid, zero) in enumerate(zip(self.c["motor_ids"], self.reference_zero)):
+        for mid, zero in zip(self.c["motor_ids"], self.reference_zero):
             first = self._feedback(mid)
-            self._check_total_continuity(axis, first)
             if self.c["motor_reference"] == "mechanical":
                 mech = signed_mechanical(self._feedback(mid, FEEDBACK_MECHANICAL_ANGLE))
                 last = self._feedback(mid)
-                self._check_total_continuity(axis, last)
                 expected = (first+last)/2-zero
                 if abs(signed_mechanical(expected-mech)) > self.c["reference_mismatch_deg"]:
                     raise RuntimeError("Mechanical/total reference mismatch; reconnect after motor restart")
@@ -887,23 +821,10 @@ class MotorService:
                 mechanical.append(None)
         angles = tuple((r-z)*s for r, z, s in zip(raw, self.reference_zero, self.c["motor_signs"]))
         with self.lock:
-            self.angles, self.feedback_time, self.mechanical = angles, min(sample[0] for sample in self.total_samples), tuple(mechanical)
-            self.raw_feedback = tuple(raw)
+            self.angles, self.feedback_time, self.mechanical = angles, time.monotonic(), tuple(mechanical)
         if any(not lo <= v <= hi for v, (lo, hi) in zip(angles, self.c["limits"])):
             raise RuntimeError("Measured position outside calibrated limits")
         return raw, angles
-
-    def _read_diagnostics(self):
-        # Deliberately does not rebuild zero, mark it valid, or refresh control age.
-        totals, mechanical = list(self.raw_feedback), list(self.mechanical)
-        for axis, mid in enumerate(self.c["motor_ids"]):
-            try:
-                totals[axis] = self._feedback(mid)
-                mechanical[axis] = signed_mechanical(self._feedback(mid, FEEDBACK_MECHANICAL_ANGLE))
-            except Exception:
-                pass
-        with self.lock:
-            self.raw_feedback, self.mechanical = tuple(totals), tuple(mechanical)
 
     def _disable_all(self):
         if self.serial is None:
@@ -922,8 +843,6 @@ class MotorService:
             self._write(disable(mid))
         if self.c["motor_reference"] == "mechanical":
             self._capture_reference()
-        else:
-            self.reference_valid = True
         _, angles = self._measure()
         return angles  # Connect disabled and continue reading feedback.
 
@@ -981,7 +900,6 @@ class MotorService:
             else:
                 self.sent_target = tuple(clip(0.0, *lim) for lim in self.c["limits"])
                 self.angles = self.sent_target
-                self.reference_valid = True
                 self.armed = self.arm_requested = True  # Simulation only.
             with self.lock:
                 self.ready = True
@@ -1029,15 +947,16 @@ class MotorService:
         except Exception as exc:
             if self.stop_event.is_set():
                 return  # Intentional shutdown still runs the disable/close finally.
-            self._latch_fault(str(exc))
+            with self.lock:
+                self.fault, self.ready, self.armed = str(exc), False, False
             print("MOTOR_FAULT", str(exc))
+            self._disable_all()
             # Keep feedback available after a fault; recovery never re-arms.
-            disable_retries = 2
             while self.serial is not None and not self.stop_event.wait(.1):
-                if disable_retries:
-                    self._disable_all()
-                    disable_retries -= 1
-                self._read_diagnostics()
+                try:
+                    self._measure()
+                except Exception:
+                    pass
         finally:
             self._disable_all()
             if self.serial is not None:
@@ -1046,7 +965,7 @@ class MotorService:
                 except Exception as exc:
                     print("MOTOR_CLOSE_FAILED", str(exc))
             with self.lock:
-                self.ready = self.armed = self.arm_requested = self.reference_valid = False
+                self.ready = False
 
     def close(self):
         self.stop_event.set()
@@ -1253,3 +1172,4 @@ def run_board(c=CONFIG):
 
 if __name__ == "__main__":
     run_board()
+

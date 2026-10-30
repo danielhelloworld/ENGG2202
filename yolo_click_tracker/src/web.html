@@ -1,0 +1,113 @@
+<!doctype html><html lang="zh-CN"><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1"><title>YOLO 点击跟踪</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#0b1420;color:#e9f1f8;font:16px system-ui,sans-serif}
+main{max-width:900px;margin:auto;padding:28px}h1{font-size:26px;margin-bottom:4px}.muted{color:#9cacbd}
+.panel{border:1px solid #2d4259;border-radius:16px;background:#131f2e;padding:22px;margin-top:18px}
+.row{display:flex;gap:26px;align-items:center;flex-wrap:wrap}button{font:inherit;cursor:pointer;border:0;border-radius:9px;padding:13px 20px;background:#285467;color:white;margin:5px 6px 5px 0}
+button:disabled{opacity:.4;cursor:default}.stop{background:#b23341}.big{font-size:32px;font-variant-numeric:tabular-nums}
+#pad{width:260px;height:260px;position:relative;border:3px solid #526e88;border-radius:50%;touch-action:none;user-select:none;background:linear-gradient(transparent 49.7%,#304052 50%,transparent 50.3%),linear-gradient(90deg,transparent 49.7%,#304052 50%,transparent 50.3%)}
+#knob{position:absolute;width:48px;height:48px;border-radius:50%;background:#28c8bf;left:103px;top:103px;pointer-events:none}
+#notice{color:#ffd18a;white-space:pre-wrap;overflow-wrap:anywhere}kbd{background:#2b4056;padding:2px 7px;border-radius:4px}
+</style><main><h1>YOLO · 点击跟踪</h1><div class="muted">MECH ONLY · 机械角度模式</div>
+<div id="buildInfo" class="muted"></div>
+<p id="mountInfo" class="muted">自动初始化回零 · 左右、上下反向 · PITCH −100°～+30° · 平滑位置控制</p>
+<p id="speedInfo" class="muted">摇杆 YAW 240°/s · PITCH 180°/s；HOME 108 / 90°/s</p>
+<div class="panel"><div class="row"><div><span id="link">未连接控制</span> · <b id="phase">--</b></div><button id="connect">连接控制</button><button id="recheck">重新检查状态</button><button id="stop" class="stop">DISARM / 失能</button></div>
+<div id="notice">加载状态…</div></div>
+<div class="panel"><img id="video" style="display:block;width:100%;height:auto;cursor:crosshair" alt="等待相机画面"><p id="visionInfo">正在连接相机…</p><button id="clear">C：清除目标</button></div><div class="panel row"><div><div class="muted">↑ PITCH · YAW →</div><div id="pad" tabindex="0" aria-label="按住拖动摇杆"><div id="knob"></div></div></div><div>
+<div class="muted">YAW / 水平角度</div><div class="big" id="yaw">--°</div><br>
+<div class="muted">PITCH / 俯仰角度</div><div class="big" id="pitch">--°</div><p id="feedback" class="muted">--</p>
+<p id="mechanical" class="muted">机械反馈：--</p>
+<p id="zeroState">机械零点未确认</p><button id="zero">ZERO OK</button><button id="arm">ARM / 使能保持</button><button id="home">HOME / 回原点</button>
+<p id="armReason" class="muted"></p><p id="responseInfo" class="muted">指令／反馈误差：--</p><a href="/api/telemetry" download="gimbal_feedback.json" style="color:#65d4d0">下载指令与反馈日志</a></div></div>
+<p>先在图像中点击检测框锁定；按 C 清除目标，再按一次 C 回原点。按住摇杆或 <kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd> 转动；松开保持位置。<kbd>空格</kbd> 失能。</p>
+<p class="muted">单次连续移动最多 8 秒，达到后松开再按。离开窗口会松开手动输入，相机继续跟踪／回零或保持；返回后自动接回控制。DISARM／空格请求失能。HOME 完成后保持使能，累计角度不参与控制。</p></main>
+<script>
+'use strict';
+const $=id=>document.getElementById(id), keys=new Set();
+let token=null,seq=0,vector=[0,0],pointer=null,pending='',busy=false,lastState=null,pendingSelection=null,displayedFrame=null;
+let resumeOnFocus=false,detachedToken=null;
+function release(){vector=[0,0];keys.clear();pointer=null;draw();}
+function draw(){ $('knob').style.transform=`translate(${vector[0]*96}px,${-vector[1]*96}px)`; }
+function render(s){lastState=s;$('visionInfo').textContent=`${s.vision_state||'DETECT'}${s.prediction_active?' / 预测补偿':''} · 目标 ${s.selected||'无'} · 控制源 ${s.control_owner||'--'}`;$('clear').textContent=s.c_next_home?'C：回原点':'C：清除目标';$('clear').disabled=!token;$('phase').textContent=s.phase;$('link').textContent=token?'控制已连接':s.connected?'另一网页正在控制':'未连接控制';
+ $('buildInfo').textContent=s.app_version?'版本 '+s.app_version:'';
+ const perf=s.performance;if(perf)$('visionInfo').textContent+=` · YOLO ${Number(perf.inference_fps_actual||0).toFixed(1)}fps · 延迟 ${Number(perf.capture_to_result_ms||0).toFixed(0)}ms`;
+ if(s.limits&&s.joystick_signs)$('mountInfo').textContent=`左右${s.joystick_signs[0]<0?'反向':'正常'} · 上下${s.joystick_signs[1]<0?'反向':'正常'} · PITCH ${s.limits[1][0]}°～${s.limits[1][1]}° · 平滑位置控制`;
+ if(s.outside_work_limits)$('mountInfo').textContent+=' · 当前超出工作限位：ARM 保持，可向内手动调整或单独 HOME';
+ if(s.tracking_rate&&s.max_rate)$('speedInfo').textContent=`摇杆 YAW ${s.max_rate[0]}°/s · PITCH ${s.max_rate[1]}°/s；跟踪 ${s.tracking_rate[0]} / ${s.tracking_rate[1]}°/s；HOME ${s.home_rate[0]} / ${s.home_rate[1]}°/s`;
+ else if(s.max_rate&&s.home_rate)$('speedInfo').textContent=`手动目标上限 YAW ${s.max_rate[0]}°/s · PITCH ${s.max_rate[1]}°/s；HOME ${s.home_rate[0]} / ${s.home_rate[1]}°/s`;
+ const valid=s.reference_valid&&s.control_feedback_seen!==false;
+ const degree=v=>Number.isFinite(v)?v.toFixed(1)+'°':'--';
+ $('yaw').textContent=valid?degree(s.angles[0]):'--';$('pitch').textContent=valid?degree(s.angles[1]):'--';
+ const age=Number.isFinite(s.age)?s.age.toFixed(2)+'s':'尚无有效控制反馈';
+ $('feedback').textContent=`控制反馈：${age} · REF ${s.reference_valid?'VALID':'INVALID'}`;
+ const ma=s.mechanical_angles||[], da=s.mechanical_feedback_age||[];
+ const diag=i=>`${degree(ma[i])}（${Number.isFinite(da[i])?da[i].toFixed(2)+'s 前':'尚未收到'}）`;
+ $('mechanical').textContent=`诊断机械反馈 YAW ${diag(0)} / PITCH ${diag(1)}`;
+ const response=s.response;if(response){const pair=(v,d=1)=>(v||[]).map(x=>Number(x).toFixed(d)).join(' / ');$('responseInfo').textContent=`指令−反馈误差 ${s.armed?pair(response.error_deg)+'°':'--（失能不调参）'} · 软件加速度 ${pair(response.software_accel_deg_s2,0)}°/s² · 响应倍率 ${pair(response.drive_scale,2)} · ${(response.status||[]).join(' / ')}`;}
+ $('zeroState').textContent=s.default_saved_zero&&s.zero_confirmed?'默认使用驱动已保存的机械零点（未重新标定）':s.startup_auto_home&&s.zero_confirmed?'使用驱动已保存的机械零点（自动初始化回零）':s.zero_confirmed?'已确认现有机械零点':'机械零点未确认';
+ const checking=['RECHECK_PENDING','RECHECKING'].includes(s.phase);
+ const arming=!!s.arm_homing;
+ $('notice').textContent=s.outside_hold?'ARM 已保持当前超限姿态；摇杆只允许向正常范围内调整，HOME 单独回零':arming?'正在从当前位置回机械零点（允许起始位置在工作限位外）；到位前屏蔽手动与目标选择':checking?'正在重新检查角度、限位与静止状态，请保持轴静止':s.fault|| (s.hold_blocked?'已达到连续移动上限，请松开后再按':s.phase==='HOME_HOLD'?'已回机械原点，保持使能；可继续摇杆控制，DISARM 请求失能':s.recheck_status==='PASSED'&&!token?(s.zero_confirmed?'重新检查通过，当前失能；连接控制 → ARM 或 HOME':'重新检查通过，当前失能；连接控制 → ZERO OK → 手动使能'):s.notice);
+ if(s.feedback_degraded&&!s.fault)$('notice').textContent=`机械查询暂时失败：保持使能、暂停新运动；连续查询失败 ${Math.round((s.feedback_loss_grace_s||.1)*1000)}ms 才失能`;
+ if(s.motion_warning&&!s.fault)$('notice').textContent='暂时运动偏差：保持使能并复核；'+s.motion_warning;
+ else if(s.motion_paused&&!s.feedback_degraded&&!s.fault)$('notice').textContent='控制暂时延迟，暂停新指令并保持使能';
+ const usable=!!token&&s.ready&&!s.fault;
+ $('connect').disabled=!!token||s.connected||!s.ready||!!s.fault||(s.armed&&s.control_owner!=='LOCAL'&&s.phase!=='HOME_HOLD');
+ $('recheck').disabled=!s.can_recheck||(s.connected&&!token);
+ $('zero').disabled=!usable||s.armed;$('arm').disabled=!usable||s.armed||!s.zero_confirmed;
+ $('home').disabled=!usable||!s.armed||!s.zero_confirmed||s.home_requested;
+ $('armReason').textContent=arming?'回零完成后保持使能；DISARM 可中止回零':checking?'重新检查不会自动使能，也不会改机械零点':s.fault?'使能已阻止：'+s.fault+(s.fault.includes('after disable')?'。失能后仍检测到运动／偏离零位，请支撑并检查负载，静止后点“重新检查状态”。':'。排查后点“重新检查状态”。'):
+  !s.ready?'等待电机就绪':!token?'先连接控制':s.armed?'已使能；DISARM / 空格请求失能':
+  !s.zero_confirmed?'确认已有机械零点正确，再点 ZERO OK':'当前失能；任意位置 ARM 使能保持，再单独 HOME 回机械零点';
+}
+async function post(path,body){const ctl=new AbortController(),timer=setTimeout(()=>ctl.abort(),450);
+ try{const r=await fetch(path,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body),signal:ctl.signal,cache:'no-store'});
+ const j=await r.json();if(!r.ok)throw Error(j.error||r.status);return j;}finally{clearTimeout(timer);}}
+function stop(){resumeOnFocus=false;pendingSelection=null;const old=token||detachedToken;token=null;detachedToken=null;pending='';release();navigator.sendBeacon('/api/stop',new Blob([JSON.stringify({token:old})],{type:'application/json'}));
+ $('link').textContent='已请求失能';}
+function background(){const old=token;release();pending='';pendingSelection=null;if(!old)return;
+ token=null;detachedToken=old;resumeOnFocus=true;
+ const body=JSON.stringify({token:old});
+ if(!navigator.sendBeacon('/api/background',new Blob([body],{type:'application/json'})))fetch('/api/background',{method:'POST',headers:{'Content-Type':'application/json'},body,keepalive:true}).catch(()=>{});
+ $('link').textContent='相机自主跟踪／保持；返回窗口后自动接回';}
+async function connectControl(){release();const j=await post('/api/connect',{});token=j.token;detachedToken=null;seq=0;resumeOnFocus=false;render(j.state);if(document.hidden||!document.hasFocus())background();}
+$('connect').onclick=async()=>{try{await connectControl();}catch(e){$('notice').textContent=e.message;}};
+$('recheck').onclick=async()=>{const old=token;release();pending='';try{const s=await post('/api/recheck',{token:old});token=null;seq=0;render(s);}catch(e){$('notice').textContent=e.message;}};
+$('stop').onclick=stop;
+for(const action of ['zero','arm','home'])$(action).onclick=()=>{release();pending=action;};
+const pad=$('pad');
+function point(e){const r=pad.getBoundingClientRect();let x=(e.clientX-r.left-r.width/2)/(r.width*.4),y=(r.top+r.height/2-e.clientY)/(r.height*.4);let d=Math.hypot(x,y);
+ if(d<.15)vector=[0,0];else{const a=Math.min(1,(d-.15)/.85);vector=[x/d*a,y/d*a];}draw();}
+pad.onpointerdown=e=>{if(!token||pointer!==null)return;e.preventDefault();keys.clear();pointer=e.pointerId;pad.setPointerCapture(pointer);point(e);};
+pad.onpointermove=e=>{if(e.pointerId===pointer)point(e);};
+pad.onpointerup=pad.onpointercancel=pad.onlostpointercapture=e=>{if(e.pointerId===pointer)release();};
+function keyVector(){let x=Number(keys.has('ArrowRight'))-Number(keys.has('ArrowLeft')),y=Number(keys.has('ArrowUp'))-Number(keys.has('ArrowDown')),n=Math.max(1,Math.hypot(x,y));vector=[x/n,y/n];draw();}
+function keyboardAllowed(e){return !e.defaultPrevented&&!e.ctrlKey&&!e.altKey&&!e.metaKey&&!document.hidden&&document.hasFocus()&&!e.target?.isContentEditable&&!['INPUT','TEXTAREA','SELECT'].includes(e.target?.tagName);}
+window.addEventListener('keydown',e=>{if(!keyboardAllowed(e))return;if(e.code==='Space'){e.preventDefault();stop();return;}if(!token||!e.key.startsWith('Arrow'))return;e.preventDefault();if(pointer===null){keys.add(e.key);keyVector();}});
+window.addEventListener('keyup',e=>{if(keys.delete(e.key))keyVector();});
+window.addEventListener('blur',background);window.addEventListener('pagehide',background);
+window.addEventListener('focus',()=>{tick();});
+document.addEventListener('visibilitychange',()=>{if(document.hidden)background();else tick();});
+async function tick(){if(busy)return;busy=true;const current=token;try{if(current){const action=pending;pending='';const v=action?[0,0]:vector.slice();const extra=action==='select'?pendingSelection:{};pendingSelection=null;const s=await post('/api/control',{token:current,seq:++seq,x:v[0],y:v[1],action,...extra});if(token===current)render(s);}
+ else{const r=await fetch('/api/state',{cache:'no-store',signal:AbortSignal.timeout(450)});const s=await r.json();render(s);
+ if(resumeOnFocus&&!document.hidden&&document.hasFocus()&&!s.connected&&s.ready&&!s.fault&&s.control_owner==='LOCAL')await connectControl();}}
+ catch(e){if(current&&token===current)stop();$('notice').textContent='连接失败 / '+e.message+'；请重新连接';}finally{busy=false;setTimeout(tick,80);}}
+
+function clearTarget(){if(!token)return;release();pendingSelection=null;pending='c';}
+$('clear').onclick=clearTarget;
+$('video').onclick=e=>{if(lastState?.arm_homing||lastState?.home_requested){$('notice').textContent='请等待回零完成';return;}if(!token||displayedFrame===null){$('notice').textContent='等待自动回零完成后连接控制，等待最新画面';return;}
+ const r=$('video').getBoundingClientRect();release();pendingSelection={frame_id:displayedFrame,nx:(e.clientX-r.left)/r.width,ny:(e.clientY-r.top)/r.height};pending='select';};
+window.addEventListener('keydown',e=>{if(token&&keyboardAllowed(e)&&e.code==='KeyC'&&!e.repeat){e.preventDefault();clearTarget();}});
+let currentURL=null;
+async function frameTick(){let nextURL=null;try{
+ const r=await fetch('/api/frame',{cache:'no-store',signal:AbortSignal.timeout(600)});if(!r.ok)throw Error('视频暂不可用');
+ const id=Number(r.headers.get('X-Frame-Id')),blob=await r.blob();nextURL=URL.createObjectURL(blob);displayedFrame=null;
+ await new Promise((resolve,reject)=>{const img=$('video');img.onload=resolve;img.onerror=()=>reject(Error('图像解码失败'));img.src=nextURL;});
+ displayedFrame=id;if(currentURL)URL.revokeObjectURL(currentURL);currentURL=nextURL;nextURL=null;
+ }catch(e){displayedFrame=null;$('visionInfo').textContent=e.message;}finally{if(nextURL)URL.revokeObjectURL(nextURL);setTimeout(frameTick,100);}}
+frameTick();
+
+tick();
+</script></html>

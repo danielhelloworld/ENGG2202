@@ -1,0 +1,18 @@
+{
+  "motor_joystick\\src\\config.py": "87df6c42e21af43ebe49248088b84118619195bffc3930eb0dd706eb4c1ef3fe",
+  "yolo_click_tracker\\src\\config.py": "d74a5dd5bda8e09c199652543207a1f0e96a15dbccf69dcd58a4ae17367ca4e1",
+  "motor_joystick\\vendor\\protocol.py": "8f2f101dd74d69f8f8e8defc1a38414a4195391b25b226de0df235a3849ae556",
+  "motor_joystick\\vendor\\motor_base.py": "c0923a66c43c4611c3ab36846fe0c379db8fac83cb7481fba36edb5b0dab0892",
+  "motor_joystick\\src\\service.py": "4cb7ee9ac20f2a62b9c3968e63bccdbe3369c1b8ce9562e2c65a9bacb113b7c3",
+  "motor_joystick\\src\\mechanical_only.py": "b978d542e6fe0e9ad1337f3c84f95ba0c0f7f26634958b477339171652b40063",
+  "motor_joystick\\src\\web.py": "2ac3fb2ab685fce25a921f6e68e3b1709fc67a9631826b15b9d906b8550a6d9a",
+  "yolo_click_tracker\\src\\vision.py": "386c52423062c3f7eeecd47dfb168a3c14b2f8d0d7fb65e2932be1628eb08406",
+  "yolo_click_tracker\\src\\response.py": "05a31e9605cbc9b2a5074065e4b00b9009615be789b29fbdb153f032b98d24c4",
+  "yolo_click_tracker\\src\\tracking_motor.py": "fb3250fb067799400cd5c9a54eee357ef44b4e0fca04be48284725a5100210cb",
+  "yolo_click_tracker\\src\\prediction.py": "eb0bde969669791524af7b59af6b1f34f972277c478b8722a267b8cb9a12b7e0",
+  "yolo_click_tracker\\src\\tracking.py": "e020b016a349184f342436c7beffda9271c8d86e66e57478957911208c749dde",
+  "yolo_click_tracker\\src\\hub.py": "abf14230600acc1b7079061be9489b3d0c2cb68b3839d74b24ce3723254c90ed",
+  "yolo_click_tracker\\src\\runtime.py": "22b3f8a2b763841324b1b885b64761a751a1c3d0faff92eacfe64c2ec35eb7d4",
+  "yolo_click_tracker\\src\\web.html": "3f729e006e5c398f6b96c2583d29c938de67fdbbf73253f2bec13b4f24804d6e",
+  "yolo_click_tracker/build.py": "eed47021bfc57745c8b00f14b4462b31f85627992fb948655f2354147bacb8f4"
+}
