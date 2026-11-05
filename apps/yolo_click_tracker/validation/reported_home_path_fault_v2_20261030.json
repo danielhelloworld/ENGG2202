@@ -1,0 +1,8 @@
+{
+  "source": "user screenshot codex-clipboard-f88e439e-451f-40fe-b3de-8d05faf27967.png",
+  "running_version": "feedback-query-v2",
+  "reported_fault": "ZERO_REFERENCE_LOST: Recovery axis 0 escaped its path toward zero",
+  "v2_home_feedback_margin_deg": 0.2,
+  "code_change": "v3 feedback tolerance 2 deg; moderate deviation pauses and rechecks for 300ms, large or persistent deviation stops",
+  "evidence_limit": "Screenshot does not provide actual deviation magnitude or prove inertia is the underlying cause. HTTP access timed out. New behavior tested with PC models only."
+}

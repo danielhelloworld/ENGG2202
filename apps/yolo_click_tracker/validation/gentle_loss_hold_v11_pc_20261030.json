@@ -1,0 +1,18 @@
+{
+  "app_version": "gentle-loss-hold-v11",
+  "python_tests": 171,
+  "shared_motor_tests": 81,
+  "node_tests": "passed",
+  "physical_v11_verified": false,
+  "live_v10_fault": "Unsafe single-turn step; no target sent",
+  "fault_context": "LOST",
+  "fault_actual_deg": [
+    -30.5,
+    -24.1
+  ],
+  "fault_planned_velocity_deg_s": [
+    -62.9556,
+    -49.1684
+  ],
+  "main_sha256": "e9d53439ea4c3c17d352c4f727d9d68de7840b440107ca4401be79d93be1ab68"
+}

@@ -1,0 +1,29 @@
+{
+  "weights": {
+    "vision": 0.7,
+    "sound": 0.15,
+    "thermal": 0.15
+  },
+  "max_age": {
+    "vision": 0.35,
+    "sound": 0.6,
+    "thermal": 0.6
+  },
+  "pair_delta": 0.25,
+  "association_radius": 0.12,
+  "visual_confirm": 0.8,
+  "confirm_hits": 3,
+  "hold_seconds": 0.8,
+  "model_path": "/root/models/yolo11n.mud",
+  "model_type": "YOLO11",
+  "drone_labels": [
+    "drone",
+    "uav",
+    "quadcopter"
+  ],
+  "thermal_to_rgb": null,
+  "sound_to_rgb": null,
+  "calibration_resolution": null,
+  "sound_calibration_bounds": null,
+  "camera_fps": 30
+}

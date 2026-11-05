@@ -1,0 +1,966 @@
+{
+  "source": "http://192.168.100.210:8080/api/state",
+  "mode": "read-only, no commands issued",
+  "samples": [
+    {
+      "angles": [
+        -51.5,
+        120.1
+      ],
+      "ready": true,
+      "fault": null,
+      "age": 0.06513520900011827,
+      "simulated": false,
+      "armed": false,
+      "mechanical_angles": [
+        -51.5,
+        120.1
+      ],
+      "reference_zero": [
+        0.0,
+        0.0
+      ],
+      "reference_valid": true,
+      "reference_fault": null,
+      "raw_feedback": [
+        null,
+        null
+      ],
+      "phase": "DISABLED",
+      "zero_confirmed": true,
+      "target": [
+        -26.5,
+        -8.0
+      ],
+      "home_requested": false,
+      "angle_source": "mechanical_only",
+      "cumulative_angle_used": false,
+      "limits": [
+        [
+          -150.0,
+          150.0
+        ],
+        [
+          -100.0,
+          30.0
+        ]
+      ],
+      "joystick_signs": [
+        -1,
+        -1
+      ],
+      "position_mode": 4,
+      "max_rate": [
+        30.0,
+        24.0
+      ],
+      "home_rate": [
+        18.0,
+        14.0
+      ],
+      "control_feedback_seen": true,
+      "mechanical_feedback_age": [
+        0.004918957999962004,
+        0.053558000000066386
+      ],
+      "last_angle_jump": null,
+      "recheck_status": "PASSED",
+      "can_recheck": true,
+      "arm_homing": false,
+      "auto_home_on_arm": false,
+      "tracking_rate": [
+        30.0,
+        24.0
+      ],
+      "suspicious_motion": null,
+      "motor_rate_ceiling": [
+        30.0,
+        24.0
+      ],
+      "recovery_active": false,
+      "startup_auto_home": true,
+      "outside_hold": false,
+      "startup_completed": true,
+      "outside_work_limits": true,
+      "connected": false,
+      "notice": "已请求双轴失能；再次操作请重新连接",
+      "hold_blocked": false,
+      "vision_state": "DETECT",
+      "selected": null,
+      "c_next_home": false,
+      "frame_id": 7824,
+      "vision_age": 0.05140974999994796,
+      "prediction_active": false,
+      "prediction_center": null,
+      "estimated_target_velocity": [
+        0.0,
+        0.0
+      ],
+      "control_owner": "NONE"
+    },
+    {
+      "angles": [
+        -51.5,
+        120.1
+      ],
+      "ready": true,
+      "fault": null,
+      "age": 0.09644562500011489,
+      "simulated": false,
+      "armed": false,
+      "mechanical_angles": [
+        -51.5,
+        120.1
+      ],
+      "reference_zero": [
+        0.0,
+        0.0
+      ],
+      "reference_valid": true,
+      "reference_fault": null,
+      "raw_feedback": [
+        null,
+        null
+      ],
+      "phase": "DISABLED",
+      "zero_confirmed": true,
+      "target": [
+        -26.5,
+        -8.0
+      ],
+      "home_requested": false,
+      "angle_source": "mechanical_only",
+      "cumulative_angle_used": false,
+      "limits": [
+        [
+          -150.0,
+          150.0
+        ],
+        [
+          -100.0,
+          30.0
+        ]
+      ],
+      "joystick_signs": [
+        -1,
+        -1
+      ],
+      "position_mode": 4,
+      "max_rate": [
+        30.0,
+        24.0
+      ],
+      "home_rate": [
+        18.0,
+        14.0
+      ],
+      "control_feedback_seen": true,
+      "mechanical_feedback_age": [
+        0.004873124999903666,
+        0.06898712499992143
+      ],
+      "last_angle_jump": null,
+      "recheck_status": "PASSED",
+      "can_recheck": true,
+      "arm_homing": false,
+      "auto_home_on_arm": false,
+      "tracking_rate": [
+        30.0,
+        24.0
+      ],
+      "suspicious_motion": null,
+      "motor_rate_ceiling": [
+        30.0,
+        24.0
+      ],
+      "recovery_active": false,
+      "startup_auto_home": true,
+      "outside_hold": false,
+      "startup_completed": true,
+      "outside_work_limits": true,
+      "connected": false,
+      "notice": "已请求双轴失能；再次操作请重新连接",
+      "hold_blocked": false,
+      "vision_state": "DETECT",
+      "selected": null,
+      "c_next_home": false,
+      "frame_id": 7826,
+      "vision_age": 0.055964375000030486,
+      "prediction_active": false,
+      "prediction_center": null,
+      "estimated_target_velocity": [
+        0.0,
+        0.0
+      ],
+      "control_owner": "NONE"
+    },
+    {
+      "angles": [
+        -51.5,
+        120.1
+      ],
+      "ready": true,
+      "fault": null,
+      "age": 0.0892164159999993,
+      "simulated": false,
+      "armed": false,
+      "mechanical_angles": [
+        -51.5,
+        120.1
+      ],
+      "reference_zero": [
+        0.0,
+        0.0
+      ],
+      "reference_valid": true,
+      "reference_fault": null,
+      "raw_feedback": [
+        null,
+        null
+      ],
+      "phase": "DISABLED",
+      "zero_confirmed": true,
+      "target": [
+        -26.5,
+        -8.0
+      ],
+      "home_requested": false,
+      "angle_source": "mechanical_only",
+      "cumulative_angle_used": false,
+      "limits": [
+        [
+          -150.0,
+          150.0
+        ],
+        [
+          -100.0,
+          30.0
+        ]
+      ],
+      "joystick_signs": [
+        -1,
+        -1
+      ],
+      "position_mode": 4,
+      "max_rate": [
+        30.0,
+        24.0
+      ],
+      "home_rate": [
+        18.0,
+        14.0
+      ],
+      "control_feedback_seen": true,
+      "mechanical_feedback_age": [
+        0.0052401670000108425,
+        0.06301170799997635
+      ],
+      "last_angle_jump": null,
+      "recheck_status": "PASSED",
+      "can_recheck": true,
+      "arm_homing": false,
+      "auto_home_on_arm": false,
+      "tracking_rate": [
+        30.0,
+        24.0
+      ],
+      "suspicious_motion": null,
+      "motor_rate_ceiling": [
+        30.0,
+        24.0
+      ],
+      "recovery_active": false,
+      "startup_auto_home": true,
+      "outside_hold": false,
+      "startup_completed": true,
+      "outside_work_limits": true,
+      "connected": false,
+      "notice": "已请求双轴失能；再次操作请重新连接",
+      "hold_blocked": false,
+      "vision_state": "DETECT",
+      "selected": null,
+      "c_next_home": false,
+      "frame_id": 7828,
+      "vision_age": 0.05075716599981206,
+      "prediction_active": false,
+      "prediction_center": null,
+      "estimated_target_velocity": [
+        0.0,
+        0.0
+      ],
+      "control_owner": "NONE"
+    },
+    {
+      "angles": [
+        -51.5,
+        120.1
+      ],
+      "ready": true,
+      "fault": null,
+      "age": 0.029418333999956303,
+      "simulated": false,
+      "armed": false,
+      "mechanical_angles": [
+        -51.5,
+        120.1
+      ],
+      "reference_zero": [
+        0.0,
+        0.0
+      ],
+      "reference_valid": true,
+      "reference_fault": null,
+      "raw_feedback": [
+        null,
+        null
+      ],
+      "phase": "DISABLED",
+      "zero_confirmed": true,
+      "target": [
+        -26.5,
+        -8.0
+      ],
+      "home_requested": false,
+      "angle_source": "mechanical_only",
+      "cumulative_angle_used": false,
+      "limits": [
+        [
+          -150.0,
+          150.0
+        ],
+        [
+          -100.0,
+          30.0
+        ]
+      ],
+      "joystick_signs": [
+        -1,
+        -1
+      ],
+      "position_mode": 4,
+      "max_rate": [
+        30.0,
+        24.0
+      ],
+      "home_rate": [
+        18.0,
+        14.0
+      ],
+      "control_feedback_seen": true,
+      "mechanical_feedback_age": [
+        0.029493124999817155,
+        0.0014041669999187434
+      ],
+      "last_angle_jump": null,
+      "recheck_status": "PASSED",
+      "can_recheck": true,
+      "arm_homing": false,
+      "auto_home_on_arm": false,
+      "tracking_rate": [
+        30.0,
+        24.0
+      ],
+      "suspicious_motion": null,
+      "motor_rate_ceiling": [
+        30.0,
+        24.0
+      ],
+      "recovery_active": false,
+      "startup_auto_home": true,
+      "outside_hold": false,
+      "startup_completed": true,
+      "outside_work_limits": true,
+      "connected": false,
+      "notice": "已请求双轴失能；再次操作请重新连接",
+      "hold_blocked": false,
+      "vision_state": "DETECT",
+      "selected": null,
+      "c_next_home": false,
+      "frame_id": 7830,
+      "vision_age": 0.08198612499995761,
+      "prediction_active": false,
+      "prediction_center": null,
+      "estimated_target_velocity": [
+        0.0,
+        0.0
+      ],
+      "control_owner": "NONE"
+    },
+    {
+      "angles": [
+        -51.5,
+        120.1
+      ],
+      "ready": true,
+      "fault": null,
+      "age": 0.08450687499998821,
+      "simulated": false,
+      "armed": false,
+      "mechanical_angles": [
+        -51.5,
+        120.1
+      ],
+      "reference_zero": [
+        0.0,
+        0.0
+      ],
+      "reference_valid": true,
+      "reference_fault": null,
+      "raw_feedback": [
+        null,
+        null
+      ],
+      "phase": "DISABLED",
+      "zero_confirmed": true,
+      "target": [
+        -26.5,
+        -8.0
+      ],
+      "home_requested": false,
+      "angle_source": "mechanical_only",
+      "cumulative_angle_used": false,
+      "limits": [
+        [
+          -150.0,
+          150.0
+        ],
+        [
+          -100.0,
+          30.0
+        ]
+      ],
+      "joystick_signs": [
+        -1,
+        -1
+      ],
+      "position_mode": 4,
+      "max_rate": [
+        30.0,
+        24.0
+      ],
+      "home_rate": [
+        18.0,
+        14.0
+      ],
+      "control_feedback_seen": true,
+      "mechanical_feedback_age": [
+        0.08458562500004518,
+        0.05544233299997359
+      ],
+      "last_angle_jump": null,
+      "recheck_status": "PASSED",
+      "can_recheck": true,
+      "arm_homing": false,
+      "auto_home_on_arm": false,
+      "tracking_rate": [
+        30.0,
+        24.0
+      ],
+      "suspicious_motion": null,
+      "motor_rate_ceiling": [
+        30.0,
+        24.0
+      ],
+      "recovery_active": false,
+      "startup_auto_home": true,
+      "outside_hold": false,
+      "startup_completed": true,
+      "outside_work_limits": true,
+      "connected": false,
+      "notice": "已请求双轴失能；再次操作请重新连接",
+      "hold_blocked": false,
+      "vision_state": "DETECT",
+      "selected": null,
+      "c_next_home": false,
+      "frame_id": 7832,
+      "vision_age": 0.14252995899983034,
+      "prediction_active": false,
+      "prediction_center": null,
+      "estimated_target_velocity": [
+        0.0,
+        0.0
+      ],
+      "control_owner": "NONE"
+    },
+    {
+      "angles": [
+        -51.5,
+        120.1
+      ],
+      "ready": true,
+      "fault": null,
+      "age": 0.0344145839999328,
+      "simulated": false,
+      "armed": false,
+      "mechanical_angles": [
+        -51.5,
+        120.1
+      ],
+      "reference_zero": [
+        0.0,
+        0.0
+      ],
+      "reference_valid": true,
+      "reference_fault": null,
+      "raw_feedback": [
+        null,
+        null
+      ],
+      "phase": "DISABLED",
+      "zero_confirmed": true,
+      "target": [
+        -26.5,
+        -8.0
+      ],
+      "home_requested": false,
+      "angle_source": "mechanical_only",
+      "cumulative_angle_used": false,
+      "limits": [
+        [
+          -150.0,
+          150.0
+        ],
+        [
+          -100.0,
+          30.0
+        ]
+      ],
+      "joystick_signs": [
+        -1,
+        -1
+      ],
+      "position_mode": 4,
+      "max_rate": [
+        30.0,
+        24.0
+      ],
+      "home_rate": [
+        18.0,
+        14.0
+      ],
+      "control_feedback_seen": true,
+      "mechanical_feedback_age": [
+        0.034489124999936394,
+        0.005588332999877821
+      ],
+      "last_angle_jump": null,
+      "recheck_status": "PASSED",
+      "can_recheck": true,
+      "arm_homing": false,
+      "auto_home_on_arm": false,
+      "tracking_rate": [
+        30.0,
+        24.0
+      ],
+      "suspicious_motion": null,
+      "motor_rate_ceiling": [
+        30.0,
+        24.0
+      ],
+      "recovery_active": false,
+      "startup_auto_home": true,
+      "outside_hold": false,
+      "startup_completed": true,
+      "outside_work_limits": true,
+      "connected": false,
+      "notice": "已请求双轴失能；再次操作请重新连接",
+      "hold_blocked": false,
+      "vision_state": "DETECT",
+      "selected": null,
+      "c_next_home": false,
+      "frame_id": 7834,
+      "vision_age": 0.0973516250001012,
+      "prediction_active": false,
+      "prediction_center": null,
+      "estimated_target_velocity": [
+        0.0,
+        0.0
+      ],
+      "control_owner": "NONE"
+    },
+    {
+      "angles": [
+        -51.5,
+        120.1
+      ],
+      "ready": true,
+      "fault": null,
+      "age": 0.03880987499996991,
+      "simulated": false,
+      "armed": false,
+      "mechanical_angles": [
+        -51.5,
+        120.1
+      ],
+      "reference_zero": [
+        0.0,
+        0.0
+      ],
+      "reference_valid": true,
+      "reference_fault": null,
+      "raw_feedback": [
+        null,
+        null
+      ],
+      "phase": "DISABLED",
+      "zero_confirmed": true,
+      "target": [
+        -26.5,
+        -8.0
+      ],
+      "home_requested": false,
+      "angle_source": "mechanical_only",
+      "cumulative_angle_used": false,
+      "limits": [
+        [
+          -150.0,
+          150.0
+        ],
+        [
+          -100.0,
+          30.0
+        ]
+      ],
+      "joystick_signs": [
+        -1,
+        -1
+      ],
+      "position_mode": 4,
+      "max_rate": [
+        30.0,
+        24.0
+      ],
+      "home_rate": [
+        18.0,
+        14.0
+      ],
+      "control_feedback_seen": true,
+      "mechanical_feedback_age": [
+        0.03891216700003497,
+        0.0013381670000853774
+      ],
+      "last_angle_jump": null,
+      "recheck_status": "PASSED",
+      "can_recheck": true,
+      "arm_homing": false,
+      "auto_home_on_arm": false,
+      "tracking_rate": [
+        30.0,
+        24.0
+      ],
+      "suspicious_motion": null,
+      "motor_rate_ceiling": [
+        30.0,
+        24.0
+      ],
+      "recovery_active": false,
+      "startup_auto_home": true,
+      "outside_hold": false,
+      "startup_completed": true,
+      "outside_work_limits": true,
+      "connected": false,
+      "notice": "已请求双轴失能；再次操作请重新连接",
+      "hold_blocked": false,
+      "vision_state": "DETECT",
+      "selected": null,
+      "c_next_home": false,
+      "frame_id": 7836,
+      "vision_age": 0.09667691699996794,
+      "prediction_active": false,
+      "prediction_center": null,
+      "estimated_target_velocity": [
+        0.0,
+        0.0
+      ],
+      "control_owner": "NONE"
+    },
+    {
+      "angles": [
+        -51.5,
+        120.1
+      ],
+      "ready": true,
+      "fault": null,
+      "age": 0.012829875000079483,
+      "simulated": false,
+      "armed": false,
+      "mechanical_angles": [
+        -51.5,
+        120.1
+      ],
+      "reference_zero": [
+        0.0,
+        0.0
+      ],
+      "reference_valid": true,
+      "reference_fault": null,
+      "raw_feedback": [
+        null,
+        null
+      ],
+      "phase": "DISABLED",
+      "zero_confirmed": true,
+      "target": [
+        -26.5,
+        -8.0
+      ],
+      "home_requested": false,
+      "angle_source": "mechanical_only",
+      "cumulative_angle_used": false,
+      "limits": [
+        [
+          -150.0,
+          150.0
+        ],
+        [
+          -100.0,
+          30.0
+        ]
+      ],
+      "joystick_signs": [
+        -1,
+        -1
+      ],
+      "position_mode": 4,
+      "max_rate": [
+        30.0,
+        24.0
+      ],
+      "home_rate": [
+        18.0,
+        14.0
+      ],
+      "control_feedback_seen": true,
+      "mechanical_feedback_age": [
+        0.012898082999981852,
+        0.001006167000014102
+      ],
+      "last_angle_jump": null,
+      "recheck_status": "PASSED",
+      "can_recheck": true,
+      "arm_homing": false,
+      "auto_home_on_arm": false,
+      "tracking_rate": [
+        30.0,
+        24.0
+      ],
+      "suspicious_motion": null,
+      "motor_rate_ceiling": [
+        30.0,
+        24.0
+      ],
+      "recovery_active": false,
+      "startup_auto_home": true,
+      "outside_hold": false,
+      "startup_completed": true,
+      "outside_work_limits": true,
+      "connected": false,
+      "notice": "已请求双轴失能；再次操作请重新连接",
+      "hold_blocked": false,
+      "vision_state": "DETECT",
+      "selected": null,
+      "c_next_home": false,
+      "frame_id": 7838,
+      "vision_age": 0.05592808300002616,
+      "prediction_active": false,
+      "prediction_center": null,
+      "estimated_target_velocity": [
+        0.0,
+        0.0
+      ],
+      "control_owner": "NONE"
+    },
+    {
+      "angles": [
+        -51.5,
+        120.1
+      ],
+      "ready": true,
+      "fault": null,
+      "age": 0.08867216599992389,
+      "simulated": false,
+      "armed": false,
+      "mechanical_angles": [
+        -51.5,
+        120.1
+      ],
+      "reference_zero": [
+        0.0,
+        0.0
+      ],
+      "reference_valid": true,
+      "reference_fault": null,
+      "raw_feedback": [
+        null,
+        null
+      ],
+      "phase": "DISABLED",
+      "zero_confirmed": true,
+      "target": [
+        -26.5,
+        -8.0
+      ],
+      "home_requested": false,
+      "angle_source": "mechanical_only",
+      "cumulative_angle_used": false,
+      "limits": [
+        [
+          -150.0,
+          150.0
+        ],
+        [
+          -100.0,
+          30.0
+        ]
+      ],
+      "joystick_signs": [
+        -1,
+        -1
+      ],
+      "position_mode": 4,
+      "max_rate": [
+        30.0,
+        24.0
+      ],
+      "home_rate": [
+        18.0,
+        14.0
+      ],
+      "control_feedback_seen": true,
+      "mechanical_feedback_age": [
+        0.0046487090000937314,
+        0.060737250000101994
+      ],
+      "last_angle_jump": null,
+      "recheck_status": "PASSED",
+      "can_recheck": true,
+      "arm_homing": false,
+      "auto_home_on_arm": false,
+      "tracking_rate": [
+        30.0,
+        24.0
+      ],
+      "suspicious_motion": null,
+      "motor_rate_ceiling": [
+        30.0,
+        24.0
+      ],
+      "recovery_active": false,
+      "startup_auto_home": true,
+      "outside_hold": false,
+      "startup_completed": true,
+      "outside_work_limits": true,
+      "connected": false,
+      "notice": "已请求双轴失能；再次操作请重新连接",
+      "hold_blocked": false,
+      "vision_state": "DETECT",
+      "selected": null,
+      "c_next_home": false,
+      "frame_id": 7840,
+      "vision_age": 0.04905250000001615,
+      "prediction_active": false,
+      "prediction_center": null,
+      "estimated_target_velocity": [
+        0.0,
+        0.0
+      ],
+      "control_owner": "NONE"
+    },
+    {
+      "angles": [
+        -51.5,
+        120.1
+      ],
+      "ready": true,
+      "fault": null,
+      "age": 0.017214416999877358,
+      "simulated": false,
+      "armed": false,
+      "mechanical_angles": [
+        -51.5,
+        120.1
+      ],
+      "reference_zero": [
+        0.0,
+        0.0
+      ],
+      "reference_valid": true,
+      "reference_fault": null,
+      "raw_feedback": [
+        null,
+        null
+      ],
+      "phase": "DISABLED",
+      "zero_confirmed": true,
+      "target": [
+        -26.5,
+        -8.0
+      ],
+      "home_requested": false,
+      "angle_source": "mechanical_only",
+      "cumulative_angle_used": false,
+      "limits": [
+        [
+          -150.0,
+          150.0
+        ],
+        [
+          -100.0,
+          30.0
+        ]
+      ],
+      "joystick_signs": [
+        -1,
+        -1
+      ],
+      "position_mode": 4,
+      "max_rate": [
+        30.0,
+        24.0
+      ],
+      "home_rate": [
+        18.0,
+        14.0
+      ],
+      "control_feedback_seen": true,
+      "mechanical_feedback_age": [
+        0.01740687500000604,
+        0.005710500000077445
+      ],
+      "last_angle_jump": null,
+      "recheck_status": "PASSED",
+      "can_recheck": true,
+      "arm_homing": false,
+      "auto_home_on_arm": false,
+      "tracking_rate": [
+        30.0,
+        24.0
+      ],
+      "suspicious_motion": null,
+      "motor_rate_ceiling": [
+        30.0,
+        24.0
+      ],
+      "recovery_active": false,
+      "startup_auto_home": true,
+      "outside_hold": false,
+      "startup_completed": true,
+      "outside_work_limits": true,
+      "connected": false,
+      "notice": "已请求双轴失能；再次操作请重新连接",
+      "hold_blocked": false,
+      "vision_state": "DETECT",
+      "selected": null,
+      "c_next_home": false,
+      "frame_id": 7842,
+      "vision_age": 0.06939266700010194,
+      "prediction_active": false,
+      "prediction_center": null,
+      "estimated_target_velocity": [
+        0.0,
+        0.0
+      ],
+      "control_owner": "NONE"
+    }
+  ]
+}

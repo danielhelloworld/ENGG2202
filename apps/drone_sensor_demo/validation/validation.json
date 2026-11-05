@@ -1,0 +1,15 @@
+{
+  "date": "2026-10-30",
+  "unit_tests": 15,
+  "unit_tests_passed": 15,
+  "desktop_window_and_slider_smoke": "passed",
+  "synthetic_scenarios": 6,
+  "board_entry_test": "fake devices only",
+  "hardware_validation": false,
+  "trained_drone_weights_included": false,
+  "default_weights": {
+    "vision": 0.7,
+    "sound": 0.15,
+    "thermal": 0.15
+  }
+}

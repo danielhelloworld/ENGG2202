@@ -1,0 +1,9 @@
+{
+  "app_version": "selection-inertia-v10",
+  "python_tests": 168,
+  "node_event_tests": "passed",
+  "live_browser_version": "stop-diagnostic-v8",
+  "hardware_v10_verified": false,
+  "root_cause_found": "browser sent STOP on rejected control request",
+  "main_sha256": "b0af31ea231b65801265dd6261b36f7346db7ce1e3495152968c1222e027c147"
+}

@@ -1,0 +1,9292 @@
+{
+  "schema": 1,
+  "units": "degrees, seconds",
+  "samples": [
+    {
+      "t": 62.84801307,
+      "phase": "CONNECTING",
+      "control_context": "MANUAL",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.017401874999997347,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 62.951297862,
+      "phase": "DISABLED",
+      "control_context": "MANUAL",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -24.0,
+        -20.0
+      ],
+      "feedback_age_s": 0.014837624999998411,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 69.780667115,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.01293366699999865,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 69.944493824,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02412287500000332,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 70.102590907,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.025229708000011897,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 70.231251407,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.014149791999997774,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 70.359116865,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02323791599999936,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 70.506310324,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.029108832999995116,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 70.663469032,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.028398541000001387,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 70.794612741,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.022877166999990095,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 70.934988449,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.04206279199999585,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 71.067265074,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02454699999999832,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 71.218225783,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.025473499999989713,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 71.361228283,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02602174999999818,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 71.502054866,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.050598666999988495,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 71.637729533,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.029033416999993733,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 71.771163908,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02463825000000952,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 71.895519908,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.04116675000000214,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 72.028389116,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.028581125000002316,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 72.165947741,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.028700583000002666,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 72.297854075,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.017391875000001278,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 72.426622908,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.0292657920000039,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 72.547115241,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.042654916000003595,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 72.7086537,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03720533300000284,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 72.860653075,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.028628707999999392,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 73.010996075,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.016765707999994106,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 73.149582158,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.015467833000002429,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 73.286287409,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.0396230839999987,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 73.413651659,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.028984583999999813,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 73.563353242,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.014634792000009611,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 73.719775034,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.032138166999999385,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 73.870146992,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.04118004200000769,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 74.020359451,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03595220900000129,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 74.230946742,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.012607333000005383,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 74.377920451,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.023166499999987877,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 74.531456367,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.024493708000008496,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 74.658380659,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.015879749999996307,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 74.788268618,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02880533399999763,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 74.936940909,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.012376833000004694,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 75.061925993,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.014915166999998064,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 75.201576534,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02742824999999982,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 75.318312868,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.011972084000007044,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 75.462298618,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.012555708000007826,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 75.600656826,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.0148500000000098,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 75.742985618,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03251662499999952,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 75.877527243,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03378566700000363,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 76.00250016,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.033993291999991015,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 76.135999702,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.025634584000002292,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 76.282415118,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.025275250000007077,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 76.420948285,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.031635291999990045,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 76.528178035,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.029489166999994154,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 76.686059952,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.027687249999999608,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 76.849475244,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.0398603750000035,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 76.95958216,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.4
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.037290583000000765,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 77.088302285,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.014457082999996373,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.06976019485701992
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -0.6081940303227413
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 77.20218816,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.013298708000007764,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.08951261640492877
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -0.23546837166831536
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 77.342702077,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.014180542000005403,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0968700744085052
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -0.07300305222257153
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 77.519909161,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03851795900000354,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09929392866096856
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -0.01667131858990884
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 77.675326661,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.026210125000005746,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09980709715583859
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -0.004566430381465408
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 77.816260661,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.025047541999995815,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09994042037061567
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -0.0014113206560856183
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 77.943777744,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.030240125000005946,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09997942134344255
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -0.000487561749077626
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 78.084947577,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02992858300000023,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999365430908162
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -0.00015035657736849222
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 78.243948744,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02585079099999632,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999831360409175
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -3.99588678857358e-05
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 78.399340078,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.030300458999988678,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999953804437436
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -1.0946028143693024e-05
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 78.520575536,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.013009707999998454,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999983177949132
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -3.985987146767723e-06
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 78.655064703,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.012872458999993341,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0999999451592609
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -1.2994529010285663e-06
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 78.788876661,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.029849917000007054,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999998202057025
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -4.260233226775276e-07
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 78.952165161,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.026229374999999777,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999999538736745
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -1.0929667434206672e-07
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 79.092023953,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.0231682080000013,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999999856198641
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -3.40739794210131e-08
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 79.223073661,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.012201333000007253,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0999999995176223
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -1.1430156859157356e-08
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 79.375037328,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.013878208000008385,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999999986405518
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -3.2214187491360544e-09
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 79.519796953,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.028162332999997375,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999999995931391
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -9.6426020477649e-10
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 79.643778662,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.024188709000000586,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999999998551962
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -3.4331521585954715e-10
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 79.77929162,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.01305624999999111,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999999999532651
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -1.1094066921373387e-10
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 79.906162995,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.012323457999997345,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999999999838219
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -3.853617029715851e-11
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 80.02842087,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02274700000000962,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0999999999994212
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -1.3916715734972401e-11
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 80.171257953,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.029914832999992313,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999999999982992
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -4.23203682815066e-12
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 80.336696454,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03265729200001033,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999999999996355
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -1.0658444777656584e-12
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 80.49201487,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03603975000000048,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.09999999999999619
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -2.922080652659926e-13
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 80.649145079,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.046555458999989696,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.1000000000000052
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -7.887355238961209e-14
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 80.77643037,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.025151082999997243,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.10000000000000737
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -2.730796066508171e-14
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 80.937366037,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.031625417000000766,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.10000000000000822
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -7.14113201382085e-15
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 81.081365287,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02976895799999113,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.10000000000000844
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -2.150882559721897e-15
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 81.219280996,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02567095899999572,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.1000000000000085
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -6.81839030814455e-16
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 81.387175621,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.0381937499999907,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.10000000000000851
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -1.6825910166176958e-16
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 81.494997037,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.05606362500000728,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -6.870872812623747e-17
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 81.653242246,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.012291709000010087,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -1.8321925604159336e-17
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 81.786445454,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02423354100000097,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -6.040094382822683e-18
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 81.938553163,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03422854199999392,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -2.0471305647727216e-18
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 82.110694038,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.035837042000011365,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -4.0495430170151627e-19
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 82.252560788,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        12.1,
+        117.3
+      ],
+      "commanded_deg": [
+        12.1,
+        117.4
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.01692216699998994,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.10000000000000853
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -1.2415871213642086e-19
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 87.761610582,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.9,
+        10.5
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.034416750000005436,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 87.90222229,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.9,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.03279095799999254,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 88.041662666,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.9,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.02696941699998945,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 88.212083207,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.9,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.029155250000002297,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 88.330777249,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.9,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.01543941699999607,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 88.471304999,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.7,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.02756587499999341,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 88.606010541,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.7,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.030546917000009444,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 88.756489041,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.8,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.019126958000001082,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 88.926645499,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.9,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.03904250000000786,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 89.057505916,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.9,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.022503666999995176,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 89.208816708,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.9,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.017192375000007587,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 89.363976541,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.7,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.028670707999992828,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 89.4703695,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.7,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.022285500000009506,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 89.612051,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.8,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.012667958999998064,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 89.747865166,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.9,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.021447499999993624,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 89.880279375,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.9,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.012343666999996117,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 90.020665458,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.9,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.028654582999990907,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 90.166821667,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        22.1,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02685699999999258,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 90.324771042,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        22.0,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03180583399999648,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 90.470077958,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        22.0,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.043626833000004694,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 90.603143042,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        22.1,
+        10.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.0313273750000036,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 90.734237417,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        22.1,
+        10.5
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.015240000000005693,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 90.863489542,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        22.1,
+        10.5
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.018836167000003456,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 91.014762875,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.9,
+        10.5
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02441866600000253,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 91.138716667,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        21.9,
+        10.5
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.024059292000004007,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 91.282497584,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        22.0,
+        10.5
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.0383002920000024,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 91.473892417,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        22.1,
+        10.5
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.04983183299999894,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 91.608122501,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        22.1,
+        10.5
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.029511333999991507,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 102.229556006,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        25.7,
+        6.5
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.022594333999990113,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 102.363346922,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        25.7,
+        6.5
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.030548332999998706,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 102.476813881,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        25.7,
+        6.5
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.027321249999999964,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 102.609836131,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        25.8,
+        6.5
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.022766916999998443,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 102.739329839,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        25.8,
+        6.5
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.025384625000000938,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 102.889183923,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        25.9,
+        6.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        0.0,
+        0.0
+      ],
+      "feedback_age_s": 0.031707917000005637,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 103.008170923,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        25.9,
+        6.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.012166624999991882,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 103.165719006,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.0,
+        6.6
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02621895800000118,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 103.301678173,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.1,
+        6.7
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.013737750000004212,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 103.427799715,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.2,
+        6.7
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02509454200000505,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 103.585358256,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.2,
+        6.7
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.01369129100000066,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 103.742256173,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.3,
+        6.7
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03710670799999605,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 103.885796881,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.3,
+        6.8
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03005687499999965,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 103.989374881,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.3,
+        6.8
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02346124999999688,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 104.148045132,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.3,
+        6.8
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03126162499999907,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 104.292381507,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.3,
+        6.9
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03705675000000497,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 104.444360507,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.3,
+        7.0
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02759799999999757,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 104.571537423,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.3,
+        7.0
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.022254707999991297,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 104.675873882,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.3,
+        7.0
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.05038970900000095,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 104.803387882,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.4,
+        7.0
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03640079199999491,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 104.933599507,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.4,
+        6.9
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.013292582999994806,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 105.072311465,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.4,
+        7.0
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.0266747080000016,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 105.21825959,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.4,
+        7.0
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.018008457999997063,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 105.37575384,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.4,
+        7.0
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.035486125000005586,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 105.536912257,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.4,
+        7.0
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.044727666,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 105.670708424,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.4,
+        7.0
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.033095875000000774,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 105.812795049,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.4,
+        7.0
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.023442291999998588,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 105.971108507,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.4,
+        7.1
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.01263920799999596,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 106.116137382,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.4,
+        7.1
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.027784791000001974,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 106.269867216,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.5,
+        7.1
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.030803499999990436,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 106.387254966,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.5,
+        7.1
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.031241832999995722,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 106.529073716,
+      "phase": "DISABLED",
+      "control_context": "HOLD",
+      "armed": false,
+      "actual_deg": [
+        26.5,
+        7.1
+      ],
+      "commanded_deg": null,
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.012148832999997694,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 106.711586799,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.5,
+        7.1
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.030161790999997606,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 106.8578843,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.5,
+        7.1
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.013156584000000748,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 106.998181133,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.5,
+        7.1
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03271016700000473,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 107.162805341,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.5,
+        7.1
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03874362499999506,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 107.299165258,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.5,
+        7.1
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.024706250000008367,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 107.433668633,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.5,
+        7.1
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.012361208000001511,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.05493194515184502
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -0.28246204083532855
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 107.568862008,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.5,
+        7.1
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.0246326249999953,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.031302023161159924
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -0.0917180798475987
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 107.6814803,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.5,
+        7.1
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.01246683300000484,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.019563322585732183
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -0.035825756481027496
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 107.846072383,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.5,
+        7.1
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.01570387499999981,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.009865268968478492
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          -0.009110201818147399
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 107.9891558,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.6,
+        7.1
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.0355029170000023,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          -0.10000000000000142,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.08350236598526171,
+          0.0054280094739739175
+        ],
+        "measured_velocity_deg_s": [
+          0.32060115827704766,
+          -0.002757981388515982
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 108.10615805,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.6,
+        7.1
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.019154499999999075,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          -0.10000000000000142,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.09411418934127926,
+          0.0033345767308523176
+        ],
+        "measured_velocity_deg_s": [
+          0.1209944148593246,
+          -0.0010408581992958103
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 108.263269634,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.6,
+        7.0
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02407270899999503,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          -0.10000000000000142,
+          0.09999999999999964
+        ],
+        "error_rms_deg": [
+          0.09844627115322702,
+          0.06607380517114027
+        ],
+        "measured_velocity_deg_s": [
+          0.032652762218297986,
+          -0.6345616614616294
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 108.428909759,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.5,
+        6.5
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.023522959000004562,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.5999999999999996
+        ],
+        "error_rms_deg": [
+          0.05180374745445227,
+          0.417914507193555
+        ],
+        "measured_velocity_deg_s": [
+          -0.3220408631142643,
+          -3.0124988439229523
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 108.594912842,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.9,
+        6.7
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03314600000000212,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          -0.3999999999999986,
+          0.39999999999999947
+        ],
+        "error_rms_deg": [
+          0.2837839212522373,
+          0.47065720564013497
+        ],
+        "measured_velocity_deg_s": [
+          2.0541964448122423,
+          0.5358426104981739
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 108.715365884,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.8,
+        7.2
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.026399416999993264,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          -0.3000000000000007,
+          -0.10000000000000053
+        ],
+        "error_rms_deg": [
+          0.2941607788732054,
+          0.2958362599094287
+        ],
+        "measured_velocity_deg_s": [
+          0.22690614094747152,
+          2.8260515771577897
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 108.887460967,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.8,
+        7.2
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02965091699999789,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          -0.3000000000000007,
+          -0.10000000000000053
+        ],
+        "error_rms_deg": [
+          0.2986187862107932,
+          0.18687541256297757
+        ],
+        "measured_velocity_deg_s": [
+          0.0540752573508477,
+          0.3763271874451939
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 109.031023092,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.9,
+        7.2
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03742433300000414,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          -0.3999999999999986,
+          -0.10000000000000053
+        ],
+        "error_rms_deg": [
+          0.3722815372017604,
+          0.13241022355551488
+        ],
+        "measured_velocity_deg_s": [
+          0.3416351870414444,
+          0.11373984768330826
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 109.177075842,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.9,
+        7.7
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.028950915999999438,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          -0.3999999999999986,
+          -0.6000000000000005
+        ],
+        "error_rms_deg": [
+          0.45261555942082465,
+          0.40795396577406967
+        ],
+        "measured_velocity_deg_s": [
+          -0.47066958522517965,
+          3.4613638287280213
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 109.328640801,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.6,
+        7.2
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03084858400001167,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          -0.10000000000000142,
+          -0.10000000000000053
+        ],
+        "error_rms_deg": [
+          0.255165860672273,
+          0.22641389157682149
+        ],
+        "measured_velocity_deg_s": [
+          -1.1680079612503582,
+          -0.44810503322979134
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 109.486886634,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        24.2,
+        7.1
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.01436662500000807,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          2.3000000000000007,
+          0.0
+        ],
+        "error_rms_deg": [
+          1.6712476053204601,
+          0.1257126141000089
+        ],
+        "measured_velocity_deg_s": [
+          -13.580584744487224,
+          -0.708546028641204
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 109.635415009,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        24.5,
+        7.0
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.013158833000005643,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          2.0,
+          0.09999999999999964
+        ],
+        "error_rms_deg": [
+          2.1540431709015437,
+          0.10808993014129918
+        ],
+        "measured_velocity_deg_s": [
+          -0.21150990063452646,
+          -1.077907947698864
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 109.763238634,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        25.1,
+        7.1
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.025609416000008878,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          1.3999999999999986,
+          0.0
+        ],
+        "error_rms_deg": [
+          1.7181810052679496,
+          0.0799283458720619
+        ],
+        "measured_velocity_deg_s": [
+          2.455549308422191,
+          0.2714308436483892
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 109.919115926,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        25.9,
+        7.0
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.033516625000004296,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.6000000000000014,
+          0.09999999999999964
+        ],
+        "error_rms_deg": [
+          1.118215539013905,
+          0.09494526625813927
+        ],
+        "measured_velocity_deg_s": [
+          4.527372020976998,
+          -0.25841210824875716
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 110.074183343,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.1,
+        7.0
+      ],
+      "commanded_deg": [
+        26.5,
+        7.1
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.06852445900000248,
+      "feedback_degraded": true,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.0,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          0.0,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "IDLE",
+          "IDLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 110.255450634,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.1,
+        7.0
+      ],
+      "commanded_deg": [
+        26.2,
+        7.0
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.032722290999998904,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.09999999999999787,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.07840981708972933,
+          0.0
+        ],
+        "measured_velocity_deg_s": [
+          -0.5370353585721634,
+          0.0
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 110.393973301,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.2,
+        6.9
+      ],
+      "commanded_deg": [
+        26.2,
+        7.0
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.015662665999997216,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.09999999999999964
+        ],
+        "error_rms_deg": [
+          0.0667285393689438,
+          0.06582862645845702
+        ],
+        "measured_velocity_deg_s": [
+          0.46653090564232147,
+          -0.6357730681704874
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 110.502445218,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.2,
+        7.0
+      ],
+      "commanded_deg": [
+        26.2,
+        7.0
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.02551570800000036,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.06263523951346212,
+          0.04189301195003647
+        ],
+        "measured_velocity_deg_s": [
+          0.4302451905439084,
+          0.16215945074826366
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 110.60480851,
+      "phase": "ARMED",
+      "control_context": "HOLD",
+      "armed": true,
+      "actual_deg": [
+        26.2,
+        6.9
+      ],
+      "commanded_deg": [
+        26.2,
+        7.0
+      ],
+      "requested_rate_deg_s": [
+        -0.0,
+        -0.0
+      ],
+      "feedback_age_s": 0.03576241700000082,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.09999999999999964
+        ],
+        "error_rms_deg": [
+          0.040889566235782555,
+          0.08053695529385513
+        ],
+        "measured_velocity_deg_s": [
+          0.18335955502620885,
+          -0.49154877526747154
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "HOLD",
+          "HOLD"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 110.74017926,
+      "phase": "MANUAL",
+      "control_context": "MANUAL",
+      "armed": true,
+      "actual_deg": [
+        26.2,
+        6.9
+      ],
+      "commanded_deg": [
+        26.4,
+        7.0
+      ],
+      "requested_rate_deg_s": [
+        3.282575978962267,
+        -0.7541025045076233
+      ],
+      "feedback_age_s": 0.035007792000001814,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.1999999999999993,
+          0.09999999999999964
+        ],
+        "error_rms_deg": [
+          0.14538484826183978,
+          0.08192338708709163
+        ],
+        "measured_velocity_deg_s": [
+          0.3290218926070867,
+          -0.42881637589397403
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "STABLE",
+          "STABLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    },
+    {
+      "t": 110.938943801,
+      "phase": "MANUAL",
+      "control_context": "MANUAL",
+      "armed": true,
+      "actual_deg": [
+        26.4,
+        6.6
+      ],
+      "commanded_deg": [
+        26.4,
+        6.6
+      ],
+      "requested_rate_deg_s": [
+        -29.646063866867834,
+        -3.675727711490595
+      ],
+      "feedback_age_s": 0.039695249999994076,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ],
+        "error_rms_deg": [
+          0.1396447269186957,
+          0.05476754972659946
+        ],
+        "measured_velocity_deg_s": [
+          0.809519609137466,
+          -1.3522357327060979
+        ],
+        "drive_scale": [
+          1.0,
+          1.0
+        ],
+        "software_accel_deg_s2": [
+          85.0,
+          68.0
+        ],
+        "rate_correction_deg_s": [
+          0.0,
+          0.0
+        ],
+        "status": [
+          "STABLE",
+          "STABLE"
+        ],
+        "torque_feedback_available": false,
+        "driver_pid_modified": false
+      }
+    }
+  ],
+  "notes": "Only armed, fresh-feedback samples are used for software tuning. No torque/current feedback; driver PID unchanged.",
+  "state": {
+    "angles": [
+      26.4,
+      6.6
+    ],
+    "ready": false,
+    "fault": "ZERO_REFERENCE_LOST: trusted mechanical feedback missing for >=100ms",
+    "age": 239.82927224,
+    "simulated": false,
+    "armed": false,
+    "mechanical_angles": [
+      10.7,
+      120.6
+    ],
+    "reference_zero": [
+      0.0,
+      0.0
+    ],
+    "reference_valid": false,
+    "reference_fault": "ZERO_REFERENCE_LOST: trusted mechanical feedback missing for >=100ms",
+    "raw_feedback": [
+      null,
+      null
+    ],
+    "phase": "FAULT",
+    "zero_confirmed": true,
+    "target": null,
+    "home_requested": false,
+    "angle_source": "mechanical_only",
+    "cumulative_angle_used": false,
+    "limits": [
+      [
+        -150.0,
+        150.0
+      ],
+      [
+        -100.0,
+        30.0
+      ]
+    ],
+    "joystick_signs": [
+      -1,
+      -1
+    ],
+    "position_mode": 4,
+    "max_rate": [
+      30.0,
+      24.0
+    ],
+    "home_rate": [
+      24.0,
+      20.0
+    ],
+    "control_feedback_seen": true,
+    "mechanical_feedback_age": [
+      0.12730649999997468,
+      0.10204787499998247
+    ],
+    "last_angle_jump": null,
+    "recheck_status": "PASSED",
+    "can_recheck": true,
+    "app_version": "feedback-100ms-v1",
+    "arm_homing": false,
+    "auto_home_on_arm": false,
+    "tracking_rate": [
+      30.0,
+      24.0
+    ],
+    "suspicious_motion": null,
+    "motor_rate_ceiling": [
+      30.0,
+      24.0
+    ],
+    "feedback_degraded": false,
+    "feedback_loss_grace_s": 0.1,
+    "feedback_axis_age_s": [
+      0.12739133399998082,
+      0.10213270899998861
+    ],
+    "feedback_issues": [
+      null,
+      null
+    ],
+    "feedback_rejected_samples": [
+      0,
+      1
+    ],
+    "response": {
+      "error_deg": [
+        0.0,
+        0.0
+      ],
+      "error_rms_deg": [
+        0.0,
+        0.0
+      ],
+      "measured_velocity_deg_s": [
+        0.0,
+        0.0
+      ],
+      "drive_scale": [
+        1.0,
+        1.0
+      ],
+      "software_accel_deg_s2": [
+        85.0,
+        68.0
+      ],
+      "rate_correction_deg_s": [
+        0.0,
+        0.0
+      ],
+      "status": [
+        "IDLE",
+        "IDLE"
+      ],
+      "torque_feedback_available": false,
+      "driver_pid_modified": false
+    },
+    "default_saved_zero": true,
+    "response_context": "HOLD",
+    "recovery_active": false,
+    "startup_auto_home": true,
+    "outside_hold": false,
+    "startup_completed": false,
+    "outside_work_limits": false,
+    "connected": false,
+    "notice": "已请求双轴失能；再次操作请重新连接",
+    "hold_blocked": false,
+    "vision_state": "DETECT",
+    "selected": null,
+    "c_next_home": false,
+    "frame_id": 6930,
+    "vision_age": 0.05109245900001724,
+    "prediction_active": false,
+    "prediction_center": null,
+    "estimated_target_velocity": [
+      0.0,
+      0.0
+    ],
+    "performance": {
+      "inference_fps_actual": 25.2,
+      "detect_api_ms": 7.001416999969479,
+      "capture_to_result_ms": 41.4461670000037,
+      "dual_buff": true,
+      "model_path": "/root/models/yolo11n.mud",
+      "model_kind": "YOLO11",
+      "camera_rotation": true
+    },
+    "control_owner": "NONE"
+  },
+  "visual_target": null
+}
