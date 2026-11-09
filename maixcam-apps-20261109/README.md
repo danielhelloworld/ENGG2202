@@ -2,6 +2,9 @@
 
 本目录收录本地 `MaixCam/apps` 的全部 **222 个文件**，共 **7 个应用**。目录结构和原始字节均保留。每个文件的大小与 SHA-256 见 [快照清单](snapshot-manifest.json)。
 
+- 各应用的当前进度、验证阶段与运行阻塞项见 [模块进度与已知问题](MODULE_STATUS.md)。
+- 跟随延迟、PID、过顶、声源方位、热像检测、标定和多模态融合见 [功能研究进度](RESEARCH_STATUS.md)。
+
 | 应用 | 文件数 | 入口或说明 |
 | --- | ---: | --- |
 | YOLO 点选跟踪 | 97 | [main.py](yolo_click_tracker/main.py) · `tight-velocity-v43` |
