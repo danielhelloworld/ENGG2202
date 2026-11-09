@@ -1,0 +1,23 @@
+{
+  "version": "speed-track-v37",
+  "date": "2026-11-09",
+  "tracking_motor_control": "speed",
+  "hardware_validation": false,
+  "checks": {
+    "tracker_unittest": {
+      "passed": 281
+    },
+    "standalone_joystick_unittest": {
+      "passed": 108
+    },
+    "standalone_joystick_web_client": "passed",
+    "generated_source_hashes": "passed"
+  },
+  "speed_tests": 13,
+  "entrypoint": "apps/yolo_click_tracker/main.py",
+  "limitations": [
+    "Integer RPM resolution is 6 deg/s.",
+    "Model validation does not measure inertia or braking performance.",
+    "No hardware deployment or motor actuation performed."
+  ]
+}

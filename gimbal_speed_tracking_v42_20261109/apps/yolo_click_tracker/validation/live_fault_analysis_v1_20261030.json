@@ -1,0 +1,10 @@
+{
+  "running_version": "feedback-100ms-v1",
+  "reported_fault": "ZERO_REFERENCE_LOST: trusted mechanical feedback missing for >=100ms",
+  "sample_count": 181,
+  "armed_samples": 88,
+  "manual_samples": 2,
+  "source": "read-only existing camera telemetry; no motor commands issued",
+  "code_review_finding": "v1 checks accepted data wall age before attempting the next serial read; v2 instead measures actual failed-query streaks",
+  "evidence_limit": "Telemetry cadence does not establish UART query frequency or prove absence of all real packet loss. v2 timing regressions are PC models, not board acceptance."
+}

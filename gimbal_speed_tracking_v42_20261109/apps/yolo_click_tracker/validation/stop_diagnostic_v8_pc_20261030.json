@@ -1,0 +1,12 @@
+{
+  "app_version": "stop-diagnostic-v8",
+  "app_tests": 166,
+  "shared_motor_tests": 81,
+  "node_event_tests": "passed",
+  "physical_direction_verified": false,
+  "physical_disable_reason_confirmed": false,
+  "screenshot_state": "DISABLED without FAULT; misleading control-pause notice",
+  "camera_http": "timed out",
+  "hardware_commands_issued": false,
+  "main_sha256": "9c3296442b26bde63599ec0b1ea18c1ce406adec9df8eb2d22ca14cd9120b2e5"
+}

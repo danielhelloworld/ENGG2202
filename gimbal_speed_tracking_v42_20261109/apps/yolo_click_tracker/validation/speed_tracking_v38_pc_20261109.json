@@ -1,0 +1,18 @@
+{
+  "version": "speed-track-v38",
+  "date": "2026-11-09",
+  "user_report": "Automatic tracking ran in reverse on both axes with v37.",
+  "correction": "Separate speed-mode polarity from encoder and joystick signs; apply in RPM generation, safety checks and telemetry.",
+  "speed_mode_signs": [
+    -1,
+    -1
+  ],
+  "checks": {
+    "tracker_unittest_passed": 284,
+    "speed_tests_passed": 16,
+    "generated_source_hashes": "passed"
+  },
+  "model_note": "Independent plant speed polarity reflects reported reverse direction; includes positive/negative targets and all encoder sign combinations.",
+  "hardware_validation_after_fix": false,
+  "entrypoint": "apps/yolo_click_tracker/main.py"
+}

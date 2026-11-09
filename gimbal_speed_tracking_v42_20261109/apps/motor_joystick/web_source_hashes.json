@@ -1,0 +1,11 @@
+{
+  "src/config.py": "87df6c42e21af43ebe49248088b84118619195bffc3930eb0dd706eb4c1ef3fe",
+  "vendor/protocol.py": "8f2f101dd74d69f8f8e8defc1a38414a4195391b25b226de0df235a3849ae556",
+  "vendor/motor_base.py": "c0923a66c43c4611c3ab36846fe0c379db8fac83cb7481fba36edb5b0dab0892",
+  "src/service.py": "1d0c66a285866f134b167ef7e17bc4dbe8da78e62fb7650b25038bc14ac5a61e",
+  "src/mechanical_only.py": "18ff3a39d06b142a402ed6dce86d2cceae850259ca216e75b073dee6250e975b",
+  "src/autotune_core.py": "7b9c159ddcfb6c3c7e1dacde83fc339b7738b72e4b2677d9ff5ce623696013a9",
+  "src/pi_autotune.py": "e30388a1a7f96c416ae3992d2323e2fe0ff1a3abfac5987fa2a27fc8b5283f38",
+  "src/tuning.py": "dabdf25914e175f2ed3522c7c2fce1aee827cc1ee9990e3885a90701fac3197b",
+  "src/web.py": "1a06c554a3f3f7a3e32ef1f576100098b677bc8092e8a16e782663229c144951"
+}

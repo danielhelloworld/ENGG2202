@@ -1,0 +1,174 @@
+{
+  "version": "wide-motion-v42",
+  "date": "2026-11-09",
+  "hardware_validation": false,
+  "new_entrypoint": "apps/yolo_click_tracker/main_wide_motion_v42.py",
+  "previous_source_files_unchanged": 116,
+  "tests": {
+    "new_branch": 22,
+    "retargeted_motor_protection_and_http": 121,
+    "total_distinct": 143
+  },
+  "large_travel_models": {
+    "75.0": {
+      "v41": {
+        "total_target_travel_deg": 150.0,
+        "actual_travel_deg": 151.3919999999999,
+        "chase_mean_error_deg": 6.144139534883767,
+        "chase_max_error_deg": 17.724000000000004,
+        "stop_overshoot_deg": 20.088000000000108,
+        "final_error_deg": 1.3919999999999106,
+        "lost_frames": 0,
+        "home_requests": 0,
+        "settled_peak_to_peak_deg": 0.0
+      },
+      "v42": {
+        "total_target_travel_deg": 150.0,
+        "actual_travel_deg": 151.4159999999999,
+        "chase_mean_error_deg": 5.312511627907009,
+        "chase_max_error_deg": 17.724000000000004,
+        "stop_overshoot_deg": 20.232000000000056,
+        "final_error_deg": 1.4159999999999116,
+        "lost_frames": 0,
+        "home_requests": 0,
+        "settled_peak_to_peak_deg": 0.0
+      }
+    },
+    "90.0": {
+      "v41": {
+        "total_target_travel_deg": 180.0,
+        "actual_travel_deg": 181.39199999999985,
+        "chase_mean_error_deg": 8.660093023255776,
+        "chase_max_error_deg": 22.752,
+        "stop_overshoot_deg": 24.28800000000001,
+        "final_error_deg": 1.3919999999998538,
+        "lost_frames": 0,
+        "home_requests": 0,
+        "settled_peak_to_peak_deg": 0.0
+      },
+      "v42": {
+        "total_target_travel_deg": 180.0,
+        "actual_travel_deg": 181.39200000000025,
+        "chase_mean_error_deg": 6.398511627907044,
+        "chase_max_error_deg": 22.752,
+        "stop_overshoot_deg": 24.384000000000412,
+        "final_error_deg": 1.3920000000002517,
+        "lost_frames": 0,
+        "home_requests": 0,
+        "settled_peak_to_peak_deg": 0.0
+      }
+    },
+    "110.0": {
+      "v41": {
+        "total_target_travel_deg": 220.0,
+        "actual_travel_deg": 221.49599999999992,
+        "chase_mean_error_deg": 12.36883720930233,
+        "chase_max_error_deg": 29.912,
+        "stop_overshoot_deg": 31.35200000000009,
+        "final_error_deg": 1.495999999999924,
+        "lost_frames": 0,
+        "home_requests": 0,
+        "settled_peak_to_peak_deg": 0.0
+      },
+      "v42": {
+        "total_target_travel_deg": 220.0,
+        "actual_travel_deg": 221.49599999999984,
+        "chase_mean_error_deg": 8.422139534883723,
+        "chase_max_error_deg": 29.912,
+        "stop_overshoot_deg": 30.72799999999998,
+        "final_error_deg": 1.4959999999998388,
+        "lost_frames": 0,
+        "home_requests": 0,
+        "settled_peak_to_peak_deg": 0.0
+      }
+    },
+    "150.0": {
+      "v41": {
+        "total_target_travel_deg": 300.0,
+        "actual_travel_deg": 51.02399999999999,
+        "chase_mean_error_deg": 127.38669767441861,
+        "chase_max_error_deg": 248.976,
+        "stop_overshoot_deg": 0.0,
+        "final_error_deg": 248.976,
+        "lost_frames": 140,
+        "home_requests": 1,
+        "settled_peak_to_peak_deg": 0.0
+      },
+      "v42": {
+        "total_target_travel_deg": 300.0,
+        "actual_travel_deg": 84.52799999999999,
+        "chase_mean_error_deg": 102.65441860465117,
+        "chase_max_error_deg": 215.472,
+        "stop_overshoot_deg": 0.0,
+        "final_error_deg": 215.472,
+        "lost_frames": 140,
+        "home_requests": 0,
+        "settled_peak_to_peak_deg": 0.0
+      }
+    }
+  },
+  "small_motion_unchanged": {
+    "v41": {
+      "total_target_travel_deg": 24.0,
+      "actual_travel_deg": 24.719999999999953,
+      "chase_mean_error_deg": 1.2530232558139582,
+      "chase_max_error_deg": 2.6400000000000006,
+      "stop_overshoot_deg": 0.7199999999999527,
+      "final_error_deg": 0.7199999999999527,
+      "lost_frames": 0,
+      "home_requests": 0,
+      "settled_peak_to_peak_deg": 0.0
+    },
+    "v42": {
+      "total_target_travel_deg": 24.0,
+      "actual_travel_deg": 24.719999999999953,
+      "chase_mean_error_deg": 1.2530232558139582,
+      "chase_max_error_deg": 2.6400000000000006,
+      "stop_overshoot_deg": 0.7199999999999527,
+      "final_error_deg": 0.7199999999999527,
+      "lost_frames": 0,
+      "home_requests": 0,
+      "settled_peak_to_peak_deg": 0.0
+    }
+  },
+  "noise_model": {
+    "v41": {
+      "total_target_travel_deg": 150.0,
+      "actual_travel_deg": 150.3119999999998,
+      "chase_mean_error_deg": 6.300976744186057,
+      "chase_max_error_deg": 17.892000000000003,
+      "stop_overshoot_deg": 20.28000000000003,
+      "final_error_deg": 0.31199999999981287,
+      "lost_frames": 0,
+      "home_requests": 0,
+      "settled_peak_to_peak_deg": 0.2400000000000091
+    },
+    "v42": {
+      "total_target_travel_deg": 150.0,
+      "actual_travel_deg": 150.2639999999999,
+      "chase_mean_error_deg": 5.762930232558143,
+      "chase_max_error_deg": 17.892000000000003,
+      "stop_overshoot_deg": 20.328000000000003,
+      "final_error_deg": 0.2639999999998963,
+      "lost_frames": 0,
+      "home_requests": 0,
+      "settled_peak_to_peak_deg": 0.36000000000001364
+    }
+  },
+  "assumptions": {
+    "vision_hz": 25,
+    "result_latency_ms": 60,
+    "command_delay_ms": 40,
+    "feedback_age_ms": 20,
+    "horizontal_fov_deg": 87,
+    "plant": "Velocity plant with bounded acceleration and integer RPM; no identified hardware load or real detector.",
+    "target": "Instant start, constant angular speed for 2s, instant stop. Constant-velocity linear bearing observations while inside the view."
+  },
+  "limitations": [
+    "150 deg/s instant-start scenario still leaves the view and is not recovered by either version. New version stops after bounded continuation instead of blind searching or automatic homing.",
+    "Instant-stop overshoot is about 20-31 degrees in several fast synthetic cases. These are not hardware measurements or a promise of no overshoot.",
+    "Large-error residual filtering reduces reference noise; full-pipeline settled motor jitter is not uniformly better in every quantized noise realization.",
+    "No device log was captured; real motor slowness, feedback interruptions and load cannot be identified from code alone.",
+    "Two-frame geometric new-ID matching is a heuristic, not appearance re-identification. Ambiguity, low score, wrong class and far candidates are rejected."
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "app_version": "speed-3-5-10-v5",
+  "evidence": "Offline Python tests, continuous target-following motor model and Node browser event model",
+  "physical_validation": false,
+  "hardware_commands_issued": false,
+  "app_tests": 146,
+  "shared_motor_tests": 81,
+  "node_event_tests": "passed",
+  "main_sha256": "9486e074990d50a9c0d94a164669ab869fa9791487a5f851c2d112116d52b895",
+  "rates_deg_s": {
+    "manual": [
+      480.0,
+      360.0
+    ],
+    "tracking": [
+      150.0,
+      120.0
+    ],
+    "home": [
+      108.0,
+      90.0
+    ],
+    "outside_recovery": [
+      108.0,
+      90.0
+    ]
+  },
+  "speed_multipliers_from_v4": {
+    "home": 3,
+    "tracking": 5,
+    "manual": 10
+  },
+  "stall_grace_s": 0.6,
+  "stall_window_s": 1.2,
+  "stall_total_s": 1.8,
+  "position_horizons_deg": {
+    "manual": [
+      24.0,
+      18.0
+    ],
+    "tracking": [
+      10.0,
+      8.0
+    ],
+    "home": [
+      8.0,
+      6.0
+    ],
+    "outside_manual": [
+      3,
+      3
+    ]
+  },
+  "source_hashes_valid": true
+}

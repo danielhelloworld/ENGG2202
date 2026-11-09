@@ -1,0 +1,138 @@
+{
+  "version": "speed-track-v41",
+  "date": "2026-11-09",
+  "tests_passed": 310,
+  "hardware_validation": false,
+  "backup": "apps/yolo_click_tracker/backups/speed-track-v40/main.py",
+  "code_bottlenecks": [
+    {
+      "name": "Target angular velocity estimate ceiling",
+      "old_deg_s": [
+        69.6,
+        39.2
+      ],
+      "new_deg_s": [
+        180,
+        140
+      ]
+    },
+    {
+      "name": "Velocity estimator response",
+      "old_alpha_at_100ms": 0.35,
+      "new_fast_alpha_at_100ms": 0.75,
+      "confirmation": "Two consecutive fast measurements with the same sign."
+    },
+    {
+      "name": "Near-center launch slowdown applied even to fast targets",
+      "change": "Use confirmed target angular velocity to bypass near-center smoothing and allow launch up to existing driver/brake ceiling (420/360 deg/s2)."
+    },
+    {
+      "name": "Goal held between vision updates",
+      "change": "Bound extrapolation from initial mailbox offer time to 40ms; preserve stale-vision checks."
+    }
+  ],
+  "fast_pipeline_comparison": {
+    "yaw": {
+      "v40": {
+        "chase_mean_error_deg": 28.186666666666667,
+        "chase_max_error_deg": 34.480000000000004,
+        "lost_frames": 0,
+        "final_error_deg": 1.4080000000000013,
+        "stop_overshoot_deg": 11.128,
+        "settled_rms_velocity_deg_s": 2.078460969082653,
+        "settled_peak_to_peak_deg": 0.6000000000000227
+      },
+      "v41": {
+        "chase_mean_error_deg": 23.36,
+        "chase_max_error_deg": 29.912,
+        "lost_frames": 0,
+        "final_error_deg": 1.4080000000000297,
+        "stop_overshoot_deg": 24.08800000000008,
+        "settled_rms_velocity_deg_s": 6.841052550594828,
+        "settled_peak_to_peak_deg": 3.840000000000032
+      }
+    },
+    "pitch": {
+      "v40": {
+        "chase_mean_error_deg": 18.056666666666672,
+        "chase_max_error_deg": 21.96,
+        "lost_frames": 0,
+        "final_error_deg": 1.1039999999999708,
+        "stop_overshoot_deg": 0.0,
+        "settled_rms_velocity_deg_s": 0.0,
+        "settled_peak_to_peak_deg": 0.0
+      },
+      "v41": {
+        "chase_mean_error_deg": 13.969999999999983,
+        "chase_max_error_deg": 19.536,
+        "lost_frames": 0,
+        "final_error_deg": 1.3200000000000074,
+        "stop_overshoot_deg": 9.480000000000047,
+        "settled_rms_velocity_deg_s": 0.0,
+        "settled_peak_to_peak_deg": 0.0
+      }
+    }
+  },
+  "stationary_noise_comparison": {
+    "yaw": {
+      "v40": {
+        "chase_mean_error_deg": 0.09333333333333332,
+        "chase_max_error_deg": 0.24,
+        "lost_frames": 0,
+        "final_error_deg": 0.36,
+        "stop_overshoot_deg": 0.48,
+        "settled_rms_velocity_deg_s": 1.8973665961010275,
+        "settled_peak_to_peak_deg": 0.36
+      },
+      "v41": {
+        "chase_mean_error_deg": 0.09333333333333332,
+        "chase_max_error_deg": 0.24,
+        "lost_frames": 0,
+        "final_error_deg": 0.12,
+        "stop_overshoot_deg": 0.12,
+        "settled_rms_velocity_deg_s": 1.2,
+        "settled_peak_to_peak_deg": 0.12
+      }
+    },
+    "pitch": {
+      "v40": {
+        "chase_mean_error_deg": 0.04666666666666666,
+        "chase_max_error_deg": 0.12,
+        "lost_frames": 0,
+        "final_error_deg": 0.12,
+        "stop_overshoot_deg": 0.24,
+        "settled_rms_velocity_deg_s": 1.697056274847714,
+        "settled_peak_to_peak_deg": 0.24
+      },
+      "v41": {
+        "chase_mean_error_deg": 0.04666666666666666,
+        "chase_max_error_deg": 0.12,
+        "lost_frames": 0,
+        "final_error_deg": 0.24,
+        "stop_overshoot_deg": 0.24,
+        "settled_rms_velocity_deg_s": 1.2,
+        "settled_peak_to_peak_deg": 0.12
+      }
+    }
+  },
+  "model_assumptions": {
+    "vision_hz": 25,
+    "result_delay_s": 0.06,
+    "command_delay_s": 0.04,
+    "feedback_age_s": 0.02,
+    "target": "Instant start at 110 deg/s yaw or -75 deg/s pitch for 1s, then instant stop.",
+    "plant": "Acceleration-limited velocity model, independent speed-mode polarity; no identified inertia, load or full device scheduling."
+  },
+  "tradeoff": "Faster chase increases instantaneous-stop overshoot in this model. Catch-up surplus capped at 30/24 deg/s; old target velocity cleared after confirmed stop. No promise of hardware overshoot reduction.",
+  "diagnostics": [
+    "performance.motion_prediction",
+    "speed_tracking_diagnostics",
+    "performance.stages.speed_command_interval",
+    "performance.stages.uart_cycle_interval"
+  ],
+  "limitations": [
+    "No live YOLO fps, UART timing or motor-load trace captured in this task.",
+    "Software limits are verified from source; the dominant real hardware bottleneck is unmeasured.",
+    "Model metrics are not physical measurements."
+  ]
+}

@@ -1,0 +1,230 @@
+{
+  "angles": [
+    -0.1,
+    0.0
+  ],
+  "ready": true,
+  "fault": null,
+  "age": 0.015402874999836058,
+  "simulated": false,
+  "armed": true,
+  "mechanical_angles": [
+    -0.1,
+    0.0
+  ],
+  "reference_zero": [
+    0.0,
+    0.0
+  ],
+  "reference_valid": true,
+  "reference_fault": null,
+  "raw_feedback": [
+    null,
+    null
+  ],
+  "phase": "HOME_HOLD",
+  "zero_confirmed": true,
+  "target": [
+    1.1379786002407855e-14,
+    0.0
+  ],
+  "home_requested": false,
+  "angle_source": "mechanical_only",
+  "cumulative_angle_used": false,
+  "limits": [
+    [
+      -150.0,
+      150.0
+    ],
+    [
+      -100.0,
+      30.0
+    ]
+  ],
+  "joystick_signs": [
+    -1,
+    -1
+  ],
+  "position_mode": 4,
+  "max_rate": [
+    240.0,
+    180.0
+  ],
+  "home_rate": [
+    108.0,
+    90.0
+  ],
+  "control_feedback_seen": true,
+  "mechanical_feedback_age": [
+    0.01546666599983837,
+    0.003586207999887847
+  ],
+  "last_angle_jump": null,
+  "recheck_status": "IDLE",
+  "can_recheck": false,
+  "app_version": "hold-drive-v16",
+  "last_disable_reason": null,
+  "disable_history": [],
+  "motor_signs": [
+    1,
+    1
+  ],
+  "direction_mapping": {
+    "right_input_mechanical_sign": -1,
+    "up_input_mechanical_sign": -1
+  },
+  "protection": {
+    "home_feedback_margin_deg": 2.0,
+    "tracking_reverse_deg": 12.0,
+    "tracking_reverse_persist_s": 1.2,
+    "tracking_stall_basis": "physical movement range with sustained position error",
+    "home_hard_margin_deg": 5.0,
+    "motion_violation_grace_s": 0.3,
+    "feedback_loss_grace_s": 0.5,
+    "stall_observation_s": 1.7999999999999998,
+    "control_pause_age_s": 0.5,
+    "watchdog_s": 1.2
+  },
+  "arm_homing": false,
+  "auto_home_on_arm": false,
+  "tracking_rate": [
+    75.0,
+    60.0
+  ],
+  "suspicious_motion": null,
+  "motor_rate_ceiling": [
+    240.0,
+    180.0
+  ],
+  "manual_jerk_deg_s3": [
+    6000.0,
+    5000.0
+  ],
+  "manual_acceleration_deg_s2": [
+    0.0,
+    0.0
+  ],
+  "command_accel_ceiling_deg_s2": [
+    600.0,
+    500.0
+  ],
+  "motor_rpm": 40,
+  "applied_motor_rpm": [
+    18,
+    15
+  ],
+  "feedback_degraded": false,
+  "feedback_loss_grace_s": 0.5,
+  "feedback_axis_age_s": [
+    0.015571207999983017,
+    0.0036907500000324944
+  ],
+  "feedback_issues": [
+    null,
+    null
+  ],
+  "feedback_rejected_samples": [
+    0,
+    0
+  ],
+  "feedback_failed_query_duration_s": [
+    null,
+    null
+  ],
+  "last_feedback_fault": null,
+  "motion_warning": null,
+  "motion_paused": false,
+  "response": {
+    "error_deg": [
+      0.10000000000001139,
+      0.0
+    ],
+    "error_rms_deg": [
+      0.10000000000001139,
+      1.717455424036702e-17
+    ],
+    "measured_velocity_deg_s": [
+      -7.740857536422306e-291,
+      3.3891923017837167e-32
+    ],
+    "drive_scale": [
+      1.0,
+      1.0
+    ],
+    "software_accel_deg_s2": [
+      153.0,
+      127.5
+    ],
+    "rate_correction_deg_s": [
+      0.0,
+      0.0
+    ],
+    "status": [
+      "HOLD",
+      "HOLD"
+    ],
+    "torque_feedback_available": false,
+    "driver_pid_modified": false
+  },
+  "default_saved_zero": true,
+  "response_context": "HOLD",
+  "position_lead_deg": [
+    3.0,
+    3.0
+  ],
+  "home_accel_deg_s2": [
+    300.0,
+    250.0
+  ],
+  "tracking_accel_deg_s2": [
+    180.0,
+    150.0
+  ],
+  "recovery_active": false,
+  "startup_auto_home": true,
+  "outside_hold": false,
+  "outside_manual_inward_only": false,
+  "startup_completed": true,
+  "startup_initialized": true,
+  "startup_cancelled": false,
+  "outside_work_limits": false,
+  "connected": false,
+  "notice": "\u7f51\u9875\u5df2\u79bb\u5f00\u7126\u70b9\uff0c\u624b\u52a8\u8f93\u5165\u5df2\u677e\u5f00\uff1b\u76f8\u673a\u7ee7\u7eed\u8ddf\u8e2a\uff0f\u56de\u96f6\u6216\u4fdd\u6301",
+  "hold_blocked": false,
+  "tuning_error": null,
+  "vision_state": "DETECT",
+  "selected": null,
+  "software_autotune": {
+    "active": false,
+    "state": "IDLE",
+    "reason": null,
+    "saved_path": null
+  },
+  "c_next_home": false,
+  "frame_id": 7551,
+  "vision_age": 0.08900433300004806,
+  "prediction_active": false,
+  "prediction_center": null,
+  "estimated_target_velocity": [
+    0.0,
+    0.0
+  ],
+  "performance": {
+    "inference_fps_actual": 23.7,
+    "detect_api_ms": 19.615165999994133,
+    "model_detect_ms": 18.993249999994077,
+    "capture_to_result_ms": 77.42208300010134,
+    "dual_buff": true,
+    "model_path": "/root/models/yolo11n.mud",
+    "model_kind": "YOLO11",
+    "camera_rotation": true,
+    "camera_read_ms": 1.000416999886511,
+    "capture_to_control_tick_ms": 78.6406669999451,
+    "camera_empty_polls": 0,
+    "capture_to_control_samples": 120,
+    "capture_to_control_p50_ms": 53.83412500009399,
+    "capture_to_control_p95_ms": 79.41929100002199,
+    "local_preview_ms": 29.003958999965107
+  },
+  "control_owner": "LOCAL"
+}

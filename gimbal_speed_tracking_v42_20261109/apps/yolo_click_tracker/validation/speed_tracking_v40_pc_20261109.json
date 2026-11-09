@@ -1,0 +1,143 @@
+{
+  "version": "speed-track-v40",
+  "date": "2026-11-09",
+  "hardware_validation": false,
+  "tracker_tests_passed": 299,
+  "added_stability_tests": 8,
+  "baseline_backup": "apps/yolo_click_tracker/backups/speed-track-v39/main.py",
+  "near_goal_filter_tau_s": 0.035,
+  "near_feedforward_filter_tau_s": 0.06,
+  "far_bypass_error_deg": 6.0,
+  "near_launch_acceleration_ratio": 0.45,
+  "low_rpm_hysteresis": 0.15,
+  "comparison": {
+    "stationary": {
+      "yaw": {
+        "v39": {
+          "peak_to_peak_deg": 0.72,
+          "rpm_switches": 64,
+          "rms_velocity_deg_s": 3.5786030794152066,
+          "mean_error_deg": 0.12248,
+          "rise_s": null,
+          "final_error_deg": 0.02400000000000002
+        },
+        "v40": {
+          "peak_to_peak_deg": 0.0,
+          "rpm_switches": 0,
+          "rms_velocity_deg_s": 0.0,
+          "mean_error_deg": 0.0,
+          "rise_s": null,
+          "final_error_deg": 0.0
+        }
+      },
+      "pitch": {
+        "v39": {
+          "peak_to_peak_deg": 0.36,
+          "rpm_switches": 54,
+          "rms_velocity_deg_s": 2.939387691339814,
+          "mean_error_deg": 0.156,
+          "rise_s": null,
+          "final_error_deg": 0.12
+        },
+        "v40": {
+          "peak_to_peak_deg": 0.0,
+          "rpm_switches": 0,
+          "rms_velocity_deg_s": 0.0,
+          "mean_error_deg": 0.0,
+          "rise_s": null,
+          "final_error_deg": 0.0
+        }
+      }
+    },
+    "step": {
+      "yaw": {
+        "v39": {
+          "peak_to_peak_deg": 0.0,
+          "rpm_switches": 0,
+          "rms_velocity_deg_s": 0.0,
+          "mean_error_deg": 2.319919999999999,
+          "rise_s": 0.72,
+          "final_error_deg": 1.2079999999999984
+        },
+        "v40": {
+          "peak_to_peak_deg": 0.0,
+          "rpm_switches": 0,
+          "rms_velocity_deg_s": 0.0,
+          "mean_error_deg": 2.1464799999999964,
+          "rise_s": 0.74,
+          "final_error_deg": 0.9439999999999955
+        }
+      },
+      "pitch": {
+        "v39": {
+          "peak_to_peak_deg": 0.0,
+          "rpm_switches": 0,
+          "rms_velocity_deg_s": 0.0,
+          "mean_error_deg": 1.9714399999999979,
+          "rise_s": 0.74,
+          "final_error_deg": 0.7039999999999971
+        },
+        "v40": {
+          "peak_to_peak_deg": 0.0,
+          "rpm_switches": 0,
+          "rms_velocity_deg_s": 0.0,
+          "mean_error_deg": 2.569840000000006,
+          "rise_s": 0.76,
+          "final_error_deg": 1.4240000000000066
+        }
+      }
+    },
+    "moving": {
+      "yaw": {
+        "v39": {
+          "peak_to_peak_deg": 0.480000000000004,
+          "rpm_switches": 59,
+          "rms_velocity_deg_s": 3.358571124749333,
+          "mean_error_deg": 0.1478400000000021,
+          "rise_s": null,
+          "final_error_deg": 2.1316282072803006e-14
+        },
+        "v40": {
+          "peak_to_peak_deg": 0.0,
+          "rpm_switches": 0,
+          "rms_velocity_deg_s": 0.0,
+          "mean_error_deg": 0.3582400000000205,
+          "rise_s": null,
+          "final_error_deg": 0.2160000000000295
+        }
+      },
+      "pitch": {
+        "v39": {
+          "peak_to_peak_deg": 0.360000000000003,
+          "rpm_switches": 54,
+          "rms_velocity_deg_s": 2.939387691339814,
+          "mean_error_deg": 0.17591999999998567,
+          "rise_s": null,
+          "final_error_deg": 0.047999999999969845
+        },
+        "v40": {
+          "peak_to_peak_deg": 0.0,
+          "rpm_switches": 0,
+          "rms_velocity_deg_s": 0.0,
+          "mean_error_deg": 0.21760000000002183,
+          "rise_s": null,
+          "final_error_deg": 3.197442310920451e-14
+        }
+      }
+    }
+  },
+  "model_assumptions": {
+    "feedback_age_s": 0.04,
+    "command_delay_s": 0.06,
+    "dt_s": 0.02,
+    "vision_hz": 25,
+    "centroid_noise_deg": ".9*sin(2*pi*9*t)+.3*sin(2*pi*4*t)",
+    "target_velocity_noise_deg_s": "8*sin(2*pi*7*t)",
+    "plant": "Acceleration-limited velocity plant; no identified inertia/load; no mechanical limit in isolated response comparison."
+  },
+  "limitations": [
+    "Synthetic noise does not identify camera noise or physical jitter.",
+    "Zero modeled settled motion is not a promise of zero hardware jitter.",
+    "No hardware deployment or changes to camera pipeline."
+  ]
+}
