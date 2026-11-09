@@ -1,0 +1,167 @@
+[
+  {
+    "scenario": "5m / all sensors",
+    "tracks": [
+      {
+        "id": 1,
+        "x": 0.5842326798098079,
+        "y": 0.3512208462010592,
+        "state": "VISUAL_CONFIRMED",
+        "evidence": {
+          "vision": 0.93,
+          "sound": 0.82,
+          "thermal": 0.88
+        },
+        "contributions": {
+          "vision": 0.651,
+          "sound": 0.12299999999999998,
+          "thermal": 0.132
+        },
+        "score": 0.906,
+        "hits": 5
+      }
+    ],
+    "rejected": []
+  },
+  {
+    "scenario": "10m / visual only",
+    "tracks": [
+      {
+        "id": 1,
+        "x": 0.33027847985123127,
+        "y": 0.5060259826283382,
+        "state": "VISUAL_CONFIRMED",
+        "evidence": {
+          "vision": 0.93,
+          "sound": 0.0,
+          "thermal": 0.0
+        },
+        "contributions": {
+          "vision": 0.651,
+          "sound": 0.0,
+          "thermal": 0.0
+        },
+        "score": 0.651,
+        "hits": 5
+      }
+    ],
+    "rejected": []
+  },
+  {
+    "scenario": "Far / sound + thermal",
+    "tracks": [
+      {
+        "id": 1,
+        "x": 0.5815747362681603,
+        "y": 0.37024884910147954,
+        "state": "CANDIDATE",
+        "evidence": {
+          "vision": 0.0,
+          "sound": 0.82,
+          "thermal": 0.88
+        },
+        "contributions": {
+          "vision": 0.0,
+          "sound": 0.12299999999999998,
+          "thermal": 0.132
+        },
+        "score": 0.255,
+        "hits": 0
+      }
+    ],
+    "rejected": []
+  },
+  {
+    "scenario": "Visual dropout",
+    "tracks": [
+      {
+        "id": 1,
+        "x": 0.4427985643187297,
+        "y": 0.5080402193956249,
+        "state": "CANDIDATE",
+        "evidence": {
+          "vision": 0.0,
+          "sound": 0.82,
+          "thermal": 0.88
+        },
+        "contributions": {
+          "vision": 0.0,
+          "sound": 0.12299999999999998,
+          "thermal": 0.132
+        },
+        "score": 0.255,
+        "hits": 0
+      }
+    ],
+    "rejected": []
+  },
+  {
+    "scenario": "Wrong-direction sound",
+    "tracks": [
+      {
+        "id": 1,
+        "x": 0.3961676620265635,
+        "y": 0.37099250754748864,
+        "state": "VISUAL_CONFIRMED",
+        "evidence": {
+          "vision": 0.93,
+          "sound": 0.0,
+          "thermal": 0.88
+        },
+        "contributions": {
+          "vision": 0.651,
+          "sound": 0.0,
+          "thermal": 0.132
+        },
+        "score": 0.783,
+        "hits": 5
+      },
+      {
+        "id": 2,
+        "x": 0.9,
+        "y": 0.37099250754748864,
+        "state": "CANDIDATE",
+        "evidence": {
+          "vision": 0.0,
+          "sound": 0.82,
+          "thermal": 0.0
+        },
+        "contributions": {
+          "vision": 0.0,
+          "sound": 0.12299999999999998,
+          "thermal": 0.0
+        },
+        "score": 0.12299999999999998,
+        "hits": 0
+      }
+    ],
+    "rejected": []
+  },
+  {
+    "scenario": "Stale sensor packets",
+    "tracks": [
+      {
+        "id": 1,
+        "x": 0.625836314042754,
+        "y": 0.48079373014676224,
+        "state": "VISUAL_CONFIRMED",
+        "evidence": {
+          "vision": 0.93,
+          "sound": 0.0,
+          "thermal": 0.0
+        },
+        "contributions": {
+          "vision": 0.651,
+          "sound": 0.0,
+          "thermal": 0.0
+        },
+        "score": 0.651,
+        "hits": 5
+      }
+    ],
+    "rejected": [
+      "sound: stale/invalid/uncalibrated",
+      "thermal: stale/invalid/uncalibrated"
+    ]
+  }
+]

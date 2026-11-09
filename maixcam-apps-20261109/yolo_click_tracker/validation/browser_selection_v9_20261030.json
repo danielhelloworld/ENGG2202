@@ -1,0 +1,19 @@
+{
+  "app_version": "selection-no-disarm-v9",
+  "live_board_version": "stop-diagnostic-v8",
+  "browser": "Edge",
+  "camera_url": "http://192.168.137.77:8080/",
+  "observed_angles_deg": [
+    30.9,
+    -130.1
+  ],
+  "observed_fault": null,
+  "live_reproduction": "connected while disabled, clicked video, session became disconnected with explicit dual DISARM notice",
+  "hardware_enable_or_motion_issued": false,
+  "root_code": "tick catch called stop() for every failed control request",
+  "python_tests": 166,
+  "python_first_run": "2 HTTP timing-sensitive errors; rerun passed",
+  "node_tests": "passed including 400/409 and network timeout no STOP",
+  "v9_hardware_verified": false,
+  "main_sha256": "c43d0c622fb09d8fac1825bd7eaf99d23d7af436706a3fc95469d130c8e79bf0"
+}

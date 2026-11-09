@@ -1,0 +1,9 @@
+{
+  "app_version": "stable-aim-v12",
+  "python_tests": 178,
+  "physical_v12_verified": false,
+  "live_source_version": "gentle-loss-hold-v11",
+  "synthetic_delay_s": 0.15,
+  "evidence": "synthetic delayed feedback model convergence, jitter and braking unit regressions",
+  "main_sha256": "6597ed70f78858f3a14bf01bbabb2849eabc849bc621c1e6a3272503f0f1bfb6"
+}

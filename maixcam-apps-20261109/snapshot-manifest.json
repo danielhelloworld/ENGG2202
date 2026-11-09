@@ -1,0 +1,1128 @@
+{
+  "snapshot_date": "2026-11-09",
+  "source": "MaixCam/apps",
+  "file_count": 222,
+  "total_bytes": 9250263,
+  "modules": {
+    "drone_sensor_demo": 30,
+    "micarray_direction": 5,
+    "motor_joystick": 37,
+    "sound_yolo_gimbal": 17,
+    "thermal_uav_detector": 13,
+    "thermal_yolo_fusion": 23,
+    "yolo_click_tracker": 97
+  },
+  "excluded_files": [],
+  "files": [
+    {
+      "path": "drone_sensor_demo/__pycache__/core.cpython-310.pyc",
+      "bytes": 8080,
+      "sha256": "fa588dc91d21cc47a1025547adfd5745b3a4e8f3c063c096eb817be8216c8566"
+    },
+    {
+      "path": "drone_sensor_demo/__pycache__/test_demo.cpython-310.pyc",
+      "bytes": 12356,
+      "sha256": "d3fccf49652f2b5466f4c5440df648cbbfb998988d190066eaf6ddae1acc327c"
+    },
+    {
+      "path": "drone_sensor_demo/board_runtime.py",
+      "bytes": 7372,
+      "sha256": "1265131b403363b6c7cc5f0832a84b508b0e4271e971ab06f838b49fad35e8b4"
+    },
+    {
+      "path": "drone_sensor_demo/build.py",
+      "bytes": 2383,
+      "sha256": "819994a5c011de5a847cf91ed00e94a2126a5e2ee8c897c5a5f108a3980356aa"
+    },
+    {
+      "path": "drone_sensor_demo/config.json",
+      "bytes": 729,
+      "sha256": "3d7ba32c8ef2785be75606c73974a0460e24a3f72ee2439f4a1a27b99c37b6dc"
+    },
+    {
+      "path": "drone_sensor_demo/core.py",
+      "bytes": 8634,
+      "sha256": "751f04b7b872fd8b6d6ac4c9dbd383512ba934cde1a5df930ab7f734cd6a583d"
+    },
+    {
+      "path": "drone_sensor_demo/demo.py",
+      "bytes": 7376,
+      "sha256": "826e7b2cf76f4538a624bc0f5dadec671ec8dccc7b090047e5d213ca69536041"
+    },
+    {
+      "path": "drone_sensor_demo/drone_sensor_demo.zip",
+      "bytes": 246744,
+      "sha256": "1e2ae941f4257357a4209692aa6aea1f7d4935c0531a233fcf64bf6f56afffb0"
+    },
+    {
+      "path": "drone_sensor_demo/INTEGRATION.md",
+      "bytes": 4917,
+      "sha256": "1fe9dbeff03184ff753ab9dab0850adc89e8db6ba177a3eda1f38c007dded2cf"
+    },
+    {
+      "path": "drone_sensor_demo/launch_demo.cmd",
+      "bytes": 61,
+      "sha256": "788418349057d3808ac84b083abf30e0e3c5ff64e5174ea93c7c70bea7f28899"
+    },
+    {
+      "path": "drone_sensor_demo/LICENSE_SIPEED.txt",
+      "bytes": 2792,
+      "sha256": "15e7c128745db14316488cddba00f0d1a7eb479974628477ffb706170ddd79ee"
+    },
+    {
+      "path": "drone_sensor_demo/main.py",
+      "bytes": 113512,
+      "sha256": "5558e2ff47e96269186c19c29417b9bd7b0490bc710ba107599aeaac15c73968"
+    },
+    {
+      "path": "drone_sensor_demo/README.md",
+      "bytes": 6445,
+      "sha256": "e880e2e4fb4445ea79f5d3e7faca3575d8f494644ed8072bb676acc0305b3b89"
+    },
+    {
+      "path": "drone_sensor_demo/test_demo.py",
+      "bytes": 6758,
+      "sha256": "68b46d6f956550201076e2491afa8f384e26cdee696903a6553bc8cf0c83ac54"
+    },
+    {
+      "path": "drone_sensor_demo/test_thermal_integration.py",
+      "bytes": 10441,
+      "sha256": "b1f6e15b7839c61aa7ea677d2f5b041a3696545219f3903c7c07646d91f1df78"
+    },
+    {
+      "path": "drone_sensor_demo/thermal_integration.py",
+      "bytes": 5836,
+      "sha256": "a66cdb6f7e204d125bab9cb9d07a0f7577e5aec837a0d0cff35d4cf5bf035514"
+    },
+    {
+      "path": "drone_sensor_demo/THIRD_PARTY.md",
+      "bytes": 946,
+      "sha256": "2f4208402bedef06cb289ab5bb26927a387c169b3aac054d76bc9950942e9ed2"
+    },
+    {
+      "path": "drone_sensor_demo/validation/desktop_stderr.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "drone_sensor_demo/validation/desktop_stdout.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "drone_sensor_demo/validation/scenario_1.png",
+      "bytes": 149603,
+      "sha256": "85cbd4eb645c2f7c25f69cbb7007b63f0e91ec9fc5d2f25aa610bf4f81b3c13a"
+    },
+    {
+      "path": "drone_sensor_demo/validation/scenario_2.png",
+      "bytes": 147696,
+      "sha256": "26fb681d5046287965dff5c99f9e67f2b06a447f962aca881a23aa9767e64600"
+    },
+    {
+      "path": "drone_sensor_demo/validation/scenario_3.png",
+      "bytes": 146282,
+      "sha256": "8d5a2478299f9742ea4207d744c206945f8b83d48abd8bbebe7ba4c9ec91b018"
+    },
+    {
+      "path": "drone_sensor_demo/validation/scenario_4.png",
+      "bytes": 145488,
+      "sha256": "7c6f9ab9e6f540aad2ff12aa6e669794247f9d4b739167f550c1f0a07949c6df"
+    },
+    {
+      "path": "drone_sensor_demo/validation/scenario_5.png",
+      "bytes": 154658,
+      "sha256": "2062a7e0fe87e571fae41602317cc5e2ca1a5d4cde6ee97dc9cc29a880d9a276"
+    },
+    {
+      "path": "drone_sensor_demo/validation/scenario_6.png",
+      "bytes": 150857,
+      "sha256": "9d8a45205e99c5a77e7808b8c0db2a47adad6736698f11701468050ac28399ab"
+    },
+    {
+      "path": "drone_sensor_demo/validation/scenarios.json",
+      "bytes": 3649,
+      "sha256": "b49844c739b645754cf4c85fc3b8731d1615e4f05e0ac256e3a913c511e787ad"
+    },
+    {
+      "path": "drone_sensor_demo/validation/thermal_alignment_synthetic.png",
+      "bytes": 119322,
+      "sha256": "18c631f69127f2aa1445efaf039109b6fcd5486ed88006d61002f40aad89c22c"
+    },
+    {
+      "path": "drone_sensor_demo/validation/thermal_integrated_synthetic.png",
+      "bytes": 88145,
+      "sha256": "23c7278d60aa6fd7c31ffc9290816cba9ef50ca3bb8df6d3856fd9243d49452a"
+    },
+    {
+      "path": "drone_sensor_demo/validation/thermal_integration_validation.json",
+      "bytes": 648,
+      "sha256": "52d8721d82cbf288a476b04045d9f95ad7c4a8f51f37d04dbac0e7f7dbfcbd39"
+    },
+    {
+      "path": "drone_sensor_demo/validation/validation.json",
+      "bytes": 366,
+      "sha256": "934d05297ee84bcdb70875649249fde1de0a48288d6311f8ba6bf4c195343990"
+    },
+    {
+      "path": "micarray_direction/config.json",
+      "bytes": 56,
+      "sha256": "777b1e8166f02be0820e8aca6c6795f42b38fbdb673764bdc9ab86170b3a85cf"
+    },
+    {
+      "path": "micarray_direction/CONFIG_CONTROL.md",
+      "bytes": 4496,
+      "sha256": "5feddfa48d0a520bdf23e99356f9304f488c12e8c53cf207a97d869b61a118e0"
+    },
+    {
+      "path": "micarray_direction/micarray_direction.py",
+      "bytes": 27398,
+      "sha256": "232136a8ae5fc5dab733cc750a56c2efb9d6e9946112540d16da4ba91fdcb416"
+    },
+    {
+      "path": "micarray_direction/MODULE_TEST.md",
+      "bytes": 6267,
+      "sha256": "7df8103b20d4115f639867b8b707dd2df6ff630d81b7d83794bc3b6226d5185c"
+    },
+    {
+      "path": "micarray_direction/README.md",
+      "bytes": 5855,
+      "sha256": "778a937cada794684670dbef161d3f65a1c8fc8dde8ecd0d32d4b1d3be3c1089"
+    },
+    {
+      "path": "motor_joystick/__pycache__/main.cpython-310.pyc",
+      "bytes": 54161,
+      "sha256": "a42912721dc76e08f5f0610578f04ba3f42b7fe962341b3faf41834d04ff07d4"
+    },
+    {
+      "path": "motor_joystick/__pycache__/pitch_serial_tune.cpython-310.pyc",
+      "bytes": 9295,
+      "sha256": "c4c6a8a6017768d07341ba0e6b035899423cd3e473ec31e0a2ed2563c5d5d690"
+    },
+    {
+      "path": "motor_joystick/__pycache__/yaw_serial_tune.cpython-310.pyc",
+      "bytes": 8102,
+      "sha256": "79ef14e96c74556ed19ae19e61abc58e4e1bb39260af01b9a781302ecce9fd79"
+    },
+    {
+      "path": "motor_joystick/build.py",
+      "bytes": 1104,
+      "sha256": "f7aab9d700af1490880afba33d8ceacfef602b5175fd839c49faa557394b1624"
+    },
+    {
+      "path": "motor_joystick/build_web.py",
+      "bytes": 1183,
+      "sha256": "eb0d27576a5e39899881066a190f30f79bc9559a9d0a74901c0e2491bafae5af"
+    },
+    {
+      "path": "motor_joystick/feedback_bridge.py",
+      "bytes": 8253,
+      "sha256": "eda85c6da7279b1957d4e04cbf3df8e68e451c198325e552b4e9c32f44c10abd"
+    },
+    {
+      "path": "motor_joystick/LEGACY_CUMULATIVE.md",
+      "bytes": 6936,
+      "sha256": "f21248d2cabcab708535a622348b5cb701e93d7d09de0a5dddcdc4d6910b96a7"
+    },
+    {
+      "path": "motor_joystick/main.py",
+      "bytes": 68099,
+      "sha256": "5c4e3fdd5ab1492e4062239a9a8471119e0f85261c38c8d0ff693e711ba5249e"
+    },
+    {
+      "path": "motor_joystick/main_web.py",
+      "bytes": 131613,
+      "sha256": "6a09d8cb4d90e457460c14adead5de9e8bff275edf8c2574249f7023778fc413"
+    },
+    {
+      "path": "motor_joystick/PID_TUNING.md",
+      "bytes": 5147,
+      "sha256": "83525bedb77e58abea5c9acb30d3a5e96cb5dcc463a3faa64c790658b877ba45"
+    },
+    {
+      "path": "motor_joystick/pitch_serial_tune.py",
+      "bytes": 11278,
+      "sha256": "c31a8c75908e07d289d323c518cdda31d816f69377c23d3e05e7f3b3be52a3c6"
+    },
+    {
+      "path": "motor_joystick/README.md",
+      "bytes": 8023,
+      "sha256": "82e793076a3a0627bd6aa88e9c083cd87fbf384f49f2c1544a6dfa3331f4e286"
+    },
+    {
+      "path": "motor_joystick/source_hashes.json",
+      "bytes": 557,
+      "sha256": "899a6beb0c5d05ab7b3e2f4ca13987e123de53878cf48e82862065aa11c8e236"
+    },
+    {
+      "path": "motor_joystick/src/__pycache__/autotune_core.cpython-310.pyc",
+      "bytes": 6549,
+      "sha256": "440a5d18589099c3ecd992153292ffd055b97c144644db6b584bee5f11e37bb1"
+    },
+    {
+      "path": "motor_joystick/src/autotune_core.py",
+      "bytes": 8736,
+      "sha256": "7b9c159ddcfb6c3c7e1dacde83fc339b7738b72e4b2677d9ff5ce623696013a9"
+    },
+    {
+      "path": "motor_joystick/src/config.py",
+      "bytes": 4215,
+      "sha256": "87df6c42e21af43ebe49248088b84118619195bffc3930eb0dd706eb4c1ef3fe"
+    },
+    {
+      "path": "motor_joystick/src/mechanical_only.py",
+      "bytes": 18359,
+      "sha256": "18ff3a39d06b142a402ed6dce86d2cceae850259ca216e75b073dee6250e975b"
+    },
+    {
+      "path": "motor_joystick/src/pi_autotune.py",
+      "bytes": 6390,
+      "sha256": "e30388a1a7f96c416ae3992d2323e2fe0ff1a3abfac5987fa2a27fc8b5283f38"
+    },
+    {
+      "path": "motor_joystick/src/service.py",
+      "bytes": 13833,
+      "sha256": "1d0c66a285866f134b167ef7e17bc4dbe8da78e62fb7650b25038bc14ac5a61e"
+    },
+    {
+      "path": "motor_joystick/src/tuning.py",
+      "bytes": 23392,
+      "sha256": "dabdf25914e175f2ed3522c7c2fce1aee827cc1ee9990e3885a90701fac3197b"
+    },
+    {
+      "path": "motor_joystick/src/ui.py",
+      "bytes": 7571,
+      "sha256": "93e565c5ec091789f2fdd40800f02510a793c143c65d688fd427cd8175ad93ac"
+    },
+    {
+      "path": "motor_joystick/src/web.py",
+      "bytes": 31281,
+      "sha256": "1a06c554a3f3f7a3e32ef1f576100098b677bc8092e8a16e782663229c144951"
+    },
+    {
+      "path": "motor_joystick/tests/__pycache__/test_demo.cpython-310.pyc",
+      "bytes": 35094,
+      "sha256": "2238d44656c6e5e8b31a90d91cbf54c85afa38325e43aab5f65a5f5daadc146e"
+    },
+    {
+      "path": "motor_joystick/tests/test_autotune.py",
+      "bytes": 5708,
+      "sha256": "7abc70d246cbeaa60599c811cd8b3dd76d3a3ad6ceede562847e0cd1d5d7f5be"
+    },
+    {
+      "path": "motor_joystick/tests/test_demo.py",
+      "bytes": 26084,
+      "sha256": "5b469d31b92071318116d2d05bd4a01fa53e86cc653ffcdf145ea3f4feb2481b"
+    },
+    {
+      "path": "motor_joystick/tests/test_pitch_serial.py",
+      "bytes": 2877,
+      "sha256": "4d722260a942cfc7bf18765cdfef80f860ba587bf5c60b6a401b2fbf0a349fd9"
+    },
+    {
+      "path": "motor_joystick/tests/test_recheck.py",
+      "bytes": 5738,
+      "sha256": "666921514475061efbfc9c1a10eb4c9ea19123425cab7a575f2825885f9fe3f5"
+    },
+    {
+      "path": "motor_joystick/tests/test_stream.py",
+      "bytes": 6927,
+      "sha256": "7dbaca73c9e88438075a33ff63c64ae690a7439a9fc850c36edf111aaefb30dd"
+    },
+    {
+      "path": "motor_joystick/tests/test_tuning.py",
+      "bytes": 11743,
+      "sha256": "834d5dad443176353bf777610edacfc4c88cadd8c48f23dac5b4a492435bfffe"
+    },
+    {
+      "path": "motor_joystick/tests/test_web.py",
+      "bytes": 8941,
+      "sha256": "a8647e27883b177c59138fdd617a2acc418f8d440190dc4eb33c5de829979d0d"
+    },
+    {
+      "path": "motor_joystick/tests/test_web_client.cjs",
+      "bytes": 5029,
+      "sha256": "96e967688b7cb25c1837178dddb36d9381d7bfe58bb37b9d2ee4f4e51bb223dd"
+    },
+    {
+      "path": "motor_joystick/vendor/__pycache__/protocol.cpython-310.pyc",
+      "bytes": 4040,
+      "sha256": "c9d4362a25574c68ec212bcddde4dffe4d4bdd304b661779df5acfd50678f86f"
+    },
+    {
+      "path": "motor_joystick/vendor/motor_base.py",
+      "bytes": 19165,
+      "sha256": "c0923a66c43c4611c3ab36846fe0c379db8fac83cb7481fba36edb5b0dab0892"
+    },
+    {
+      "path": "motor_joystick/vendor/protocol.py",
+      "bytes": 3554,
+      "sha256": "8f2f101dd74d69f8f8e8defc1a38414a4195391b25b226de0df235a3849ae556"
+    },
+    {
+      "path": "motor_joystick/WEB_CONTROL.md",
+      "bytes": 11996,
+      "sha256": "1d12a2267df58c0ce969b929fb7a0929806628adc8bf39df87756ebd77cab3cc"
+    },
+    {
+      "path": "motor_joystick/web_source_hashes.json",
+      "bytes": 828,
+      "sha256": "627b63fbf6422eeb975e88d82bf1c9101ce77986620298f6ffb25ddacdecd58c"
+    },
+    {
+      "path": "motor_joystick/yaw_serial_tune.py",
+      "bytes": 8580,
+      "sha256": "f7372c38f065c44695454e0e8313e1802e6c0e232393930406c844e6a17bcaef"
+    },
+    {
+      "path": "sound_yolo_gimbal/build.py",
+      "bytes": 1465,
+      "sha256": "2b8fbe22693170439d17d04d410e947de1bd2bbd21698204eeafb931e9b1dfc7"
+    },
+    {
+      "path": "sound_yolo_gimbal/calibrate_zero.py",
+      "bytes": 53516,
+      "sha256": "5774d32a72570a47b55c8515699d30db64377cf160429d2bb306a1b21bed8e19"
+    },
+    {
+      "path": "sound_yolo_gimbal/calibration_table.py",
+      "bytes": 1932,
+      "sha256": "be0e3819c54267da97556ab57887d808da4e7788d20cc15a58a39923f5ec5a9e"
+    },
+    {
+      "path": "sound_yolo_gimbal/main.py",
+      "bytes": 54168,
+      "sha256": "50b595acab05fad17f462532e466821f11d63842015e607b80f49a03805ba63d"
+    },
+    {
+      "path": "sound_yolo_gimbal/README.md",
+      "bytes": 14951,
+      "sha256": "dc38779642de9601428b05469def6902120536680060a8e6c7f642e5d19166f2"
+    },
+    {
+      "path": "sound_yolo_gimbal/simulate.py",
+      "bytes": 1558,
+      "sha256": "c0b6803fea8514678df056aa4513d9c2235815feffaa9292bfa32a48d865b590"
+    },
+    {
+      "path": "sound_yolo_gimbal/source_hashes.json",
+      "bytes": 728,
+      "sha256": "906945b52ed2d976168d3c6a9199eefea7ef85b95d88358cdaa3d328e32724e0"
+    },
+    {
+      "path": "sound_yolo_gimbal/src/config.py",
+      "bytes": 6567,
+      "sha256": "24026e17f4b677c9aa938c6a7872ff481b086845d86012fedf6ce9191f1b8346"
+    },
+    {
+      "path": "sound_yolo_gimbal/src/core.py",
+      "bytes": 7975,
+      "sha256": "032dafa22fde6bb19023a308872c03d607b22dea94aa0501d2a146748ae3b743"
+    },
+    {
+      "path": "sound_yolo_gimbal/src/motor.py",
+      "bytes": 18887,
+      "sha256": "e7eeaad54ee6b148ed06b390baf28c156ac5d9ef1508e5339a9f0c850579961f"
+    },
+    {
+      "path": "sound_yolo_gimbal/src/runtime.py",
+      "bytes": 6059,
+      "sha256": "b06c590c13b49dff017a6bfb463c398471e45663377597823e7ea86ebbab8ab1"
+    },
+    {
+      "path": "sound_yolo_gimbal/src/vision.py",
+      "bytes": 3650,
+      "sha256": "22383f807aca720b657d4ebbb66c0472e45436f4ed35cf34256c0eab14a90b94"
+    },
+    {
+      "path": "sound_yolo_gimbal/src/zero_runtime.py",
+      "bytes": 964,
+      "sha256": "ad1e3780af6eeb26f6a21bce99f541441db01d39a1d22a4a6547b9217bd352be"
+    },
+    {
+      "path": "sound_yolo_gimbal/tests/test_system.py",
+      "bytes": 29740,
+      "sha256": "6ad07b94a90534153c2a2e3aca515058d489d6a98d9d9bd5503e511cbd4a9d2f"
+    },
+    {
+      "path": "sound_yolo_gimbal/VALIDATION.md",
+      "bytes": 3295,
+      "sha256": "fa1df7377547bace8e822cc3cf52d37a87e711a4751cd8fd54238062d67de507"
+    },
+    {
+      "path": "sound_yolo_gimbal/vendor/micarray.py",
+      "bytes": 10520,
+      "sha256": "84ca3545a379859726c9ceec0588293b8d0eb2efb4dab891bf53de9b3606e156"
+    },
+    {
+      "path": "sound_yolo_gimbal/vendor/protocol.py",
+      "bytes": 3554,
+      "sha256": "8f2f101dd74d69f8f8e8defc1a38414a4195391b25b226de0df235a3849ae556"
+    },
+    {
+      "path": "thermal_uav_detector/adapter.py",
+      "bytes": 2620,
+      "sha256": "dc0ee66fa4da87c6ec65d176a08930828fd9bfe1446542203f5face1fd424e48"
+    },
+    {
+      "path": "thermal_uav_detector/board_main.py",
+      "bytes": 22295,
+      "sha256": "c7ae042d36bfb65c8a36f6c238a724a7f54f9508d78f16319b56abe2cd727818"
+    },
+    {
+      "path": "thermal_uav_detector/build.py",
+      "bytes": 2047,
+      "sha256": "0f704cd6acc28594135bbb076956ca68f6209dfa7678d72cffadc30ef05cafc9"
+    },
+    {
+      "path": "thermal_uav_detector/detector.py",
+      "bytes": 11260,
+      "sha256": "ee694652835aa43c02e74ae19827f6d607218c3916696f93053ed60c384f2bda"
+    },
+    {
+      "path": "thermal_uav_detector/HANDOFF.md",
+      "bytes": 3749,
+      "sha256": "6c19a0ba733cb9495a9dcd8aa638bcf09221af911c6be9ccf7909f21b6339b2e"
+    },
+    {
+      "path": "thermal_uav_detector/LICENSE_SIPEED.txt",
+      "bytes": 2863,
+      "sha256": "c5173471196f2a41b28b7fcfefb468883e7716240cec3781cc1610b24692a277"
+    },
+    {
+      "path": "thermal_uav_detector/maixvision.py",
+      "bytes": 1145,
+      "sha256": "2751f1d5d67768c272983405cbaaf60bdc628743bc0ce856f004180e9faba268"
+    },
+    {
+      "path": "thermal_uav_detector/README.md",
+      "bytes": 4003,
+      "sha256": "4ea3cae9b6afd829b5917afa52a1fd278e9ffa04108e1b1b317e430a56314902"
+    },
+    {
+      "path": "thermal_uav_detector/replay.py",
+      "bytes": 2084,
+      "sha256": "b75f43a0f50bcf9fc94acabcf043d995ca0c78f3a2184d0372e2eea75d97f80e"
+    },
+    {
+      "path": "thermal_uav_detector/synthetic_results.jsonl",
+      "bytes": 12084,
+      "sha256": "af08f349e18a2bfc2e70016bf0da253ee025d2508001699a9351ed02f873ecfb"
+    },
+    {
+      "path": "thermal_uav_detector/TEST_REPORT.md",
+      "bytes": 1648,
+      "sha256": "423e2dfac210c3c22d8983229839277d71adc2a4d0c58ffc9203df1806a0ebac"
+    },
+    {
+      "path": "thermal_uav_detector/tests/test_detector.py",
+      "bytes": 4039,
+      "sha256": "d69c35503b3108a80f53197be85ddb03a62c2a309828b570cd68583e953c5107"
+    },
+    {
+      "path": "thermal_uav_detector/THIRD_PARTY.md",
+      "bytes": 966,
+      "sha256": "804a5e76ff30661c18b171602df21283eefee52d22e51df8fc970c2b4ffbc928"
+    },
+    {
+      "path": "thermal_yolo_fusion/app.yaml",
+      "bytes": 430,
+      "sha256": "15a92d770e52773b2b8acfde998a1c83a8d0b293ad0d835809f0d9d9137aa6d3"
+    },
+    {
+      "path": "thermal_yolo_fusion/assets/thermal.json",
+      "bytes": 5279,
+      "sha256": "78099b08688e6703dcc7da4cbd213dabcfcab745edf443bb13f8bd8903c4fb82"
+    },
+    {
+      "path": "thermal_yolo_fusion/CALIBRATION.md",
+      "bytes": 9585,
+      "sha256": "711555b246f9675129b331ee02ee5ebddf11b77d4f249b8ffdb02cfb62885bff"
+    },
+    {
+      "path": "thermal_yolo_fusion/DYNAMIC_ALIGNMENT_AND_THERMAL_YOLO.md",
+      "bytes": 8309,
+      "sha256": "ad9a87263a9a9bd8d0967920c5f532657e22e0e32e60f184ae2d333a8527a68c"
+    },
+    {
+      "path": "thermal_yolo_fusion/hardware_probe.py",
+      "bytes": 106405,
+      "sha256": "4a1a27b73aeeeb2b7ff17b407852787181fa259c2c3feec94f2bbbc2e55e6b6d"
+    },
+    {
+      "path": "thermal_yolo_fusion/LICENSE_SIPEED.txt",
+      "bytes": 2792,
+      "sha256": "15e7c128745db14316488cddba00f0d1a7eb479974628477ffb706170ddd79ee"
+    },
+    {
+      "path": "thermal_yolo_fusion/main.py",
+      "bytes": 99156,
+      "sha256": "976d6e2b452db1f6afd1c0782f7f3662f6c7845dd94e3eac676c2c080232a1c9"
+    },
+    {
+      "path": "thermal_yolo_fusion/PERFORMANCE.md",
+      "bytes": 6962,
+      "sha256": "624c645632674e40b3a8094d0ed819bc8f115c73373d14b1e44dea7c7e28b807"
+    },
+    {
+      "path": "thermal_yolo_fusion/README.md",
+      "bytes": 14363,
+      "sha256": "03030302fe112cfa57fade4f8268fb0827eb50a454e6dcdf59df4b19b6f0d34b"
+    },
+    {
+      "path": "thermal_yolo_fusion/src/calibration.py",
+      "bytes": 12429,
+      "sha256": "d9c92c7c99db1578c119183a33c1e911fa8c936042a799b2abc4b3f8a54f8e9c"
+    },
+    {
+      "path": "thermal_yolo_fusion/src/config.py",
+      "bytes": 2803,
+      "sha256": "d7d8fb2b3a2671c2e3851901513407fe87e0897286408771a447b7874c71e304"
+    },
+    {
+      "path": "thermal_yolo_fusion/src/fusion.py",
+      "bytes": 22458,
+      "sha256": "5e3c290c126c43bac305b89fe40555eb57cd51c00497e55dee477f104b6ae8a2"
+    },
+    {
+      "path": "thermal_yolo_fusion/src/hot_tracker.py",
+      "bytes": 7412,
+      "sha256": "3cc6b978f5a736d60a8e1f2849f76c749280b829a688ca57865d0373f15b180b"
+    },
+    {
+      "path": "thermal_yolo_fusion/src/pipeline.py",
+      "bytes": 12554,
+      "sha256": "249385432221dede5ffb5c5cf1ccbaefca5690475b4bac655a1faa8dd25c298e"
+    },
+    {
+      "path": "thermal_yolo_fusion/src/rtsp_jpeg.py",
+      "bytes": 15994,
+      "sha256": "588238e2ddc658bbb8bcb017a4d3fddccbc2fe18f4fd0cf87b2c955ce4f63991"
+    },
+    {
+      "path": "thermal_yolo_fusion/src/runtime.py",
+      "bytes": 15871,
+      "sha256": "ed1030d42891d5a636667c7543d096a6cfed23f7ee54c54acd6798fe19c4511a"
+    },
+    {
+      "path": "thermal_yolo_fusion/src/thermal.py",
+      "bytes": 7118,
+      "sha256": "17f696e75f6edee5fa62144cd1dae25cbea597a6d119cee85b6793878fda5d1c"
+    },
+    {
+      "path": "thermal_yolo_fusion/THIRD_PARTY.md",
+      "bytes": 946,
+      "sha256": "2f4208402bedef06cb289ab5bb26927a387c169b3aac054d76bc9950942e9ed2"
+    },
+    {
+      "path": "thermal_yolo_fusion/validation/calibration_ui_reference.png",
+      "bytes": 93651,
+      "sha256": "1c45e940bf87004f4f586e2f161d1fd48af24c029fdf3839f5ff88137fad5bf5"
+    },
+    {
+      "path": "thermal_yolo_fusion/validation/composite_reference.png",
+      "bytes": 145481,
+      "sha256": "fdc7b0c08d291134a03fdeef6cdba83ab8cd6ad00ed2cb56106ecca9de42a70c"
+    },
+    {
+      "path": "thermal_yolo_fusion/validation/manual_fov_reference.png",
+      "bytes": 165542,
+      "sha256": "2a0ebafaf0e942353efe6a717dfba738ac21994c6b333a017341d9550262f476"
+    },
+    {
+      "path": "thermal_yolo_fusion/validation/rtsp_decode.json",
+      "bytes": 245,
+      "sha256": "385e7f764756a0f0d29034acd8c79798e48707efe7da73f8a97d4c37bbfe44b9"
+    },
+    {
+      "path": "thermal_yolo_fusion/validation/rtsp_decoded.png",
+      "bytes": 209495,
+      "sha256": "51f9017d19074493b1c13449d3fa255d456683849e9b276bcd8e2556aebdc2a4"
+    },
+    {
+      "path": "yolo_click_tracker/__pycache__/commission_drive.cpython-310.pyc",
+      "bytes": 5617,
+      "sha256": "46cda21f6a2154aec989c77736e08904e399c939c17be1203c9ee86e7916c934"
+    },
+    {
+      "path": "yolo_click_tracker/__pycache__/main.cpython-310.pyc",
+      "bytes": 174779,
+      "sha256": "88390f0ca09bdc42526331e050c74ce9d6871b10880f83668244155be5391e93"
+    },
+    {
+      "path": "yolo_click_tracker/ANGLE_TEST.md",
+      "bytes": 3565,
+      "sha256": "1828ae00f0bf191d39f75af50630592e30339a982eee42221a561aaf1bd96972"
+    },
+    {
+      "path": "yolo_click_tracker/AUTOTUNE.md",
+      "bytes": 4702,
+      "sha256": "7dc58d6a6553b2562e9fafe9c59966e177c36665dba9db6c09102a5bfcd0340c"
+    },
+    {
+      "path": "yolo_click_tracker/behavior_reference.json",
+      "bytes": 4730,
+      "sha256": "a6d8715d7ee4e033b5355e24a3ea447aadf517cc4ab16d52b9d22f919396f4f0"
+    },
+    {
+      "path": "yolo_click_tracker/build.py",
+      "bytes": 5386,
+      "sha256": "17d23cfdb271ece249f3afab169989aebfbe0965e94d3f26f02c0f83e81593a6"
+    },
+    {
+      "path": "yolo_click_tracker/commission_drive.py",
+      "bytes": 5575,
+      "sha256": "3c4e96217744d434b8b949dde5ab10085b63f89c78ffe96a036fbf54967466ba"
+    },
+    {
+      "path": "yolo_click_tracker/HOLD_POSITION.md",
+      "bytes": 4242,
+      "sha256": "db92ad4c3ae8ef81a5b553e45fc2b4b0182bf740f841e763f253b68ada05e1e8"
+    },
+    {
+      "path": "yolo_click_tracker/inertia_probe.py",
+      "bytes": 5143,
+      "sha256": "e0cc81cfad1ecdb9694194999dafe8425eef054226d4ddc6ba71e1de1ef7db3e"
+    },
+    {
+      "path": "yolo_click_tracker/latency_probe.py",
+      "bytes": 2771,
+      "sha256": "1fa756f63ce2b38455465bc79dca2d77efd6f9c1fc559827bb78a57c44d7f6c9"
+    },
+    {
+      "path": "yolo_click_tracker/main.py",
+      "bytes": 328036,
+      "sha256": "667c6ca4db873b6ddb714679b1a0b1e840a3ea0143370caa3395faa78f1f1007"
+    },
+    {
+      "path": "yolo_click_tracker/motion_probe.py",
+      "bytes": 2614,
+      "sha256": "4d24d6d25ddf82791489fe8e36f5ccbdb1a39086612b66c118db738c9c8c6ca2"
+    },
+    {
+      "path": "yolo_click_tracker/README.md",
+      "bytes": 43609,
+      "sha256": "853a03b838453f15778683e725908f534fcc08bb60dea8cd5750d79c8a26e93b"
+    },
+    {
+      "path": "yolo_click_tracker/source_hashes.json",
+      "bytes": 2555,
+      "sha256": "459da8cc4f5338872236c39c2a80be5a0cdc6d8b7338952e427f6ad61234033d"
+    },
+    {
+      "path": "yolo_click_tracker/src/angle_move.py",
+      "bytes": 3515,
+      "sha256": "053009505cae5f97af86878e742de92e0a6bcae03430790c7163dfca00890739"
+    },
+    {
+      "path": "yolo_click_tracker/src/config.py",
+      "bytes": 18489,
+      "sha256": "5f74daacd563a5252044c73af30f3c3dcb0aaa97456aeae8ead9156544b3c8bf"
+    },
+    {
+      "path": "yolo_click_tracker/src/hub.py",
+      "bytes": 21517,
+      "sha256": "ac5b453bf6fd83a4a7093f784e1f9ced0e63ac5fb726b8ed62ef5a40d77ee4b9"
+    },
+    {
+      "path": "yolo_click_tracker/src/native_tracking.py",
+      "bytes": 9636,
+      "sha256": "ec293e53b1a0ea642a8def7d1f1750fefb84c6c83b4396e28d5657ad468d104b"
+    },
+    {
+      "path": "yolo_click_tracker/src/overhead.py",
+      "bytes": 6984,
+      "sha256": "26b2b735f5e3b2da6376b945a685536733b64cf8b74f4f574c9b86bdcac51290"
+    },
+    {
+      "path": "yolo_click_tracker/src/performance.py",
+      "bytes": 4419,
+      "sha256": "63eab04aeb4dd9650b09302265c180bcdf0cb91fe3fbbd57ffd56e02fb6975b6"
+    },
+    {
+      "path": "yolo_click_tracker/src/prediction.py",
+      "bytes": 3186,
+      "sha256": "4280e12c1177684346d034b6dc58f9f49b6fa8320d4efc39b2e7eb51447983bb"
+    },
+    {
+      "path": "yolo_click_tracker/src/response.py",
+      "bytes": 5290,
+      "sha256": "05a31e9605cbc9b2a5074065e4b00b9009615be789b29fbdb153f032b98d24c4"
+    },
+    {
+      "path": "yolo_click_tracker/src/runtime.py",
+      "bytes": 17308,
+      "sha256": "704969832fe91e3562ed99752213bec7bfc8af4af66fcc561edb7aaee7d4e3fa"
+    },
+    {
+      "path": "yolo_click_tracker/src/software_autotune.py",
+      "bytes": 7783,
+      "sha256": "16253e7bb82498a61907a86aee31ce99c9f4a2fe5ac6abd20266b0f876cc5359"
+    },
+    {
+      "path": "yolo_click_tracker/src/tracking.py",
+      "bytes": 9477,
+      "sha256": "7b30398f30e0d7b7f97d52bb5e0bb1fed28f827023df47078f64544c53062ad1"
+    },
+    {
+      "path": "yolo_click_tracker/src/tracking_motor.py",
+      "bytes": 84297,
+      "sha256": "15b45dac5531f4060cd9f5e93785fcf895e661e7fe1e9e4dce260f1b09872e94"
+    },
+    {
+      "path": "yolo_click_tracker/src/velocity_motor.py",
+      "bytes": 20881,
+      "sha256": "629de1b112d0f8e3c9d4781fc5884c35c8fe759da3a4cba6bf0829f28f65da57"
+    },
+    {
+      "path": "yolo_click_tracker/src/vision.py",
+      "bytes": 5986,
+      "sha256": "7acc5812e3f4adbb5ec7ea0cf9734faba7256170ef5770ea2bf94cc7a2d0dc92"
+    },
+    {
+      "path": "yolo_click_tracker/src/web.html",
+      "bytes": 22825,
+      "sha256": "155352c81709fd9271eee9a7abec5fcdd936bb7c90ba6dc30bb244e89783ce64"
+    },
+    {
+      "path": "yolo_click_tracker/tests/__pycache__/test_adapter.cpython-310.pyc",
+      "bytes": 7486,
+      "sha256": "42a06d73cf890981eeb3cf210ebc3e5d2dc0ab0bd508f0fbfe53ae59c1f73671"
+    },
+    {
+      "path": "yolo_click_tracker/tests/__pycache__/test_fast_manual.cpython-310.pyc",
+      "bytes": 10117,
+      "sha256": "3b313396bcb7c950b156ff8b7b1e3aea6858a81f2792f34a221991fccb19c7e4"
+    },
+    {
+      "path": "yolo_click_tracker/tests/__pycache__/test_separate_controls.cpython-310.pyc",
+      "bytes": 7471,
+      "sha256": "8b50427bb56606234e23940287216600a79253f306dce43a830f6d2c67019cf3"
+    },
+    {
+      "path": "yolo_click_tracker/tests/__pycache__/test_tracker.cpython-310.pyc",
+      "bytes": 22864,
+      "sha256": "681d683120bdf35fe0b7ce992e320eda2a5493ec3c98dfd4d3b15ea00cea7dee"
+    },
+    {
+      "path": "yolo_click_tracker/tests/native_model.py",
+      "bytes": 1239,
+      "sha256": "c25b932164d3e7e92e12db0dd2cc6af0027e556614b23b5d7af452800969ec36"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_adapter.py",
+      "bytes": 4798,
+      "sha256": "5764036d007a6a8ddcb0b5db1b878f6cdbdcfeba0694a961d67f2285c6bbbe96"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_angle_move.py",
+      "bytes": 5414,
+      "sha256": "508ad7384fcc97b6875debc6dfb22d57957743265d6a9eb6a81976ff6a2ea05e"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_arming_guard.py",
+      "bytes": 6394,
+      "sha256": "f638830fce55c1c7aa690197650dc79028c83370f49459b66222cd36a4a877c7"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_client.cjs",
+      "bytes": 11227,
+      "sha256": "ec96824d62be8bcd0be3daf6c0a39eb093ff19f8ea7b2a7be2e69491e5105ae6"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_continuous_yaw.py",
+      "bytes": 4814,
+      "sha256": "570e9d1c424c92295d9a6557f66cc27777145a8f5e878bdf6473f4cd8ac54288"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_fast_manual.py",
+      "bytes": 8712,
+      "sha256": "b946f119ee946d9e28e166fe419ed17920ac36b807d76250b0db2e540b398e47"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_fast_return.py",
+      "bytes": 2897,
+      "sha256": "b084865248d6ecdbe564f06a3615e662cc82ac9b9469e5bc5349fd5628f0dd55"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_fast_vision.py",
+      "bytes": 4992,
+      "sha256": "0ebd280ec674dd7be320d8ef1fe8989d7bfb3dd7d25c90f8335b6949b5696b60"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_feedback_capture.py",
+      "bytes": 1548,
+      "sha256": "c258ef103b268ac2523e66edc947624cf378f17f217b711674c09763ce2be630"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_feedback_response.py",
+      "bytes": 10082,
+      "sha256": "c7a99ebfd611ba345f3c0bdd164dec8e0939363978593da2715a5d39c35b8815"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_feedback_scheduling.py",
+      "bytes": 10226,
+      "sha256": "3326740fef6e41a026d1d9de895e0daf947d223a868975711a8386b3d246d903"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_fixed_hold.py",
+      "bytes": 6029,
+      "sha256": "d271a30c9e82874330d99ec96d4cc0b70741795a7ba2cfe0295025751e75db6c"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_home_tolerance.py",
+      "bytes": 6613,
+      "sha256": "56ffe81ab4e1f86b42277157a99b9089a1832e3312beef5628b1262d483ab393"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_inertia_braking.py",
+      "bytes": 4442,
+      "sha256": "385cfa8bf58db74c5a0f78caa27bf8d772cec2dd7db965efb1b0d2e58790ed2d"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_inertia_mode.py",
+      "bytes": 3031,
+      "sha256": "f021663ccfc2dfe7440ff2d18cf606d77557079efc13e8346b2a1554e100117a"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_loss_hold_replan.py",
+      "bytes": 2791,
+      "sha256": "743b7d00ea0189f54818600139a1887b9a7dcd9d6dca548a0ad2e80ba49b6896"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_low_confidence.py",
+      "bytes": 1369,
+      "sha256": "aa74982a66716a06ee247f9427e22f7d65a4bb28a6b2a7a05390c35199d4c11b"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_manual_fault_regression.py",
+      "bytes": 5504,
+      "sha256": "9875f620d3bcb8a80480daf0d2173d99b07c5c2f78478ee227d811df3ba67f4b"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_native_pitch.py",
+      "bytes": 3254,
+      "sha256": "41c6864ba4aa2cfa1cc047d493ed3d63ed404a3d607ce09025a313695ba3975e"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_native_tracking.py",
+      "bytes": 10912,
+      "sha256": "bab765d3b12e57582ef49959dc49b7a7d75c61afcdb84752107232086fb744ca"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_overhead.py",
+      "bytes": 7258,
+      "sha256": "766e392aeda9112b73f5836e1577cd7367e39f509bc8dbf050196b4958c809b9"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_prediction.py",
+      "bytes": 4751,
+      "sha256": "60a26581bf03d31a0337dd6908ee4496d3af92771aa4ab9d56002276509fbff3"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_preview_worker.py",
+      "bytes": 2659,
+      "sha256": "01163644bbedbd819c41fedff37cd30d8926a4fcab834b8b49ff94151f97a9f8"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_pursuit.py",
+      "bytes": 4554,
+      "sha256": "38a91656c38668bcd05bf0fd65e9c6987eea86dd9cb126411039b0f546f9d968"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_saved_zero_recheck.py",
+      "bytes": 2605,
+      "sha256": "8c3af391a2b671ee8bd4d65ae51a79bc9b1046163c504eeb11e7501f9ec17320"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_separate_controls.py",
+      "bytes": 6366,
+      "sha256": "6bda7760523d9ece5005834bab9252b3db8b6b72a7d095070a1ca4d6d25f3255"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_smooth_stream.py",
+      "bytes": 3253,
+      "sha256": "c55a65ef7651e56f934697f336fe395f04dd69b5570669c68cc2af86b7c1862c"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_software_autotune.py",
+      "bytes": 3882,
+      "sha256": "377f4612f6b34c3be508521871c847c59fe92b183e8b02f65903b19433366590"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_speed_multipliers.py",
+      "bytes": 7919,
+      "sha256": "69f5de3ecb64dd3424cf473219032fc032327d4cf53385acc2b4e43c29f16acd"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_stable_aim.py",
+      "bytes": 3442,
+      "sha256": "1997bb1a71d8ce2f45b7177a86dd9967b633d5593b7699d5b383850e131926ff"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_startup_recovery.py",
+      "bytes": 7003,
+      "sha256": "2fca79dff207f15d5d44e71ac9d483627da3701231135026351ff78418e9a9ab"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_stop_diagnostic.py",
+      "bytes": 1716,
+      "sha256": "f46ca3b3d293b8c4e0910a5ed1d62e38678c6e1f4d165a3dfee89ddf31487a08"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_tracker.py",
+      "bytes": 17887,
+      "sha256": "5f91c64583f5048ad9f2cdca2d3e49b1c17f0bb61e354e5cddd7a286a5aab98f"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_tracking_tolerance.py",
+      "bytes": 5476,
+      "sha256": "e52e975d4a3d8715a8750522bf755820b567d1dde631ba91512c8b94535b5396"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_uart_frame_gap.py",
+      "bytes": 887,
+      "sha256": "2353855d4d7add1c069767f949b9ea0ae8f9cf9bba969bfb0b31350dada4d4f1"
+    },
+    {
+      "path": "yolo_click_tracker/tests/test_velocity_drive.py",
+      "bytes": 13646,
+      "sha256": "626138f7e0899b49a72408d7603b3df2e1926a47319626c3bccba5708ad621ec"
+    },
+    {
+      "path": "yolo_click_tracker/tools/read_feedback.py",
+      "bytes": 3425,
+      "sha256": "3b9da490b2d664a403e75de98046aa92272d1b60ef8a531303008d191b136d82"
+    },
+    {
+      "path": "yolo_click_tracker/validation/analyze_drive_v16.py",
+      "bytes": 4872,
+      "sha256": "5de348076e25ce4edfdd5bb2f1d383d262b2497c8b32a3f90d51fe2cde9ecd24"
+    },
+    {
+      "path": "yolo_click_tracker/validation/browser_selection_v9_20261030.json",
+      "bytes": 790,
+      "sha256": "c11402e688d25aa4773d871a45b3720397277e77964c632ea87b3a7fc1d8298e"
+    },
+    {
+      "path": "yolo_click_tracker/validation/drive_response_v16_20261105.json",
+      "bytes": 2144843,
+      "sha256": "6ddb23b23c10b2b627726c1fc326cd2d3fb4f207b08b834746dc04b663c01077"
+    },
+    {
+      "path": "yolo_click_tracker/validation/drive_response_v16_20261105.png",
+      "bytes": 185506,
+      "sha256": "e85db29f502e988be40e3c2506bcd79e3c06f145c4a8695f4709639707c40662"
+    },
+    {
+      "path": "yolo_click_tracker/validation/drive_summary_v16_20261105.json",
+      "bytes": 4049,
+      "sha256": "1d2aac6810e69a91e44c8b5760278422632e4fcd38b5da99451240091f029c2f"
+    },
+    {
+      "path": "yolo_click_tracker/validation/drive_telemetry_v16_20261105.json",
+      "bytes": 828543,
+      "sha256": "58669f3eebf712c5661a522b2293cbfec2aef893c4d302d26c5c5e8d3a9423ae"
+    },
+    {
+      "path": "yolo_click_tracker/validation/fast_smooth_v4_pc_20261030.json",
+      "bytes": 788,
+      "sha256": "048ef4d305c66e3bd315f68c932961324750d7072c3938eb56c81ee27d103163"
+    },
+    {
+      "path": "yolo_click_tracker/validation/final_hold_v16_20261105.json",
+      "bytes": 4949,
+      "sha256": "accf7d4eb87f51bef42bec540b77ee4e51ce734efdafd91133cccec1b956f616"
+    },
+    {
+      "path": "yolo_click_tracker/validation/gentle_loss_hold_v11_pc_20261030.json",
+      "bytes": 466,
+      "sha256": "558ea427e1193324fb6bf8fc0ba06413c35621ed2a922cba10ec7c0bf168c247"
+    },
+    {
+      "path": "yolo_click_tracker/validation/home_telemetry_v16_20261105.json",
+      "bytes": 295592,
+      "sha256": "c124c8a01315900d9ca00c9f62c2bb833b0778e4c312ccfaebfe6e445f3b623b"
+    },
+    {
+      "path": "yolo_click_tracker/validation/live_capture_20261030.json",
+      "bytes": 9385,
+      "sha256": "1358e9520cbc10fde4ca2c4f69764992684c9e707c936dec0d179b580b36ed95"
+    },
+    {
+      "path": "yolo_click_tracker/validation/LIVE_DRIVE_20261105.md",
+      "bytes": 3691,
+      "sha256": "6db71a1e5dfc1cccf1d5a252a6ad1a3dd0fbc3a2dc161d1e3c61de205db42bc7"
+    },
+    {
+      "path": "yolo_click_tracker/validation/live_fault_analysis_v1_20261030.json",
+      "bytes": 624,
+      "sha256": "67e2834c195335538911fd2fdc46027ec9b1baba52f8da807261301845ba88be"
+    },
+    {
+      "path": "yolo_click_tracker/validation/live_fault_feedback_v1_20261030.json",
+      "bytes": 191527,
+      "sha256": "30875ec16b508567b39629e7c7b1e2d51cbbc9236a56cc17f03cdc8264755d4e"
+    },
+    {
+      "path": "yolo_click_tracker/validation/live_loss_hold_fault_v10_20261030.json",
+      "bytes": 267742,
+      "sha256": "d81de34d70de41c0f10e02619d2b72949d1c31cf7ae2d349827b60994ed495ea"
+    },
+    {
+      "path": "yolo_click_tracker/validation/live_readonly_baseline_20261030.json",
+      "bytes": 21611,
+      "sha256": "f299438b126a9d9c5b3d90956ac20a670cdd5363a2b238c0f2926c4956af96a9"
+    },
+    {
+      "path": "yolo_click_tracker/validation/live_stop_diagnostic_v8_20261030.json",
+      "bytes": 736021,
+      "sha256": "9643f147bd3620a2efe63757026b460cce43418a1b70c0966be94b6d7bd064ad"
+    },
+    {
+      "path": "yolo_click_tracker/validation/manual_half_soft_v6_pc_20261030.json",
+      "bytes": 1241,
+      "sha256": "8a52571ae528407a9e7ef87586f212f9c8e48276b916c58b6ff9ee528499e07c"
+    },
+    {
+      "path": "yolo_click_tracker/validation/reported_home_path_fault_v2_20261030.json",
+      "bytes": 587,
+      "sha256": "d47a400f200e9b9c0abfaaf9b8d7de08055af633aa7c9b8b6b352fca5c5aa5e4"
+    },
+    {
+      "path": "yolo_click_tracker/validation/selection_inertia_v10_pc_20261030.json",
+      "bytes": 347,
+      "sha256": "db53c9b6948ece6b08f41eafaab0ae16bb44fe1373029f0b98159a6984737956"
+    },
+    {
+      "path": "yolo_click_tracker/validation/speed_3_5_10_v5_pc_20261030.json",
+      "bytes": 1068,
+      "sha256": "d62aedc40d873cbf74462fe3c0961f779ddda8e4f663f42e41bc5cd64090c840"
+    },
+    {
+      "path": "yolo_click_tracker/validation/stable_aim_v12_pc_20261030.json",
+      "bytes": 366,
+      "sha256": "80164b17a755f9f1b17867f7806a8d7c469ac2ebc9830e970ec7d5dc60404f83"
+    },
+    {
+      "path": "yolo_click_tracker/validation/startup_v16_20261105.json",
+      "bytes": 1615,
+      "sha256": "3ec77ac86cab8c47560e66fb8ec790c230405b679b896e40889c5d1125b3b3ab"
+    },
+    {
+      "path": "yolo_click_tracker/validation/stop_diagnostic_v8_pc_20261030.json",
+      "bytes": 453,
+      "sha256": "ee807fd949907a7aa8b950ff26dafd07195db94b02a94abadb9193d544dc5682"
+    },
+    {
+      "path": "yolo_click_tracker/validation/tracking_tolerant_v7_pc_20261030.json",
+      "bytes": 564,
+      "sha256": "37042eb09c05a449a9467950ef52c3dfac59c46f32d73912a077ea6deb92b592"
+    },
+    {
+      "path": "yolo_click_tracker/VELOCITY_DRIVE.md",
+      "bytes": 4990,
+      "sha256": "6a2086c2afaddc53c335c2b7a30defa1b57467820ecbdb1dc093b05b670db61a"
+    }
+  ]
+}

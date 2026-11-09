@@ -1,0 +1,35 @@
+{
+  "evidence": "PC synthetic motor model; no hardware motion commands",
+  "app_version": "fast-smooth-v4",
+  "main_sha256": "35a3ed1babbb59812ac6c7ac1186b79f8c659c221d1155326b9a71425a550af3",
+  "app_tests": 137,
+  "shared_motor_tests": 81,
+  "node_event_tests": "passed",
+  "home_model_start_deg": [
+    70,
+    -65
+  ],
+  "home_model": {
+    "v3_rate": {
+      "seconds": 3.998,
+      "phase": "HOME_HOLD",
+      "armed": true,
+      "angles": [
+        0.0,
+        0.0
+      ]
+    },
+    "v4_rate": {
+      "seconds": 3.02,
+      "phase": "HOME_HOLD",
+      "armed": true,
+      "angles": [
+        0.0,
+        0.0
+      ]
+    }
+  },
+  "manual_ramp_fixed_accel_deg_s2": 153,
+  "manual_yaw_95_percent_time_s": 0.37,
+  "physical_validation": false
+}

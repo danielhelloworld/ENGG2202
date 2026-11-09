@@ -1,0 +1,22 @@
+{
+  "app_version": "tracking-tolerant-v7",
+  "app_tests": 163,
+  "shared_motor_tests": 81,
+  "node_event_tests": "passed",
+  "hardware_commands_issued": false,
+  "physical_validation": false,
+  "camera_status_read": "timed out",
+  "main_sha256": "eaccb306ec1d3be3ff49bc4d0b2831e2c4d9290b37bc51c9a1ac4ba37466713f",
+  "tracking_accel_deg_s2": [
+    600,
+    500
+  ],
+  "tracking_rate_deg_s": [
+    150,
+    120
+  ],
+  "stall_observation_s": 1.8,
+  "tracking_reverse_deg": 6,
+  "tracking_reverse_confirm_s": 0.8,
+  "source_hashes_valid": true
+}

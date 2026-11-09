@@ -1,0 +1,468 @@
+{
+  "schema": 0,
+  "samples": [
+    {
+      "t": 453045.937,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.020788042000049245,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453046.125,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.11042154200004006,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453046.296,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.10459199999991142,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453046.453,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.09436045899997225,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453046.578,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.08602675099996304,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453046.734,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.09949383399998624,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453046.906,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.054833540999879915,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453047.062,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.0218582919999335,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453047.203,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.037215500000002066,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453047.328,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.048896082999817736,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453047.453,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.03789454200000364,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453047.593,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.08497183300005418,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453047.703,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.038468249999823456,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453047.89,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.025322167000012996,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453048.093,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.044271833000038896,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453048.234,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.0747593329999745,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453048.39,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.06522845800009236,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453048.531,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.036780416999818044,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453048.687,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.10643454199998814,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453048.875,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.029475583000021288,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "t": 453049.0,
+      "armed": false,
+      "actual_deg": [
+        -51.5,
+        120.2
+      ],
+      "commanded_deg": null,
+      "feedback_age_s": 0.07610316699992836,
+      "feedback_degraded": false,
+      "response": {
+        "error_deg": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "compatibility": "old board state snapshots",
+  "state": {
+    "angles": [
+      -51.5,
+      120.2
+    ],
+    "ready": true,
+    "fault": null,
+    "age": 0.07610316699992836,
+    "simulated": false,
+    "armed": false,
+    "mechanical_angles": [
+      -51.5,
+      120.2
+    ],
+    "reference_zero": [
+      0.0,
+      0.0
+    ],
+    "reference_valid": true,
+    "reference_fault": null,
+    "raw_feedback": [
+      null,
+      null
+    ],
+    "phase": "DISABLED",
+    "zero_confirmed": true,
+    "target": [
+      -26.5,
+      -8.0
+    ],
+    "home_requested": false,
+    "angle_source": "mechanical_only",
+    "cumulative_angle_used": false,
+    "limits": [
+      [
+        -150.0,
+        150.0
+      ],
+      [
+        -100.0,
+        30.0
+      ]
+    ],
+    "joystick_signs": [
+      -1,
+      -1
+    ],
+    "position_mode": 4,
+    "max_rate": [
+      30.0,
+      24.0
+    ],
+    "home_rate": [
+      18.0,
+      14.0
+    ],
+    "control_feedback_seen": true,
+    "mechanical_feedback_age": [
+      0.005517290999932811,
+      0.06434779100004562
+    ],
+    "last_angle_jump": null,
+    "recheck_status": "PASSED",
+    "can_recheck": true,
+    "arm_homing": false,
+    "auto_home_on_arm": false,
+    "tracking_rate": [
+      30.0,
+      24.0
+    ],
+    "suspicious_motion": null,
+    "motor_rate_ceiling": [
+      30.0,
+      24.0
+    ],
+    "recovery_active": false,
+    "startup_auto_home": true,
+    "outside_hold": false,
+    "startup_completed": true,
+    "outside_work_limits": true,
+    "connected": false,
+    "notice": "已请求双轴失能；再次操作请重新连接",
+    "hold_blocked": false,
+    "vision_state": "DETECT",
+    "selected": null,
+    "c_next_home": false,
+    "frame_id": 13640,
+    "vision_age": 0.050908292000031,
+    "prediction_active": false,
+    "prediction_center": null,
+    "estimated_target_velocity": [
+      0.0,
+      0.0
+    ],
+    "control_owner": "NONE"
+  },
+  "source": "http://192.168.100.210:8080",
+  "read_only": true,
+  "summary": {
+    "total_samples": 21,
+    "eligible_samples": 0,
+    "moving_samples": 0,
+    "rms_command_feedback_error_deg": null,
+    "note": "Disabled/stale targets are excluded. No torque/current measurement or motor command is issued by this tool."
+  }
+}

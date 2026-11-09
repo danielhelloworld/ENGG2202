@@ -1,0 +1,139 @@
+{
+  "synthetic": false,
+  "version": "hold-drive-v16",
+  "pi_modified": false,
+  "mechanical_zero_modified": false,
+  "limits": [
+    [
+      -150,
+      150
+    ],
+    [
+      -100,
+      30
+    ]
+  ],
+  "startup_angles_deg": [
+    5.8,
+    91.7
+  ],
+  "startup_enable_to_home_hold_s": 2.64885412600006,
+  "pulse_count": 12,
+  "pulse_actual_range_deg": [
+    [
+      -11.8,
+      0.0
+    ],
+    [
+      -6.0,
+      3.2
+    ]
+  ],
+  "all_samples_armed": true,
+  "all_samples_fault_free": true,
+  "http_rtt_p50_ms": 61.99999999989814,
+  "final_hold": [
+    -0.1,
+    0.0
+  ],
+  "final_armed": true,
+  "final_five_second_peak_to_peak_deg": [
+    0.0,
+    0.1
+  ],
+  "pulses": [
+    {
+      "axis": 0,
+      "input": 0.08,
+      "configured_direction_observed": true,
+      "pc_observed_03_degree_latency_s": 0.25,
+      "release_snapshot_to_settled_delta_deg": -2.5
+    },
+    {
+      "axis": 0,
+      "input": -0.08,
+      "configured_direction_observed": true,
+      "pc_observed_03_degree_latency_s": 0.31300000000010186,
+      "release_snapshot_to_settled_delta_deg": 0.8999999999999999
+    },
+    {
+      "axis": 0,
+      "input": 0.16,
+      "configured_direction_observed": true,
+      "pc_observed_03_degree_latency_s": 0.23500000000012733,
+      "release_snapshot_to_settled_delta_deg": -2.4999999999999996
+    },
+    {
+      "axis": 0,
+      "input": -0.16,
+      "configured_direction_observed": true,
+      "pc_observed_03_degree_latency_s": 0.28099999999994907,
+      "release_snapshot_to_settled_delta_deg": 4.0
+    },
+    {
+      "axis": 0,
+      "input": 0.3,
+      "configured_direction_observed": true,
+      "pc_observed_03_degree_latency_s": 0.23500000000012733,
+      "release_snapshot_to_settled_delta_deg": -3.5999999999999996
+    },
+    {
+      "axis": 0,
+      "input": -0.3,
+      "configured_direction_observed": true,
+      "pc_observed_03_degree_latency_s": 0.25,
+      "release_snapshot_to_settled_delta_deg": 2.3000000000000007
+    },
+    {
+      "axis": 1,
+      "input": 0.08,
+      "configured_direction_observed": true,
+      "pc_observed_03_degree_latency_s": 0.25,
+      "release_snapshot_to_settled_delta_deg": -1.1
+    },
+    {
+      "axis": 1,
+      "input": -0.08,
+      "configured_direction_observed": true,
+      "pc_observed_03_degree_latency_s": 0.2339999999999236,
+      "release_snapshot_to_settled_delta_deg": 0.9
+    },
+    {
+      "axis": 1,
+      "input": 0.16,
+      "configured_direction_observed": true,
+      "pc_observed_03_degree_latency_s": 0.2339999999999236,
+      "release_snapshot_to_settled_delta_deg": -2.4
+    },
+    {
+      "axis": 1,
+      "input": -0.16,
+      "configured_direction_observed": true,
+      "pc_observed_03_degree_latency_s": 0.25,
+      "release_snapshot_to_settled_delta_deg": 4.1
+    },
+    {
+      "axis": 1,
+      "input": 0.3,
+      "configured_direction_observed": true,
+      "pc_observed_03_degree_latency_s": 0.31300000000010186,
+      "release_snapshot_to_settled_delta_deg": -2.3
+    },
+    {
+      "axis": 1,
+      "input": -0.3,
+      "configured_direction_observed": true,
+      "pc_observed_03_degree_latency_s": 0.25,
+      "release_snapshot_to_settled_delta_deg": 4.5
+    }
+  ],
+  "limitations": [
+    "PC observed latency includes HTTP, application scheduling and angle sampling; it is not pure motor delay.",
+    "Pulse length is requested PC duration; request and feedback timing limit its precision.",
+    "Release delta starts at the API response snapshot, before UART release is necessarily applied; it is not measured overshoot past a fixed setpoint.",
+    "0.1 degree encoder telemetry cannot exclude high frequency vibration.",
+    "No visual target was selected; visual tracking gains and FOV were not calibrated.",
+    "No PI baseline was known, and no PI or zero/Flash command was sent.",
+    "Tests near zero do not establish safe maximum speed or stopping distance at the mechanical limits."
+  ]
+}

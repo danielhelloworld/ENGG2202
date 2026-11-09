@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-06",
+  "mode": "synthetic_only",
+  "tests": {
+    "system_and_bridge": 28,
+    "original_calibration": 18,
+    "thermal_detector": 6,
+    "total": 52
+  },
+  "hardware_verified": false,
+  "tracks": [
+    {
+      "id": 1,
+      "x": 0.32400039785160134,
+      "y": 0.3610503282275711,
+      "state": "VISUAL_CONFIRMED",
+      "evidence": {
+        "vision": 0.95,
+        "sound": 0.8,
+        "thermal": 1.0
+      },
+      "contributions": {
+        "vision": 0.6649999999999999,
+        "sound": 0.12,
+        "thermal": 0.15
+      },
+      "score": 0.9349999999999999,
+      "hits": 4
+    }
+  ]
+}
