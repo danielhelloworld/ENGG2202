@@ -1,0 +1,8 @@
+* -text whitespace=cr-at-eol
+*.stl binary
+*.step binary
+*.stp binary
+*.f3d binary
+*.f3z binary
+*.png binary
+*.zip binary

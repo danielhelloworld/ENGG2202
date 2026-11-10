@@ -1,0 +1,40 @@
+{
+  "output_v2_reinforced": {
+    "STL_passed": 9,
+    "bad_features": {},
+    "STEP_solid_counts": {
+      "camera_plate.step": 1,
+      "camera_plate_four_screw.step": 1,
+      "fit_coupon_gap_0.15.step": 1,
+      "fit_coupon_gap_0.25.step": 1,
+      "fit_coupon_gap_0.35.step": 1,
+      "fit_coupon_male.step": 1,
+      "MaixCAM2_quick_release_assembly.step": 8,
+      "receiver_heat_stake.step": 1,
+      "receiver_M2_bolt.step": 1,
+      "side_heat_rivet_print_2.step": 1
+    },
+    "assembly_F3D_bytes": 1745448
+  },
+  "output_v3_usb": {
+    "STL_passed": 9,
+    "bad_features": {},
+    "STEP_solid_counts": {
+      "camera_plate.step": 1,
+      "camera_plate_four_screw.step": 1,
+      "fit_coupon_gap_0.15.step": 1,
+      "fit_coupon_gap_0.25.step": 1,
+      "fit_coupon_gap_0.35.step": 1,
+      "fit_coupon_male.step": 1,
+      "MaixCAM2_quick_release_assembly.step": 8,
+      "receiver_heat_stake.step": 1,
+      "receiver_M2_bolt.step": 1,
+      "side_heat_rivet_print_2.step": 1
+    },
+    "assembly_F3D_bytes": 1842219
+  },
+  "original_v2_preserved": {
+    "files": 31,
+    "changed": []
+  }
+}

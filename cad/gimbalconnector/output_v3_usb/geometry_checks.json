@@ -1,0 +1,181 @@
+{
+  "version": "v3_usb",
+  "source_camera": "MaixCAM2_3.0.step",
+  "source_gimbal": "云台连接件.step",
+  "dimensions_mm": {
+    "receiver": [
+      44.000000000000014,
+      80.15,
+      22.7
+    ],
+    "plate": [
+      38,
+      70,
+      9
+    ],
+    "plate_top": 21.3,
+    "rail_gap_each_side": 0.25,
+    "friction_interference_each_side": 0.1,
+    "mount_slot_width": 2.4,
+    "mount_slot_length_between_end_centres": 65,
+    "arm_thickness": 2,
+    "heat_pin_diameter": 2.2,
+    "heat_pin_length": 5.5,
+    "pins_y": [
+      -4,
+      4,
+      10,
+      32
+    ],
+    "centre_screw_clearance": 6.8,
+    "head_recess_diameter": 14,
+    "head_recess_depth": 3.5,
+    "camera_screw_bearing_thickness": 5.5,
+    "four_screw_pitch": [
+      55.67811,
+      40.27408
+    ],
+    "four_screw_clearance": 2.8,
+    "front_frame_added_thickness": 2.4,
+    "camera_shift_toward_free_end": 20.0,
+    "side_holes_y": [
+      -28.15,
+      36.85
+    ],
+    "side_hole_diameter": 3.2,
+    "side_rivet_shank_diameter": 3.0,
+    "side_rivet_print_quantity": 2,
+    "USB_side_to_motor_flange_gap": 25.525,
+    "added_track_height_vs_original_v2": 5.0,
+    "receiver_rail_top_above_arm": 17.2
+  },
+  "exports": {},
+  "checks": {
+    "coincident_face_retry_offset_xyz_mm": [
+      -0.005,
+      0.005,
+      0.005
+    ],
+    "Receiver_heat_stake_optimized": {
+      "one_solid": true,
+      "volume_mm3": 31839.044574434833,
+      "bbox_mm": [
+        [
+          -22.000000000000007,
+          -32.15,
+          -5.5
+        ],
+        [
+          22.000000000000007,
+          48.00000000000001,
+          17.2
+        ]
+      ],
+      "features": 27
+    },
+    "Receiver_M2_bolt_optimized": {
+      "one_solid": true,
+      "volume_mm3": 31612.91980381296,
+      "bbox_mm": [
+        [
+          -22.000000000000007,
+          -32.15,
+          -2.1
+        ],
+        [
+          22.000000000000007,
+          48.00000000000001,
+          17.2
+        ]
+      ],
+      "features": 27
+    },
+    "Camera_plate_1_4_optimized": {
+      "one_solid": true,
+      "volume_mm3": 15029.47439899408,
+      "bbox_mm": [
+        [
+          -19.000000000000004,
+          -15.000000000000004,
+          12.300000000000002
+        ],
+        [
+          19.000000000000004,
+          55.0,
+          21.300000000000004
+        ]
+      ],
+      "features": 4
+    },
+    "Camera_plate_1_4_four_screw_optimized": {
+      "one_solid": true,
+      "volume_mm3": 16851.962191624192,
+      "bbox_mm": [
+        [
+          -19.000000000000004,
+          -15.000000000000004,
+          12.300000000000002
+        ],
+        [
+          19.000000000000004,
+          55.0,
+          70.30000000000001
+        ]
+      ],
+      "features": 7
+    },
+    "Side_heat_rivet_3mm": {
+      "one_solid": true,
+      "volume_mm3": 111.13384012073416,
+      "bbox_mm": [
+        [
+          -2.75,
+          -2.75,
+          0.0
+        ],
+        [
+          2.75,
+          2.75,
+          11.0
+        ]
+      ],
+      "features": 2
+    },
+    "receiver_to_original_arm_intersection_mm3": 0.0,
+    "plate_to_original_arm_intersection_mm3": 0.0,
+    "plate_to_camera_casing_intersections_mm3": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "receiver_to_camera_casing_intersections_mm3": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "camera_casing_to_original_arm_intersections_mm3": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "receiver_to_plate_designed_friction_interference_mm3": 8.30666666666667,
+    "side_rivets_to_arm_intersections_mm3": [
+      0.0,
+      0.0
+    ],
+    "side_rivets_to_receiver_intersections_mm3": [
+      0.0,
+      0.0
+    ],
+    "USB_plug_keepout_to_gimbal_mm3": 0.0,
+    "USB_plug_keepout_to_receiver_mm3": 0.0,
+    "USB_plug_keepout_to_camera_plate_mm3": 0.0
+  },
+  "orientation": {
+    "camera_long_edge_axis": "Y",
+    "gimbal_arm_long_axis": "Y",
+    "insert_direction": "-X",
+    "withdraw_direction": "+X",
+    "underside_mount_pins_remain_along_original_Y_slot": true
+  }
+}
